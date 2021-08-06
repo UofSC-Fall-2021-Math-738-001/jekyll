@@ -27,7 +27,7 @@ nav_order: 5
 
 ## Course Name and Number
 
-HRNS: Linear Algebra – Math 544
+Selected Topics in Geometry and Topology: Derived categories in algebraic geometry I – Math 738
 
 ## Term 
 
@@ -35,7 +35,7 @@ Fall 2021
 
 ## Meeting Time and Location 
 
-Tuesdays and Thursdays 8:30-9:45 AM in Room 3007 of the [Carolina Coliseum](https://sc.edu/visit/map/?id=744#!m/223299) 
+Tuesdays and Thursdays 10:05-11:20 AM in Room 3006B of the [Carolina Coliseum](https://sc.edu/visit/map/?id=744#!m/223299) 
 
 ## Instructor Information
 
@@ -47,51 +47,31 @@ Tuesdays and Thursdays 8:30-9:45 AM in Room 3007 of the [Carolina Coliseum](http
 ## Office Hours
 
 Tuesdays and Thursdays 11:30-1:00 or by appointment 
- 
 
-## Academic Bulletin Description 
-
-Vectors, vector spaces, and subspaces; geometry of finite dimensional Euclidean space; linear transformations; eigenvalues and eigenvectors; diagonalization. Throughout there will be an emphasis on theoretical concepts, logic, and methods.
 
 ## Full Course Description 
 
-Figure out all values of $x,y,z$ that solve the equations
- $$ 
-    5x - 2y + z = 1 \\
-    -x + y - 3z = 0 \\
-    2x - y + z = -1 
- $$
-The most direct attack would perhaps be to repeatedly substitute and simplify to reach only a single variable equation. Are there easier ways? More efficient ways? What if we had 256 equations and 128 variables? 
-
-In this class, we study the structure of linear equations from both very concrete and mildly abstract perspectives. We will develop tools that allow us to both gain a conceptual understanding of systems of linear equations and underpin robust computational tools. 
-
-Our pen, paper, and mental work will be supplemented with a working knowledge of [Sage](https://www.sagemath.org/). 
+This is the first in a two-semester course. This semester we will introduce derived categories of abelian categories with a particular 
+emphasis on the category $\operatorname{Mod} R$ of $R$-modules over a ring $R$. Time allowing we will introduce the necessary 
+ideas and facts from Algebraic Geometry for the category $\operatorname{Qcoh} X$ of quasi-coherent sheaves on a scheme $X$. 
  
 ## Prerequisites 
 
-C or better in MATH 241 and MATH 300.
+None
 
 ## Learning Outcomes 
 
 After successful completion of this course, you will be able to: 
 
-- Determine the complete solution to $Ax = b$
-- Relate linear transformations, matrices, and change of basis
-- Recognize linearly dependent and independent collections of vectors
-- Compute bases and dimensions of vector spaces
-- Orthogonalize vectors using Gram-Schmidt
-- Know and use the properties of determinants
-- Compute eigenvalues and eigenvectors
-- Appreciate the ubiquity of linear algebra across science
+- Localize abelian categories for fun and profit
+- Draw confusing diagrams that claim to explain the octohedral axiom
+- Day dream about stable $\infty$-categories
 
 ## Course Materials 
 
-The main resources for materials are the [course website](https://544.f21.matthewrobertballard.com) and the [Microsoft Team](https://teams.microsoft.com/l/channel/19%3aJgLzdLZpFCbmrJptHxrA2E7bvjwXsxJFPmFdJmn1-CI1%40thread.tacv2/General?groupId=5ff176b0-5dbd-44cb-a436-ec0c668e897e&tenantId=4b2a4b19-d135-420e-8bb2-b1cd238998cc) for the course. 
+The main resources for materials are the [course website](https://738.f21.matthewrobertballard.com), the course channel in the [SCAGNT Zulip](https://scagnt.zulipchat.com) and the [Microsoft Team](https://teams.microsoft.com/l/team/19%3am7sMpRskwXsB5SC5HX4uuaTIG2Ux56ChImvB3o2aMB41%40thread.tacv2/conversations?groupId=a8908864-beb6-45da-9c7d-2bb454080245&tenantId=4b2a4b19-d135-420e-8bb2-b1cd238998cc) for the course. 
 
-Some supplemental (and optional) resources:
-- K. Kuttler. [A first course in linear algebra](https://www.oercommons.org/courses/first-course-linear-algebra/view) (Open Access)
-- J. Hefferon. [Linear algebra](https://joshua.smcvt.edu/linearalgebra/) (Open Access)
-- G. Strang. [Introduction to linear algebra](http://math.mit.edu/~gs/linearalgebra/) 
+Supplemental course materials will be linked as necessary. 
 
 All course materials comply with copyright/fair use policies. 
 
@@ -99,24 +79,17 @@ All course materials comply with copyright/fair use policies.
 
 ## Course Format  
 
-To wholly and successfully engage with the course, you will need to be need to [attend](#attendance-policy-and-covid-reporting) class, attempt lots of problems, and engage both with me and your fellow classmates. All course materials are will be made available online so regular Internet access is essential for successful completion of the course. 
+The course is a standard lecture course with homeworks to test your understanding. 
 
-It is expected that much of this material will be unfamiliar to you. (If not, more power to you.) The course is structured to guide every student to mastery in terms of conceptual understanding and computational fidelity by the end of the semester.
-
-Class time will be spent working in small groups and presenting solutions to problems. It is expected you will have consumed the relevant material ahead of each course. It is not expected you will be comfortable with the material. Class time is for learning through doing and working through your 
-misunderstandings. 
-
-Each class will end with a short quiz to diagnose any problems. 
-
-At the end of the class, a project will be due in place of a final exam.  
+At the end of the class, a paper will be due in place of a final exam.  
 
 ## Course Communication 
 
-I will be communicating with you regarding grades and assignments. If you need to get in touch with me, the best method is via Microsoft Team chat or email. Generally, I will reply within 24 hours and will provide feedback on assignments within one week. 
+If you need to get in touch with me, the best method is via Zulip chat or email. Generally, I will reply within 24 hours and will provide feedback on assignments within one week. 
 
 You may also post questions pertaining to the course in the Questions channel in the course team. These questions will be answered within 24 hours. I encourage all students to take a stab at answering any question. 
 
-If you are having trouble with this course or its material, you should contact me via Microsoft Team chat or email to discuss the issues. 
+If you are having trouble with this course or its material, you should contact me via Zulip chat or email to discuss the issues. 
 
 Announcements will be posted to this course whenever necessary. If there is any other information I think is important, I will send it to your preferred university email address. It is your responsibility to ensure that your email account works properly in order to receive email. 
 
@@ -132,26 +105,9 @@ To participate in learning activities and complete assignments, you will need:
 
 - If you plan to submit handwritten assignments, a scanning device such as a smartphone with the Microsoft Office Lens app.  
 
-- The main hub for this course is the Microsoft Teams team [COTEAM-BALLARMR-MATH-544-H01-FALL-2021](https://teams.microsoft.com/l/channel/19%3aJgLzdLZpFCbmrJptHxrA2E7bvjwXsxJFPmFdJmn1-CI1%40thread.tacv2/General?groupId=5ff176b0-5dbd-44cb-a436-ec0c668e897e&tenantId=4b2a4b19-d135-420e-8bb2-b1cd238998cc) run through UofSC’s Microsoft Teams account. All course materials, including recorded lectures, live lectures, assignments, handouts, will be published there. To access the team for the first time on your desktop/laptop: 
+- The main hub for this course is the Microsoft Teams team [COTEAM-BALLARMR-MATH-738-001-FALL-2021]https://teams.microsoft.com/l/team/19%3am7sMpRskwXsB5SC5HX4uuaTIG2Ux56ChImvB3o2aMB41%40thread.tacv2/conversations?groupId=a8908864-beb6-45da-9c7d-2bb454080245&tenantId=4b2a4b19-d135-420e-8bb2-b1cd238998cc) run through UofSC’s Microsoft Teams account. To access the team for the first time on your desktop/laptop, use the join link included in your welcome email.
 
-    - Navigate to [https://teams.microsoft.com/](https://teams.microsoft.com/)
-
-    - Enter your UofSC network ID and password (same as Blackboard) 
-
-    - On the left menu select ‘Teams’.  
-
-    - In the upper right, click ‘Join or create team’ 
-
-    - Enter in the code for our class to join the Math 300 team which is included in your email. <!--c2sss3q-->
-
-    - Download and install the Microsoft Teams application using the bottom icon on the left menu.      
-
-    - Note that you might benefit from installing the Microsoft Teams app on your smartphone. Search for ‘Microsoft Teams’ in the Android or iOS app store and install.  
-
-- We will be using a computer algebra system called [Sage](https://www.sagemath.org/) to aid our learning. It blows your graphing calculator out of the water and is ideally suited to STEM work. Built as a super-set of the popular programming language [Python](https://www.python.org/), Sage skills will translate into Python skills. There are three main ways to access Sage: 
-    - [SageMathCell](https://sagecell.sagemath.org/) is ideal for a computation involving a few lines. 
-    - [CoCalc](https://www.cocalc.com/) provides a free plan for more complicted porgrams. 
-    - [A local installation](http://doc.sagemath.org/html/en/installation/binary.html) will never be required of anyone. But, it might be valuable for a power-user. 
+- We will be using a chat service called [zulip](https://zulip.com/) to aid our learning. It exceeds Team's capabilities with regards to typsetting mathematics content. To access the [SCAGNT zulip chat](https://scagnt.zulipchat.com) for the first time on your desktop/laptop, use the join link included in your welcome email.
  
 ## Minimal Technical Skills Needed  
 
@@ -159,7 +115,7 @@ Minimal technical skills are needed in this course. All work in this course must
 
 - Organize and save electronic files; 
 
-- Check and use the Microsoft Teams site daily; 
+- Check and use the course, Zulip, and Microsoft Teams sites daily; 
 
 - Download and upload documents; 
 
@@ -169,36 +125,33 @@ Minimal technical skills are needed in this course. All work in this course must
 
 If you have problems with your computer, technology, IT-related questions, support, including Microsoft Teams, please contact the Division of Information Technology (DoIT) Service Desk at (803) 777-1800 or submit an online request through the [Self-Service Portal](https://scprod.service-now.com/sp) or visit the [Carolina Tech Zone](https://www.sc.edu/about/offices_and_divisions/university_technology_services/support/ctz.php). The Service Desk is open Monday – Friday from 8:00 AM – 6:00 PM (Eastern Daylight Time). The Thomas Cooper Library at USC has computers for you to use in case you encounter computer issues/problems. 
 
+If you have problems with Zulip, [contact me](mailto:ballard@math.sc.edu). 
+
 # Course Assignments and Grading 
 
 ## Homework	 
 
-Homework will need to be completed in groups of 3-4 that will be randomly assigned each week. The assignments will be available in and must be returned through Microsoft Teams. All homework assignments are due by 11:59 pm (Eastern Time) on the day indicated on the course schedule. Homework will be graded for correctness. You will be allowed up to two revisions on each homework assignment. 
+Homework can be completed in groups of 1-4. All sources utilized must be cited. 
 
-## Quizzes 
+Latex should be submitted as pdfs compiled via Latex. 
 
-Each course will end with a short quiz. The goal of the quiz is to diagnose any gaps in the understanding and make sure we all stay on the same page. Quizzes are graded for correctness. You will be allowed up to two revisions on each quiz. 
+The assignments will be available in and must be returned through Microsoft Teams. All homework assignments are due by 11:59 pm (Eastern Time) on the day indicated on the course schedule. Homework will be graded for correctness. You will be allowed up to two revisions on each homework assignment. 
 
-## Presentations 
+## Paper 
 
-All students are expected to regularly present solutions to in-class work group problems. Your target should be to present one solution every two weeks. Presentations are graded simply for completion. If you attempt it, it counts. 
-
-## Project 
-
-A list of project topics will be released on October 1. These can be done in groups of 1-4 of your own choosing. Projects are due by December 9 at 9:00 am (EST). 
+In lieu of a finals, papers on more in depth topics are required. [Contact me](mailto:ballard@math.sc.edu) to arrange for a topic. Suggestions will be provided as we progress. 
 
 ## Evaluation and Grading Scale 
 
-All grades will be posted on Teams. You are strongly encouraged to check you scores in Teams regularly. A final letter grade will be assigned based on weighting below. 
+All grades will be posted on Teams. A final letter grade will be assigned based on weighting below. 
 
 ### Assignment Weights 
 
 | Component     | Percent of total      |
 | :---------:   | :---------:    |
-| Homework      |      25%       |
-| Quizzes       |      25%       |
-| Presentations |      25%       |
-| Project       |      25%       |
+| Participation |      33%       |
+| Homework      |      33%       |
+| Project       |      33%       |
 
 ### Grading Scale 
 
@@ -223,31 +176,13 @@ All written assignments are required to be submitted through Teams. Unless other
 
 ## Revisions 
 
-All homework turned in on-time is eligible for revision at full credit. All quizzes taken on-time are eligible for revision at full credit. Each assignment can undergo at most two revisions. Revisions must be resubmitted within one week of receiving a marked assignment or revision.
+All homework turned in on-time is eligible for revision at full credit. Each assignment can undergo at most two revisions. Revisions must be resubmitted within one week of receiving a marked assignment or revision.
 
 # Academic Success 
 
 ## Accessibility 
 
 The [Student Disability Resource Center](http://www.sa.sc.edu/sds/) (SDRC) empowers students to manage challenges and limitations imposed by disabilities. Students with disabilities are encouraged to contact me to discuss the logistics of any accommodations needed to fulfill course requirements (within the first week of the semester). In order to receive reasonable accommodations from me, you must be registered with the Student Disability Resource Center (1705 College Street Close-Hipp, Suite 102 Columbia, SC 29208, 803-777-6142). Any student with a documented disability should contact the SDRC to make arrangements for appropriate accommodations. 
-
-## Student Success Center 
-
-In partnership with USC faculty, the [Student Success Center](https://www.sc.edu/success) (SSC) offers a number of programs to assist you in better understanding your course material and to aid you on your path to success. SSC programs are facilitated by professional staff, graduate students, and trained undergraduate peer leaders who have previously excelled in their courses. Resources available to you in this and other courses may include: 
-
-Peer Tutoring: You can make a one-on-one appointment with a [Peer Tutor](https://www.sc.edu/success). Drop-in Tutoring and Online Tutoring may also be available for this course. Visit their website for a full schedule of times, locations, and courses.  
-
-<!-- Supplemental Instruction (SI): SI Leaders are assigned to specific sections of courses and hold three weekly study sessions. Sessions focus on the most difficult content being covered in class. The SI Session schedule is posted through the SSC website each week and will also be communicated in class by the SI Leader. There is no SI for Math 300 but this might be useful for your other classes.   -->
-
-Peer Writing: Improve your college-level writing skills by bringing writing assignments from any of your classes to a Peer Writing Tutor. Similar to Tutoring, you can visit the website to make an appointment, and to view the full schedule of available drop-in hours and locations. 
-
-Success Consultations: In Success Consultations, SSC staff assist you in developing study skills, setting goals, and connecting to a variety of campus resources. Throughout the semester, I may communicate with the SSC via Success Connect, an online referral system, regarding your progress in the course. If contacted by the SSC, please schedule a Success Consultation. Success Connect referrals are not punitive and any information shared by me is confidential and subject to FERPA regulations. 
-
-SSC services are offered to all USC undergraduates at no additional cost. You are invited to call the Student Success Hotline at (803) 777-1000, visit [SSC website](https://www.sc.edu/success), or stop by the SSC in the Thomas Cooper Library on the Mezzanine Level to check schedules and make appointments. 
-
-## Writing Center 
-
-This course has many of writing assignments. The [University Writing Center](http://artsandsciences.sc.edu/write/university-writing-center) is an important resource you should use! It's open to help any USC student needing assistance with a writing project at any stage of development. The main Writing Center is in Byrnes 703. 
 
 ## University Library Resources 
 
@@ -297,7 +232,7 @@ Using the words or ideas of another as if they were one’s own is a serious for
 
 ## Group Work 
 
-Group work should be performed in socially distant manner. Remote work will certainly form a larger component of a career going forward. Now is the time to learn to work collaboratively and remotely in an efficient manner. You are encouraged to take advantage of Microsoft Teams video and chat abilities to aid in collaboration.  
+Group work should be performed in safe manner. Remote work will certainly form a larger component of a career going forward. You are encouraged to take advantage of Microsoft Teams video conferencing and Zulip chat abilities to aid in collaboration.  
 
 ## Class Conduct 
 
@@ -359,71 +294,6 @@ I am expected to facilitate learning, answer questions appropriately, be fair an
 
 I will cite and/or reference any materials that I use in this course that I do not create. 
 
-Anything that appears on this website is copyright &copy; 2021 Matthew Ballard and is distributed by an <a href="https://github.com/UofSC-Fall-2021-Math-544-H01-UofSC-Fall-2021-Math-544-H01.github.io/tree/master/LICENSE.txt\">MIT license.
+Anything that appears on this website is copyright &copy; 2021 Matthew Ballard and is distributed by an <a href="https://github.com/UofSC-Fall-2021-Math-738-001-UofSC-Fall-2021-Math-738-001.github.io/tree/master/LICENSE.txt\">MIT license.
 
 Course materials that do not appear on this website are copyright &copy; 2021 Matthew Ballard and all rights are reserved. In particular, you may not distribute any of these course materials in any fashion. 
-
-# Tentative Schedule 
-
-This is the (ambitious) plan for the semester. But it is only a plan. The successful progression of each student is the most important guide to through the material. As such, you should expect revisions as we go. 
-
-## Week 1
-- 8/19 welcome and orientation
-
-## Week 2
-- 8/24 addition and multiplication of matrices and vectors
-- 8/26 solving linear systems: row reduction 
-
-## Week 3
-- 8/31 row echelon form and LU decompositions  
-- 9/2 geometry and solvability of linear systems 
-
-## Week 4
-- 9/7 ranges and null spaces of matrices - implicit and parametric representations
-- 9/9 linear dependence and spans of collections of vectors - dimensions and bases
-
-## Week 5
-- 9/14 row rank, column rank  
-- 9/16 invertibility 
-
-## Week 6
-- 9/21 vector spaces
-- 9/23 subspaces
-
-## Week 7
-- 9/28 bases again
-- 9/30 linear transformations 
-
-## Week 8
-- 10/5 kernels and images
-
-## Week 9
-- 10/12 isomorphisms 
-- 10/14 determinants: the idea
-
-## Week 10
-- 10/19 determinants: computations
-- 10/21 the complex number system
-
-## Week 11
-- 10/26 eigenvalues and eigenvectors 1
-- 10/28 eigenvalues and eigenvectors 2
-
-## Week 12
-- 11/2 symmetric matrices
-- 11/4 positive definite matrices 
-
-## Week 13
-- 11/9 diagonalizability
-- 11/11 diagonalizability 2 
-
-## Week 14
-- 11/16 orthogonality and projections
-- 11/18 least squares approximations
-
-## Week 15
-- 11/23 gram-schmidt and QR factorization
-
-## Week 16 
-- 11/30 singular value decomposition
-- 12/2 selected applications 

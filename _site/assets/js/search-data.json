@@ -1,668 +1,428 @@
 {"0": {
     "doc": "Homework 1",
     "title": "Homework 1",
-    "content": "Due 2021-08-31 . | (Do this individually) On the channel in Microsoft Teams, introduce yourself. Also, tell us why you are taking the course and what you hope to gain from it. | . More coming after class on 8/19. ",
+    "content": "Due 2021-12-31 . | TBD | . ",
     "url": "http://localhost:4000/homework/1/",
     "relUrl": "/homework/1/"
   },"1": {
-    "doc": "Worksheet 1",
-    "title": "Worksheet 1",
-    "content": ". | What is the coefficient matrix and the augmented matrix for the following system of linear equations: \\(x_1 + x_2 + x_3 = 1 \\\\ 2x_1 + 3x_2 + x_3 = 2 \\\\ x_1 - x_2 + 3x_3 = 2.\\) . | Solve the system given in Problem 1 using the algorithm described in the notes . | For the matrix \\(\\begin{pmatrix} 1 &amp; -2 &amp; 0 &amp; 1 \\\\ 3 &amp; 0 &amp; 4 &amp; -1 \\\\ 5 &amp; 5 &amp; 5 &amp; 5 \\end{pmatrix}\\) write out the set of column vectors and row vectors. | Compute the transpose of the matrix in Problem 3. | For the matrices . | . $ A = \\begin{pmatrix} 1 &amp; 0 &amp; 1 &amp; 0 \\\\ 1 &amp; 1 &amp; -1 &amp; -1 \\\\ 0 &amp; 0 &amp; 1 &amp; 1 \\end{pmatrix} \\ , \\ B = \\begin{pmatrix} -3 &amp; -1 &amp; 0\\\\ 2 &amp; 0 &amp; 0 \\\\ 1 &amp; 1 &amp; 0 \\end{pmatrix} \\ , \\ \\mathbf{v} = \\begin{pmatrix} 1 &amp; 1 &amp; 1 \\\\ \\end{pmatrix} \\ , \\ \\mathbf{w} = \\begin{pmatrix} 1 \\\\ 1 \\\\ 1 \\end{pmatrix} $ Compute all the products (as matrices) that are well-defined. Which ones are not well-defined? . | Which of the following statements are true? . | For any two matrices $A$ and $B$ of the same size, we always have $A + B = B + A$ | For any two matrices $A$ and $B$, we always have $AB = BA$. | For any two square matrices $A$ and $B$ of the same size, we always have $AB = BA$. | . | For any three matrices $A$, $B$, and $C$, either . | both $(AB)C$ and $A(BC)$ are not well-defined or | $(AB)C = A(BC)$. | . Can you convincingly explain why? A professional mathematician would say matrix multiplication is associative. | We have the following problem: we want to find a cubic polynomial \\(p(x) = a + bx + cx^2 + dx^3\\) such that $p(1) = 5$, $p^\\prime(1) = 5$, $p(2) = 17$, and $p^\\prime(2) = 21$. What does this have to do with linear algebra? | . ",
-    "url": "http://localhost:4000/worksheets/1/",
-    "relUrl": "/worksheets/1/"
-  },"2": {
     "doc": "About",
     "title": "Syllabus",
-    "content": ". | Course Information . | Course Name and Number | Term | Meeting Time and Location | Instructor Information | Office Hours | Academic Bulletin Description | Full Course Description | Prerequisites | Learning Outcomes | Course Materials | . | Course Requirements . | Course Format | Course Communication | Technology | Minimal Technical Skills Needed | Technical Support | . | Course Assignments and Grading . | Homework | Quizzes | Presentations | Project | Evaluation and Grading Scale . | Assignment Weights | Grading Scale | . | Assignment Submission | Revisions | . | Academic Success . | Accessibility | Student Success Center | Writing Center | University Library Resources | Teams and Technology | Counseling Services | . | Course Policies and Procedures . | Attendance Policy and COVID Reporting | Academic Integrity | Plagiarism | Group Work | Class Conduct | Late Work/Make-up Policy | Incomplete Grades | Diversity and Inclusion | Title IX and Gendered Identity | Expectations of the Instructor | Copyright/Fair Use Statement | . | Tentative Schedule . | Week 1 | Week 2 | Week 3 | Week 4 | Week 5 | Week 6 | Week 7 | Week 8 | Week 9 | Week 10 | Week 11 | Week 12 | Week 13 | Week 14 | Week 15 | Week 16 | . | . ",
+    "content": ". | Course Information . | Course Name and Number | Term | Meeting Time and Location | Instructor Information | Office Hours | Full Course Description | Prerequisites | Learning Outcomes | Course Materials | . | Course Requirements . | Course Format | Course Communication | Technology | Minimal Technical Skills Needed | Technical Support | . | Course Assignments and Grading . | Homework | Paper | Evaluation and Grading Scale . | Assignment Weights | Grading Scale | . | Assignment Submission | Revisions | . | Academic Success . | Accessibility | University Library Resources | Teams and Technology | Counseling Services | . | Course Policies and Procedures . | Attendance Policy and COVID Reporting | Academic Integrity | Plagiarism | Group Work | Class Conduct | Late Work/Make-up Policy | Incomplete Grades | Diversity and Inclusion | Title IX and Gendered Identity | Expectations of the Instructor | Copyright/Fair Use Statement | . | . ",
     "url": "http://localhost:4000/about/#syllabus",
     "relUrl": "/about/#syllabus"
-  },"3": {
+  },"2": {
     "doc": "About",
     "title": "Course Information",
     "content": " ",
     "url": "http://localhost:4000/about/#course-information",
     "relUrl": "/about/#course-information"
-  },"4": {
+  },"3": {
     "doc": "About",
     "title": "Course Name and Number",
-    "content": "HRNS: Linear Algebra – Math 544 . ",
+    "content": "Selected Topics in Geometry and Topology: Derived categories in algebraic geometry I – Math 738 . ",
     "url": "http://localhost:4000/about/#course-name-and-number",
     "relUrl": "/about/#course-name-and-number"
-  },"5": {
+  },"4": {
     "doc": "About",
     "title": "Term",
     "content": "Fall 2021 . ",
     "url": "http://localhost:4000/about/#term",
     "relUrl": "/about/#term"
-  },"6": {
+  },"5": {
     "doc": "About",
     "title": "Meeting Time and Location",
-    "content": "Tuesdays and Thursdays 8:30-9:45 AM in Room 3007 of the Carolina Coliseum . ",
+    "content": "Tuesdays and Thursdays 10:05-11:20 AM in Room 3006B of the Carolina Coliseum . ",
     "url": "http://localhost:4000/about/#meeting-time-and-location",
     "relUrl": "/about/#meeting-time-and-location"
-  },"7": {
+  },"6": {
     "doc": "About",
     "title": "Instructor Information",
     "content": ". | Instructor Name and Preferred Title: Prof. Matthew (Matt) Ballard | Preferred pronouns: He/Him/His | Office : Carolina Coliseum Room 1022C | E-mail: ballard@math.sc.edu | . ",
     "url": "http://localhost:4000/about/#instructor-information",
     "relUrl": "/about/#instructor-information"
-  },"8": {
+  },"7": {
     "doc": "About",
     "title": "Office Hours",
     "content": "Tuesdays and Thursdays 11:30-1:00 or by appointment . ",
     "url": "http://localhost:4000/about/#office-hours",
     "relUrl": "/about/#office-hours"
-  },"9": {
-    "doc": "About",
-    "title": "Academic Bulletin Description",
-    "content": "Vectors, vector spaces, and subspaces; geometry of finite dimensional Euclidean space; linear transformations; eigenvalues and eigenvectors; diagonalization. Throughout there will be an emphasis on theoretical concepts, logic, and methods. ",
-    "url": "http://localhost:4000/about/#academic-bulletin-description",
-    "relUrl": "/about/#academic-bulletin-description"
-  },"10": {
+  },"8": {
     "doc": "About",
     "title": "Full Course Description",
-    "content": "Figure out all values of $x,y,z$ that solve the equations \\(5x - 2y + z = 1 \\\\ -x + y - 3z = 0 \\\\ 2x - y + z = -1\\) The most direct attack would perhaps be to repeatedly substitute and simplify to reach only a single variable equation. Are there easier ways? More efficient ways? What if we had 256 equations and 128 variables? . In this class, we study the structure of linear equations from both very concrete and mildly abstract perspectives. We will develop tools that allow us to both gain a conceptual understanding of systems of linear equations and underpin robust computational tools. Our pen, paper, and mental work will be supplemented with a working knowledge of Sage. ",
+    "content": "This is the first in a two-semester course. This semester we will introduce derived categories of abelian categories with a particular emphasis on the category $\\operatorname{Mod} R$ of $R$-modules over a ring $R$. Time allowing we will introduce the necessary ideas and facts from Algebraic Geometry for the category $\\operatorname{Qcoh} X$ of quasi-coherent sheaves on a scheme $X$. ",
     "url": "http://localhost:4000/about/#full-course-description",
     "relUrl": "/about/#full-course-description"
-  },"11": {
+  },"9": {
     "doc": "About",
     "title": "Prerequisites",
-    "content": "C or better in MATH 241 and MATH 300. ",
+    "content": "None . ",
     "url": "http://localhost:4000/about/#prerequisites",
     "relUrl": "/about/#prerequisites"
-  },"12": {
+  },"10": {
     "doc": "About",
     "title": "Learning Outcomes",
-    "content": "After successful completion of this course, you will be able to: . | Determine the complete solution to $Ax = b$ | Relate linear transformations, matrices, and change of basis | Recognize linearly dependent and independent collections of vectors | Compute bases and dimensions of vector spaces | Orthogonalize vectors using Gram-Schmidt | Know and use the properties of determinants | Compute eigenvalues and eigenvectors | Appreciate the ubiquity of linear algebra across science | . ",
+    "content": "After successful completion of this course, you will be able to: . | Localize abelian categories for fun and profit | Draw confusing diagrams that claim to explain the octohedral axiom | Day dream about stable $\\infty$-categories | . ",
     "url": "http://localhost:4000/about/#learning-outcomes",
     "relUrl": "/about/#learning-outcomes"
-  },"13": {
+  },"11": {
     "doc": "About",
     "title": "Course Materials",
-    "content": "The main resources for materials are the course website and the Microsoft Team for the course. Some supplemental (and optional) resources: . | K. Kuttler. A first course in linear algebra (Open Access) | J. Hefferon. Linear algebra (Open Access) | G. Strang. Introduction to linear algebra | . All course materials comply with copyright/fair use policies. ",
+    "content": "The main resources for materials are the course website, the course channel in the SCAGNT Zulip and the Microsoft Team for the course. Supplemental course materials will be linked as necessary. All course materials comply with copyright/fair use policies. ",
     "url": "http://localhost:4000/about/#course-materials",
     "relUrl": "/about/#course-materials"
-  },"14": {
+  },"12": {
     "doc": "About",
     "title": "Course Requirements",
     "content": " ",
     "url": "http://localhost:4000/about/#course-requirements",
     "relUrl": "/about/#course-requirements"
-  },"15": {
+  },"13": {
     "doc": "About",
     "title": "Course Format",
-    "content": "To wholly and successfully engage with the course, you will need to be need to attend class, attempt lots of problems, and engage both with me and your fellow classmates. All course materials are will be made available online so regular Internet access is essential for successful completion of the course. It is expected that much of this material will be unfamiliar to you. (If not, more power to you.) The course is structured to guide every student to mastery in terms of conceptual understanding and computational fidelity by the end of the semester. Class time will be spent working in small groups and presenting solutions to problems. It is expected you will have consumed the relevant material ahead of each course. It is not expected you will be comfortable with the material. Class time is for learning through doing and working through your misunderstandings. Each class will end with a short quiz to diagnose any problems. At the end of the class, a project will be due in place of a final exam. ",
+    "content": "The course is a standard lecture course with homeworks to test your understanding. At the end of the class, a paper will be due in place of a final exam. ",
     "url": "http://localhost:4000/about/#course-format",
     "relUrl": "/about/#course-format"
-  },"16": {
+  },"14": {
     "doc": "About",
     "title": "Course Communication",
-    "content": "I will be communicating with you regarding grades and assignments. If you need to get in touch with me, the best method is via Microsoft Team chat or email. Generally, I will reply within 24 hours and will provide feedback on assignments within one week. You may also post questions pertaining to the course in the Questions channel in the course team. These questions will be answered within 24 hours. I encourage all students to take a stab at answering any question. If you are having trouble with this course or its material, you should contact me via Microsoft Team chat or email to discuss the issues. Announcements will be posted to this course whenever necessary. If there is any other information I think is important, I will send it to your preferred university email address. It is your responsibility to ensure that your email account works properly in order to receive email. If you are unsure of your preferred email, check your account at myaccount.sc.edu. For more information on setting your preferred university email, please see the Knowledge Base Article How To Change Your Primary University Email Address. ",
+    "content": "If you need to get in touch with me, the best method is via Zulip chat or email. Generally, I will reply within 24 hours and will provide feedback on assignments within one week. You may also post questions pertaining to the course in the Questions channel in the course team. These questions will be answered within 24 hours. I encourage all students to take a stab at answering any question. If you are having trouble with this course or its material, you should contact me via Zulip chat or email to discuss the issues. Announcements will be posted to this course whenever necessary. If there is any other information I think is important, I will send it to your preferred university email address. It is your responsibility to ensure that your email account works properly in order to receive email. If you are unsure of your preferred email, check your account at myaccount.sc.edu. For more information on setting your preferred university email, please see the Knowledge Base Article How To Change Your Primary University Email Address. ",
     "url": "http://localhost:4000/about/#course-communication",
     "relUrl": "/about/#course-communication"
-  },"17": {
+  },"15": {
     "doc": "About",
     "title": "Technology",
-    "content": "To participate in learning activities and complete assignments, you will need: . | Access to a working computer that has a current operating system with updates installed with a modern web browser installed; . | Reliable Internet access and a USC email account; . | If you plan to submit handwritten assignments, a scanning device such as a smartphone with the Microsoft Office Lens app. | The main hub for this course is the Microsoft Teams team COTEAM-BALLARMR-MATH-544-H01-FALL-2021 run through UofSC’s Microsoft Teams account. All course materials, including recorded lectures, live lectures, assignments, handouts, will be published there. To access the team for the first time on your desktop/laptop: . | Navigate to https://teams.microsoft.com/ . | Enter your UofSC network ID and password (same as Blackboard) . | On the left menu select ‘Teams’. | In the upper right, click ‘Join or create team’ . | Enter in the code for our class to join the Math 300 team which is included in your email. | Download and install the Microsoft Teams application using the bottom icon on the left menu. | Note that you might benefit from installing the Microsoft Teams app on your smartphone. Search for ‘Microsoft Teams’ in the Android or iOS app store and install. | . | We will be using a computer algebra system called Sage to aid our learning. It blows your graphing calculator out of the water and is ideally suited to STEM work. Built as a super-set of the popular programming language Python, Sage skills will translate into Python skills. There are three main ways to access Sage: . | SageMathCell is ideal for a computation involving a few lines. | CoCalc provides a free plan for more complicted porgrams. | A local installation will never be required of anyone. But, it might be valuable for a power-user. | . | . ",
+    "content": "To participate in learning activities and complete assignments, you will need: . | Access to a working computer that has a current operating system with updates installed with a modern web browser installed; . | Reliable Internet access and a USC email account; . | If you plan to submit handwritten assignments, a scanning device such as a smartphone with the Microsoft Office Lens app. | The main hub for this course is the Microsoft Teams team [COTEAM-BALLARMR-MATH-738-001-FALL-2021]https://teams.microsoft.com/l/team/19%3am7sMpRskwXsB5SC5HX4uuaTIG2Ux56ChImvB3o2aMB41%40thread.tacv2/conversations?groupId=a8908864-beb6-45da-9c7d-2bb454080245&amp;tenantId=4b2a4b19-d135-420e-8bb2-b1cd238998cc) run through UofSC’s Microsoft Teams account. To access the team for the first time on your desktop/laptop, use the join link included in your welcome email. | We will be using a chat service called zulip to aid our learning. It exceeds Team’s capabilities with regards to typsetting mathematics content. To access the SCAGNT zulip chat for the first time on your desktop/laptop, use the join link included in your welcome email. | . ",
     "url": "http://localhost:4000/about/#technology",
     "relUrl": "/about/#technology"
-  },"18": {
+  },"16": {
     "doc": "About",
     "title": "Minimal Technical Skills Needed",
-    "content": "Minimal technical skills are needed in this course. All work in this course must be completed and submitted online. Therefore, you must have consistent and reliable access to a computer and the Internet. The minimal technical skills you have include the ability to: . | Organize and save electronic files; . | Check and use the Microsoft Teams site daily; . | Download and upload documents; . | Locate and enter information with a browser. | . ",
+    "content": "Minimal technical skills are needed in this course. All work in this course must be completed and submitted online. Therefore, you must have consistent and reliable access to a computer and the Internet. The minimal technical skills you have include the ability to: . | Organize and save electronic files; . | Check and use the course, Zulip, and Microsoft Teams sites daily; . | Download and upload documents; . | Locate and enter information with a browser. | . ",
     "url": "http://localhost:4000/about/#minimal-technical-skills-needed",
     "relUrl": "/about/#minimal-technical-skills-needed"
-  },"19": {
+  },"17": {
     "doc": "About",
     "title": "Technical Support",
-    "content": "If you have problems with your computer, technology, IT-related questions, support, including Microsoft Teams, please contact the Division of Information Technology (DoIT) Service Desk at (803) 777-1800 or submit an online request through the Self-Service Portal or visit the Carolina Tech Zone. The Service Desk is open Monday – Friday from 8:00 AM – 6:00 PM (Eastern Daylight Time). The Thomas Cooper Library at USC has computers for you to use in case you encounter computer issues/problems. ",
+    "content": "If you have problems with your computer, technology, IT-related questions, support, including Microsoft Teams, please contact the Division of Information Technology (DoIT) Service Desk at (803) 777-1800 or submit an online request through the Self-Service Portal or visit the Carolina Tech Zone. The Service Desk is open Monday – Friday from 8:00 AM – 6:00 PM (Eastern Daylight Time). The Thomas Cooper Library at USC has computers for you to use in case you encounter computer issues/problems. If you have problems with Zulip, contact me. ",
     "url": "http://localhost:4000/about/#technical-support",
     "relUrl": "/about/#technical-support"
-  },"20": {
+  },"18": {
     "doc": "About",
     "title": "Course Assignments and Grading",
     "content": " ",
     "url": "http://localhost:4000/about/#course-assignments-and-grading",
     "relUrl": "/about/#course-assignments-and-grading"
-  },"21": {
+  },"19": {
     "doc": "About",
     "title": "Homework",
-    "content": "Homework will need to be completed in groups of 3-4 that will be randomly assigned each week. The assignments will be available in and must be returned through Microsoft Teams. All homework assignments are due by 11:59 pm (Eastern Time) on the day indicated on the course schedule. Homework will be graded for correctness. You will be allowed up to two revisions on each homework assignment. ",
+    "content": "Homework can be completed in groups of 1-4. All sources utilized must be cited. Latex should be submitted as pdfs compiled via Latex. The assignments will be available in and must be returned through Microsoft Teams. All homework assignments are due by 11:59 pm (Eastern Time) on the day indicated on the course schedule. Homework will be graded for correctness. You will be allowed up to two revisions on each homework assignment. ",
     "url": "http://localhost:4000/about/#homework",
     "relUrl": "/about/#homework"
-  },"22": {
+  },"20": {
     "doc": "About",
-    "title": "Quizzes",
-    "content": "Each course will end with a short quiz. The goal of the quiz is to diagnose any gaps in the understanding and make sure we all stay on the same page. Quizzes are graded for correctness. You will be allowed up to two revisions on each quiz. ",
-    "url": "http://localhost:4000/about/#quizzes",
-    "relUrl": "/about/#quizzes"
-  },"23": {
-    "doc": "About",
-    "title": "Presentations",
-    "content": "All students are expected to regularly present solutions to in-class work group problems. Your target should be to present one solution every two weeks. Presentations are graded simply for completion. If you attempt it, it counts. ",
-    "url": "http://localhost:4000/about/#presentations",
-    "relUrl": "/about/#presentations"
-  },"24": {
-    "doc": "About",
-    "title": "Project",
-    "content": "A list of project topics will be released on October 1. These can be done in groups of 1-4 of your own choosing. Projects are due by December 9 at 9:00 am (EST). ",
-    "url": "http://localhost:4000/about/#project",
-    "relUrl": "/about/#project"
-  },"25": {
+    "title": "Paper",
+    "content": "In lieu of a finals, papers on more in depth topics are required. Contact me to arrange for a topic. Suggestions will be provided as we progress. ",
+    "url": "http://localhost:4000/about/#paper",
+    "relUrl": "/about/#paper"
+  },"21": {
     "doc": "About",
     "title": "Evaluation and Grading Scale",
-    "content": "All grades will be posted on Teams. You are strongly encouraged to check you scores in Teams regularly. A final letter grade will be assigned based on weighting below. Assignment Weights . | Component | Percent of total | . | Homework | 25% | . | Quizzes | 25% | . | Presentations | 25% | . | Project | 25% | . Grading Scale . | Final total intervals | Letter Grade | . | [90,100] | A | . | [85,90) | B+ | . | [80,85) | B | . | [75,80) | C+ | . | [70,75) | C | . | [65,70) | D+ | . | [60,65) | D | . | [0,60) | F | . ",
+    "content": "All grades will be posted on Teams. A final letter grade will be assigned based on weighting below. Assignment Weights . | Component | Percent of total | . | Participation | 33% | . | Homework | 33% | . | Project | 33% | . Grading Scale . | Final total intervals | Letter Grade | . | [90,100] | A | . | [85,90) | B+ | . | [80,85) | B | . | [75,80) | C+ | . | [70,75) | C | . | [65,70) | D+ | . | [60,65) | D | . | [0,60) | F | . ",
     "url": "http://localhost:4000/about/#evaluation-and-grading-scale",
     "relUrl": "/about/#evaluation-and-grading-scale"
-  },"26": {
+  },"22": {
     "doc": "About",
     "title": "Assignment Submission",
     "content": "All written assignments are required to be submitted through Teams. Unless otherwise specified in the problem, you will be able to enter text directly through Teams or upload a scan of handwritten work. If you choose to upload a scan, then . | the handwriting must be clear and legible – otherwise you will receive no credit . | you will need to use the Office 365 Lens app to scan and upload you work to your university OneDrive account before attaching to the assignment. No HEIC extensions are allowed. | . ",
     "url": "http://localhost:4000/about/#assignment-submission",
     "relUrl": "/about/#assignment-submission"
-  },"27": {
+  },"23": {
     "doc": "About",
     "title": "Revisions",
-    "content": "All homework turned in on-time is eligible for revision at full credit. All quizzes taken on-time are eligible for revision at full credit. Each assignment can undergo at most two revisions. Revisions must be resubmitted within one week of receiving a marked assignment or revision. ",
+    "content": "All homework turned in on-time is eligible for revision at full credit. Each assignment can undergo at most two revisions. Revisions must be resubmitted within one week of receiving a marked assignment or revision. ",
     "url": "http://localhost:4000/about/#revisions",
     "relUrl": "/about/#revisions"
-  },"28": {
+  },"24": {
     "doc": "About",
     "title": "Academic Success",
     "content": " ",
     "url": "http://localhost:4000/about/#academic-success",
     "relUrl": "/about/#academic-success"
-  },"29": {
+  },"25": {
     "doc": "About",
     "title": "Accessibility",
     "content": "The Student Disability Resource Center (SDRC) empowers students to manage challenges and limitations imposed by disabilities. Students with disabilities are encouraged to contact me to discuss the logistics of any accommodations needed to fulfill course requirements (within the first week of the semester). In order to receive reasonable accommodations from me, you must be registered with the Student Disability Resource Center (1705 College Street Close-Hipp, Suite 102 Columbia, SC 29208, 803-777-6142). Any student with a documented disability should contact the SDRC to make arrangements for appropriate accommodations. ",
     "url": "http://localhost:4000/about/#accessibility",
     "relUrl": "/about/#accessibility"
-  },"30": {
-    "doc": "About",
-    "title": "Student Success Center",
-    "content": "In partnership with USC faculty, the Student Success Center (SSC) offers a number of programs to assist you in better understanding your course material and to aid you on your path to success. SSC programs are facilitated by professional staff, graduate students, and trained undergraduate peer leaders who have previously excelled in their courses. Resources available to you in this and other courses may include: . Peer Tutoring: You can make a one-on-one appointment with a Peer Tutor. Drop-in Tutoring and Online Tutoring may also be available for this course. Visit their website for a full schedule of times, locations, and courses. Peer Writing: Improve your college-level writing skills by bringing writing assignments from any of your classes to a Peer Writing Tutor. Similar to Tutoring, you can visit the website to make an appointment, and to view the full schedule of available drop-in hours and locations. Success Consultations: In Success Consultations, SSC staff assist you in developing study skills, setting goals, and connecting to a variety of campus resources. Throughout the semester, I may communicate with the SSC via Success Connect, an online referral system, regarding your progress in the course. If contacted by the SSC, please schedule a Success Consultation. Success Connect referrals are not punitive and any information shared by me is confidential and subject to FERPA regulations. SSC services are offered to all USC undergraduates at no additional cost. You are invited to call the Student Success Hotline at (803) 777-1000, visit SSC website, or stop by the SSC in the Thomas Cooper Library on the Mezzanine Level to check schedules and make appointments. ",
-    "url": "http://localhost:4000/about/#student-success-center",
-    "relUrl": "/about/#student-success-center"
-  },"31": {
-    "doc": "About",
-    "title": "Writing Center",
-    "content": "This course has many of writing assignments. The University Writing Center is an important resource you should use! It’s open to help any USC student needing assistance with a writing project at any stage of development. The main Writing Center is in Byrnes 703. ",
-    "url": "http://localhost:4000/about/#writing-center",
-    "relUrl": "/about/#writing-center"
-  },"32": {
+  },"26": {
     "doc": "About",
     "title": "University Library Resources",
     "content": "University Libraries has access to books, articles, subject specific resources, citation help, and more. If you are not sure where to start, please Ask a Librarian! Assistance is available at sc.edu/libraries/ask.  . Remember that if you use anything that is not your own writing or media (quotes from books, articles, interviews, websites, movies – everything) you must cite the source in MLA (or other appropriate and approved) format. ",
     "url": "http://localhost:4000/about/#university-library-resources",
     "relUrl": "/about/#university-library-resources"
-  },"33": {
+  },"27": {
     "doc": "About",
     "title": "Teams and Technology",
     "content": "Teams and Technology. As a student in this course, you have access to support from the Division of Information Technology (DoIT) for Teams and computer issues. The service desk can be reached at 803-777-1800. ",
     "url": "http://localhost:4000/about/#teams-and-technology",
     "relUrl": "/about/#teams-and-technology"
-  },"34": {
+  },"28": {
     "doc": "About",
     "title": "Counseling Services",
     "content": "The University offers counseling and crisis services as well as outreach services and self-help. ",
     "url": "http://localhost:4000/about/#counseling-services",
     "relUrl": "/about/#counseling-services"
-  },"35": {
+  },"29": {
     "doc": "About",
     "title": "Course Policies and Procedures",
     "content": " ",
     "url": "http://localhost:4000/about/#course-policies-and-procedures",
     "relUrl": "/about/#course-policies-and-procedures"
-  },"36": {
+  },"30": {
     "doc": "About",
     "title": "Attendance Policy and COVID Reporting",
     "content": "You are expected to participate actively in each course. If you anticipate an excused absence, you need to contact me in advance. You should submit a request in writing (email is acceptable) stating the dates of the anticipated absence, explaining the reason for absence, providing supporting documentation as required above, and including any request for make-up work. You should submit this request no later than the end of the second week of regularly scheduled classes in a full fall or spring semester term and within twice the length of the drop/add period for any other term. If regularly attending class becomes difficult for any reason, please contact me to discuss the issue. In accordance with university policy, a grade penalty of 10% may be imposed if a student has unexcused absensces exceeding 5% of the total number of courses. For this course, that means missing TWO courses without excuse. All absences due to documented illness or quarantine will be excused, and no grade penalty will be assessed for missing classes for this reason. If you experience COVID-19 symptoms, please stay home, contact the COVID-19 Student Health Services (SHS) nurse line (803-576-8511), complete the COVID-19 Student Report Form and select the option allowing the Student Ombuds to contact your professors. When talking with the SHS nurse, be sure to ask for documentation of the consult as you will need this to document why you missed class. You will also use the COVID-19 Student Report Form if you have tested positive for COVID-19 or if you have been ordered to quarantine because of close contact with a person who was COVID-19 positive. In each of these situations you will be provided appropriate documentation that can be shared through the Student Report Form. ",
     "url": "http://localhost:4000/about/#attendance-policy-and-covid-reporting",
     "relUrl": "/about/#attendance-policy-and-covid-reporting"
-  },"37": {
+  },"31": {
     "doc": "About",
     "title": "Academic Integrity",
     "content": "You are expected to practice the highest possible standards of academic integrity. Any deviation from this expectation will result in a minimum academic penalty of your failing the assignment, and will result in additional disciplinary measures. This includes improper citation of sources, using another student’s work, and any other form of academic misrepresentation. The first tenet of the Carolinian Creed is, “I will practice personal and academic integrity.” . Below are some websites for you to visit to learn more about University policies: . | Carolinian Creed . | Academic Responsibility . | Office of Student Conduct and Academic Integrity . | Information Security Policy and Standards . | . ",
     "url": "http://localhost:4000/about/#academic-integrity",
     "relUrl": "/about/#academic-integrity"
-  },"38": {
+  },"32": {
     "doc": "About",
     "title": "Plagiarism",
     "content": "Using the words or ideas of another as if they were one’s own is a serious form of academic dishonesty. If another person’s complete sentence, syntax, key words, or the specific or unique ideas and information are used, one must give that person credit through proper citation. You should in particular cite any resources, person, text, or otherwise, you used to assist in preparation of your work. Copying proofs or problem solutions is strictly forbidden. ",
     "url": "http://localhost:4000/about/#plagiarism",
     "relUrl": "/about/#plagiarism"
-  },"39": {
+  },"33": {
     "doc": "About",
     "title": "Group Work",
-    "content": "Group work should be performed in socially distant manner. Remote work will certainly form a larger component of a career going forward. Now is the time to learn to work collaboratively and remotely in an efficient manner. You are encouraged to take advantage of Microsoft Teams video and chat abilities to aid in collaboration. ",
+    "content": "Group work should be performed in safe manner. Remote work will certainly form a larger component of a career going forward. You are encouraged to take advantage of Microsoft Teams video conferencing and Zulip chat abilities to aid in collaboration. ",
     "url": "http://localhost:4000/about/#group-work",
     "relUrl": "/about/#group-work"
-  },"40": {
+  },"34": {
     "doc": "About",
     "title": "Class Conduct",
     "content": "Professionalism will be expected at all times, but most especially with your interactions online and in person. Because the university classroom is a place designed for the free exchange of ideas, we must show respect for one another in all circumstances. We will show respect for one another by exhibiting patience and courtesy in our exchanges. Appropriate language and restraint from verbal attacks upon those whose perspectives differ from your own is a minimum requirement. Courtesy and kindness is the norm for those who participate in the class. Mistakes, in particular during the running phase, are expected and natural. Mistakes are how learning happens. All students should recognize and respect the bravery of a student presenting a proof or solution. If you ever feel uncomfortable beyond the intellectual challenge of the course, please contact me. Teams is a way for you to share your ideas and learning with your colleagues in this class. We do this as colleagues in learning, and the online space is meant to be a safe and respectful environment for us to conduct these discussions. Some general netiquette rules: . | Treat one another with respect. It will be expected that we will not attack one another personally for holding different opinions. | Do not use all CAPITAL LETTERS in emails or discussion board postings. This is considered “shouting” and is seen as impolite or aggressive. | Begin emails with a proper salutation (Examples: Dr. Name; Ms. Name; Hello Professor Name; Good afternoon Mr. Name). Starting an email without a salutation or a simple “Hey” is not appropriate. | When sending an email, please include a detailed subject line. Additionally, make sure you reference the course number (Ex. ENGL 287) in the message and sign the mail with your name. | Use proper grammar, spelling, punctuation, and capitalization. Text messaging language is not acceptable. | Use good taste when communicating. Profanity should be avoided. | Re-Read, think, and edit your message before you click “Send/Submit/Post.” . | Please remember when posting to be respectful and courteous to your colleagues, and limit your communication to topics of this course and the assignments. | . ",
     "url": "http://localhost:4000/about/#class-conduct",
     "relUrl": "/about/#class-conduct"
-  },"41": {
+  },"35": {
     "doc": "About",
     "title": "Late Work/Make-up Policy",
     "content": "All assignments due by the deadline as posted on the course schedule. Late work is not accepted and not eligible for revision. Please plan accordingly, and complete these assignments in advance of their deadlines to ensure any unanticipated circumstances do not result in a missed assignment. User error does not qualify you for any kind of makeup or retake opportunity. Completing and submitting the assignments by the due date is the sole responsibility of you. If you fail to submit the assignment or test by the due date, then your score for that assignment will be recorded as “zero.” . You will be allowed to access the assignments an unlimited number of times until the due date/time. If you are concerned about missing a deadline, post your assignment the day before the deadline. Be Careful: The clock on your computer may be different than the clock in Teams. If the clock is different by one second, you will be locked out of the assignment. Plan accordingly. ",
     "url": "http://localhost:4000/about/#late-workmake-up-policy",
     "relUrl": "/about/#late-workmake-up-policy"
-  },"42": {
+  },"36": {
     "doc": "About",
     "title": "Incomplete Grades",
     "content": "The grade of Incomplete will be granted only in accordance with university policy. ",
     "url": "http://localhost:4000/about/#incomplete-grades",
     "relUrl": "/about/#incomplete-grades"
-  },"43": {
+  },"37": {
     "doc": "About",
     "title": "Diversity and Inclusion",
     "content": "The university is committed to a campus environment that is inclusive, safe, and respectful for all persons, and one that fully embraces the Carolinian Creed: “I will discourage bigotry, while striving to learn from differences in people, ideas and opinions.” Likewise, the Student Code of Conduct stresses, “The University of South Carolina strives to maintain an educational community that fosters the development of students who are ethical, civil and responsible persons.” . To that end, all course activities will be conducted in an atmosphere of friendly participation and interaction among colleagues, recognizing and appreciating the unique experiences, background, and point of view each student brings. You are expected at all times to apply the highest academic standards to this course and to treat others with dignity and respect. ",
     "url": "http://localhost:4000/about/#diversity-and-inclusion",
     "relUrl": "/about/#diversity-and-inclusion"
-  },"44": {
+  },"38": {
     "doc": "About",
     "title": "Title IX and Gendered Identity",
     "content": "This course affirms equality and respect for all gendered identities and expressions. Please don’t hesitate to correct me regarding your preferred gender pronoun and/or name if different from what is indicated on the official class roster. Likewise, I am committed to nurturing an environment free from discrimination and harassment. Consistent with Title IX policy, please be aware that I as a responsible employee am obligated to report information that you provide to me about a situation involving sexual harassment or assault. ",
     "url": "http://localhost:4000/about/#title-ix-and-gendered-identity",
     "relUrl": "/about/#title-ix-and-gendered-identity"
-  },"45": {
+  },"39": {
     "doc": "About",
     "title": "Expectations of the Instructor",
     "content": "I am expected to facilitate learning, answer questions appropriately, be fair and objective in grading, provide timely and useful feedback on assignments and treat you as I would like to be treated. ",
     "url": "http://localhost:4000/about/#expectations-of-the-instructor",
     "relUrl": "/about/#expectations-of-the-instructor"
-  },"46": {
+  },"40": {
     "doc": "About",
     "title": "Copyright/Fair Use Statement",
     "content": "I will cite and/or reference any materials that I use in this course that I do not create. Anything that appears on this website is copyright © 2021 Matthew Ballard and is distributed by an MIT license. Course materials that do not appear on this website are copyright © 2021 Matthew Ballard and all rights are reserved. In particular, you may not distribute any of these course materials in any fashion. ",
     "url": "http://localhost:4000/about/#copyrightfair-use-statement",
     "relUrl": "/about/#copyrightfair-use-statement"
-  },"47": {
-    "doc": "About",
-    "title": "Tentative Schedule",
-    "content": "This is the (ambitious) plan for the semester. But it is only a plan. The successful progression of each student is the most important guide to through the material. As such, you should expect revisions as we go. ",
-    "url": "http://localhost:4000/about/#tentative-schedule",
-    "relUrl": "/about/#tentative-schedule"
-  },"48": {
-    "doc": "About",
-    "title": "Week 1",
-    "content": ". | 8/19 welcome and orientation | . ",
-    "url": "http://localhost:4000/about/#week-1",
-    "relUrl": "/about/#week-1"
-  },"49": {
-    "doc": "About",
-    "title": "Week 2",
-    "content": ". | 8/24 addition and multiplication of matrices and vectors | 8/26 solving linear systems: row reduction | . ",
-    "url": "http://localhost:4000/about/#week-2",
-    "relUrl": "/about/#week-2"
-  },"50": {
-    "doc": "About",
-    "title": "Week 3",
-    "content": ". | 8/31 row echelon form and LU decompositions | 9/2 geometry and solvability of linear systems | . ",
-    "url": "http://localhost:4000/about/#week-3",
-    "relUrl": "/about/#week-3"
-  },"51": {
-    "doc": "About",
-    "title": "Week 4",
-    "content": ". | 9/7 ranges and null spaces of matrices - implicit and parametric representations | 9/9 linear dependence and spans of collections of vectors - dimensions and bases | . ",
-    "url": "http://localhost:4000/about/#week-4",
-    "relUrl": "/about/#week-4"
-  },"52": {
-    "doc": "About",
-    "title": "Week 5",
-    "content": ". | 9/14 row rank, column rank | 9/16 invertibility | . ",
-    "url": "http://localhost:4000/about/#week-5",
-    "relUrl": "/about/#week-5"
-  },"53": {
-    "doc": "About",
-    "title": "Week 6",
-    "content": ". | 9/21 vector spaces | 9/23 subspaces | . ",
-    "url": "http://localhost:4000/about/#week-6",
-    "relUrl": "/about/#week-6"
-  },"54": {
-    "doc": "About",
-    "title": "Week 7",
-    "content": ". | 9/28 bases again | 9/30 linear transformations | . ",
-    "url": "http://localhost:4000/about/#week-7",
-    "relUrl": "/about/#week-7"
-  },"55": {
-    "doc": "About",
-    "title": "Week 8",
-    "content": ". | 10/5 kernels and images | . ",
-    "url": "http://localhost:4000/about/#week-8",
-    "relUrl": "/about/#week-8"
-  },"56": {
-    "doc": "About",
-    "title": "Week 9",
-    "content": ". | 10/12 isomorphisms | 10/14 determinants: the idea | . ",
-    "url": "http://localhost:4000/about/#week-9",
-    "relUrl": "/about/#week-9"
-  },"57": {
-    "doc": "About",
-    "title": "Week 10",
-    "content": ". | 10/19 determinants: computations | 10/21 the complex number system | . ",
-    "url": "http://localhost:4000/about/#week-10",
-    "relUrl": "/about/#week-10"
-  },"58": {
-    "doc": "About",
-    "title": "Week 11",
-    "content": ". | 10/26 eigenvalues and eigenvectors 1 | 10/28 eigenvalues and eigenvectors 2 | . ",
-    "url": "http://localhost:4000/about/#week-11",
-    "relUrl": "/about/#week-11"
-  },"59": {
-    "doc": "About",
-    "title": "Week 12",
-    "content": ". | 11/2 symmetric matrices | 11/4 positive definite matrices | . ",
-    "url": "http://localhost:4000/about/#week-12",
-    "relUrl": "/about/#week-12"
-  },"60": {
-    "doc": "About",
-    "title": "Week 13",
-    "content": ". | 11/9 diagonalizability | 11/11 diagonalizability 2 | . ",
-    "url": "http://localhost:4000/about/#week-13",
-    "relUrl": "/about/#week-13"
-  },"61": {
-    "doc": "About",
-    "title": "Week 14",
-    "content": ". | 11/16 orthogonality and projections | 11/18 least squares approximations | . ",
-    "url": "http://localhost:4000/about/#week-14",
-    "relUrl": "/about/#week-14"
-  },"62": {
-    "doc": "About",
-    "title": "Week 15",
-    "content": ". | 11/23 gram-schmidt and QR factorization | . ",
-    "url": "http://localhost:4000/about/#week-15",
-    "relUrl": "/about/#week-15"
-  },"63": {
-    "doc": "About",
-    "title": "Week 16",
-    "content": ". | 11/30 singular value decomposition | 12/2 selected applications | . ",
-    "url": "http://localhost:4000/about/#week-16",
-    "relUrl": "/about/#week-16"
-  },"64": {
+  },"41": {
     "doc": "About",
     "title": "About",
     "content": " ",
     "url": "http://localhost:4000/about/",
     "relUrl": "/about/"
-  },"65": {
+  },"42": {
     "doc": "This Website",
     "title": "About this website",
     "content": "This website is hosted on GitHub and relies on Jekyll to generate the content. It uses the Just the Class theme which built off the Just the Docs theme. At material appearing here is copyright © 2021 Matthew Ballard and is distributed with an MIT license. ",
     "url": "http://localhost:4000/about_this_webpage/#about-this-website",
     "relUrl": "/about_this_webpage/#about-this-website"
-  },"66": {
+  },"43": {
     "doc": "This Website",
     "title": "This Website",
     "content": " ",
     "url": "http://localhost:4000/about_this_webpage/",
     "relUrl": "/about_this_webpage/"
-  },"67": {
+  },"44": {
     "doc": "Announcements",
     "title": "Announcements",
     "content": "Announcements are stored in the _announcements directory and rendered according to the layout file, _layouts/announcement.html. ",
     "url": "http://localhost:4000/announcements/",
     "relUrl": "/announcements/"
-  },"68": {
+  },"45": {
     "doc": "Announcements",
     "title": "Week 0 Announcement",
-    "content": "Aug 5 &middot; 0 min read Welcome to linear algebra! To be prepared for the first class, make sure you . | read the syllabus | do the pre-reading for the week | reach out with any questions. | . ",
+    "content": "Aug 5 &middot; 0 min read Hi There . ",
     "url": "http://localhost:4000/announcements/",
     "relUrl": "/announcements/"
-  },"69": {
+  },"46": {
     "doc": "Calendar",
     "title": "Calendar",
     "content": " ",
     "url": "http://localhost:4000/calendar/",
     "relUrl": "/calendar/"
-  },"70": {
+  },"47": {
     "doc": "Calendar",
     "title": "Welcome and Orientation",
     "content": "Aug 19 Introducing the course and ourselves ",
     "url": "http://localhost:4000/calendar/#welcome-and-orientation",
     "relUrl": "/calendar/#welcome-and-orientation"
-  },"71": {
-    "doc": "Calendar",
-    "title": "Solving Linear Systems",
-    "content": "Aug 24 Matrices and linear systems Pre-readings: introduction, linear equations, systems, vectors, matrices Class worksheet Aug 26 Row reduction Pre-readings: coming by 8/19 Class worksheet: coming by 8/19 Aug 31 Reduced row echelon form Pre-readings: coming by 8/24 Class worksheet: coming by 8/24 HW 1 due ",
-    "url": "http://localhost:4000/calendar/#solving-linear-systems",
-    "relUrl": "/calendar/#solving-linear-systems"
-  },"72": {
+  },"48": {
     "doc": "Homework",
     "title": "Homework",
-    "content": ". | Homework 1. Due Date: August 31 | . ",
+    "content": ". | Homework 1. Due Date: December 31 | . ",
     "url": "http://localhost:4000/homework/",
     "relUrl": "/homework/"
-  },"73": {
-    "doc": "Worksheets",
-    "title": "Worksheets",
-    "content": ". | Worksheet 1. Class: August 24 | . ",
-    "url": "http://localhost:4000/worksheets/",
-    "relUrl": "/worksheets/"
-  },"74": {
-    "doc": "Linear Algebra",
-    "title": "Fall 2021 Math 544 at UofSC",
-    "content": "In this course, we explore transformations that take lines to other lines. It is a surprisingly well-structured setting with applications all over the place. ",
-    "url": "http://localhost:4000/#fall-2021-math-544-at-uofsc",
-    "relUrl": "/#fall-2021-math-544-at-uofsc"
-  },"75": {
-    "doc": "Linear Algebra",
+  },"49": {
+    "doc": "Derived Categories",
+    "title": "Fall 2021 Math 738 at UofSC",
+    "content": "We will localize some categories and have fun doing it. ",
+    "url": "http://localhost:4000/#fall-2021-math-738-at-uofsc",
+    "relUrl": "/#fall-2021-math-738-at-uofsc"
+  },"50": {
+    "doc": "Derived Categories",
     "title": "Week 0 Announcement",
-    "content": "Aug 5 &middot; 0 min read Welcome to linear algebra! To be prepared for the first class, make sure you . | read the syllabus | do the pre-reading for the week | reach out with any questions. | . Announcements . ",
+    "content": "Aug 5 &middot; 0 min read Hi There . Announcements . ",
     "url": "http://localhost:4000/",
     "relUrl": "/"
-  },"76": {
-    "doc": "Linear Algebra",
+  },"51": {
+    "doc": "Derived Categories",
     "title": "Syllabus",
     "content": "The syllabus can be found at the about tab. ",
     "url": "http://localhost:4000/#syllabus",
     "relUrl": "/#syllabus"
-  },"77": {
-    "doc": "Linear Algebra",
+  },"52": {
+    "doc": "Derived Categories",
     "title": "Calendar",
-    "content": "At the calendar tab, you will find our topic schedule for each class along with the pre-reading, worksheets for that class, and due dates for assignments. ",
+    "content": "At the calendar tab, you will find our topic schedule and due dates for assignments. ",
     "url": "http://localhost:4000/#calendar",
     "relUrl": "/#calendar"
-  },"78": {
-    "doc": "Linear Algebra",
+  },"53": {
+    "doc": "Derived Categories",
     "title": "Notes",
-    "content": "The notes tab is where you can find the course reading. ",
+    "content": "The notes tab is where you can find the course notes. ",
     "url": "http://localhost:4000/#notes",
     "relUrl": "/#notes"
-  },"79": {
-    "doc": "Linear Algebra",
-    "title": "Homework and Worksheets",
-    "content": "There are tabs for class homework and worksheets. Homework is turned in weekly and in groups of 3-4. Worksheets are what we work in during class, also in groups. Worksheets are not turned in - you are only graded on how much you present solutions to them. For more information, see the Syllabus. ",
-    "url": "http://localhost:4000/#homework-and-worksheets",
-    "relUrl": "/#homework-and-worksheets"
-  },"80": {
-    "doc": "Linear Algebra",
+  },"54": {
+    "doc": "Derived Categories",
+    "title": "Homework",
+    "content": "There is also a tab for class homework. ",
+    "url": "http://localhost:4000/#homework",
+    "relUrl": "/#homework"
+  },"55": {
+    "doc": "Derived Categories",
     "title": "Weekly schedule",
     "content": "If you ever need to remind yourself about the time and coordinates of our course or my office hours, you can quickly reference at the schedule tab. ",
     "url": "http://localhost:4000/#weekly-schedule",
     "relUrl": "/#weekly-schedule"
-  },"81": {
-    "doc": "Linear Algebra",
+  },"56": {
+    "doc": "Derived Categories",
     "title": "Me",
-    "content": "If you are interested in a bit about who I am and what I do, check out the staff tab or visit my website. ",
+    "content": "If you are interested in a bit about who I am and what I do, check out the Me tab or visit my website. ",
     "url": "http://localhost:4000/#me",
     "relUrl": "/#me"
-  },"82": {
-    "doc": "Linear Algebra",
-    "title": "Linear Algebra",
+  },"57": {
+    "doc": "Derived Categories",
+    "title": "Derived Categories",
     "content": " ",
     "url": "http://localhost:4000/",
     "relUrl": "/"
-  },"83": {
-    "doc": "Solving Linear Systems",
-    "title": "A motivating example",
-    "content": "Linear algebra is ubiquitous. It can even appear seemingly out of no-where. For example, assume we have two races of aliens. They are at constant war. To understand the progress of the war, we want to know the population of each at any given time. Let us try to mathematize this. First, we need to assign some labels. Let’s call the population of the first group $X$ and the population of the second $Y$. These are functions of time, which we call $t$. So we can also write $X(t)$ and $Y(t)$ to emphasize this. Now the populations grow as they procreate. The populations decrease with repeated conflicts. Let’s make this more precise. | Say it takes 4 aliens to produce 1 more of $X$ and 3 aliens to make 1 more of $Y$ and | 2 aliens of type $X$ eliminates 1 of $Y$ while 3 aliens of $Y$ remove 1 of $X$. | . Then we can model the populations with the system of differential equations: . \\[X^\\prime(t) = \\frac{1}{4} X(t) - \\frac{1}{3} Y(t) \\\\ {} \\\\ Y^\\prime(t) = - \\frac{1}{2} X(t) + \\frac{1}{3} Y(t).\\] This seems complicated. Let’s try to understand a basic problem: is possible for the populations $X$ and $Y$ to be constant? In other words, is there a steady-state solution? . If the populations are constant, then we have \\(X^\\prime(t) = Y^\\prime(t) = 0\\) and there are fixed constant values $x$ and $y$ so that \\(X(t) = x \\text{ and } Y(t) = y\\) for any value of time $t$. So, we need to solve \\(0 = \\frac{1}{4} x - \\frac{1}{3} y \\\\ {} \\\\ 0 = - \\frac{1}{2} x + \\frac{1}{3} y\\) for the possible $x$ and $y$. Can we? . The collection of equations is a called a system of linear equations. Our first goal is to understand when it is possible to find solutions and how we can do so explicitly. ",
-    "url": "http://localhost:4000/notes/solving_linear_systems/intro/#a-motivating-example",
-    "relUrl": "/notes/solving_linear_systems/intro/#a-motivating-example"
-  },"84": {
-    "doc": "Solving Linear Systems",
-    "title": "Solving Linear Systems",
-    "content": " ",
-    "url": "http://localhost:4000/notes/solving_linear_systems/intro/",
-    "relUrl": "/notes/solving_linear_systems/intro/"
-  },"85": {
+  },"58": {
     "doc": "Notes",
     "title": "Course Notes",
-    "content": "These will serve to provide the background ideas we will discuss in class. <!-- ",
+    "content": "We will record notes from the course here. <!-- ",
     "url": "http://localhost:4000/notes/intro/#course-notes",
     "relUrl": "/notes/intro/#course-notes"
-  },"86": {
+  },"59": {
     "doc": "Notes",
     "title": "Rank Nullity Theorem",
     "content": "Let $T : V \\to W$ be a linear tranformation between two finite dimensional vectors $V$ and $W$. Then, \\(\\operatorname{Rank}(T) + \\operatorname{Nullity}(T) = \\dim V.\\) . --> ",
     "url": "http://localhost:4000/notes/intro/#rank-nullity-theorem",
     "relUrl": "/notes/intro/#rank-nullity-theorem"
-  },"87": {
+  },"60": {
     "doc": "Notes",
     "title": "Notes",
     "content": " ",
     "url": "http://localhost:4000/notes/intro/",
     "relUrl": "/notes/intro/"
-  },"88": {
-    "doc": "Linear Equations",
-    "title": "Linear equations",
-    "content": "A linear equation in a set of variables $x_1,x_2,x_3,\\ldots,x_m$ is a equation of the form \\(a_1 x_1 + a_2 x_2 + \\cdots + a_m x_m = b\\) for constant numbers $a_1,\\ldots,a_m, b$. So, for example, \\(-x_1 + 2x_2 - 3x_3 + 4x_4 = 5\\) would be a linear equation in 4 unknowns. Most equations you have seen are not linear. For example, \\(xy = 1.\\) or \\(e^{x_1} + x_2 + x_3 = -1.\\) . In general, linear equations are the simplest types of mathematical equations so we better be able to handle them quickly and efficiently. Solving a single linear equation . Say we wanted to solve the equation \\(-x_1 + 2x_2 - 3x_3 + 4x_4 = 5\\) How would we go about doing this? . First, we need to be a bit more precise about what we mean to “solve the equation”. What we want here is often called a *parametric” representation of the solution. We want to identify some free variables that can be used to determine all the solutions explicitly. As you might have done or seen before, this can be accomplished by “solving out” a variable using the equation. We can rewrite the equation as \\(x_1 = 2x_2 - 3x_3 + 4x_4 - 5\\) . Now, given any possible values of $(x_2,x_3,x_4)$, we can use the new form of the equation to find a value for $x_1$ so that we solve the equation. For example, if we take $(1,1,1)$, then plug in to get \\(x_1 = 2 \\cdot 1 - 3 \\cdot 1 + 4 \\cdot 1 -5 = -2\\) and $(-2,1,1,1)$ is a solution to the equation. Great! You might think we have mastered single linear equations. To find the solution to \\(a_1 x_1 + \\cdots + a_m x_m = b\\) in general, we pick some $a_i \\neq 0$ and then we can solve for $x_i$ as \\(x_i = b - \\sum_{j \\neq i} \\frac{a_j}{a_i} x_j\\) . We can try another example to test our understanding. How about solving \\(x_2 - x_4 = 2\\) . One possible point of confusion is: how many variables are we using? We only see 2 in the equation but the biggest index is a 4. So are we using 2 unknowns or 4 unknowns? We will often infer the number of unknowns in the linear equation (and system) from the context. The convention we will use will be this is an equation in 4 unknowns. But, do not be afraid to ask for clarification. Back to the example. Let us pick $x_4$ to solve out \\(x_4 = x_2 - 2\\) Then, our general (parametric) solution would look like $(x_1,x_2,x_3,x_2-2)$. We might be satisfied with our understanding but there is actually one case that breaks our algorithm. What happens if all $a_i = 0$ and $b \\neq 0$, say $b = 1$? Then, we are looking at an immediate problem \\(0 = 1\\) is not satisfiable for any values of our unknowns. In this case, there are no solutions. This situation may seem contrived. Often in mathematics, a general understanding often hinges on properly understanding the edge cases of a problem. Linear algebra is no different. Encountering \\(0 = 1\\) will be a natural possibility once we have developed enough tools. Before we turn to systems of linear equations, let’s recap some important points: . Algorithm for solving a linear equation: . We can write the algorithm for solving $a_1x_1 + \\cdots + a_mx_m = b$ described above in pseudo-code. if all a_i == 0 and b != 0: return No Solution else if all a_i == 0 and b == 0: return [x_1,...,x_m] else: pick i with a_i != 0 set x_i = (a_1/a_i)*x_1-...-(a_{i-1}/a_i)*x_{i-1} - (a_{i+1}/a_i)*x_{i+1} - ... -(a_m/a_1)*x_m return [x_1,...,x_m] . Dichotomy of solutions: . For a linear equation, $a_1x_1 + \\cdots a_mx_m = b$, we have three possibilities . | there can be infinitely-many solutions (if $m &gt; 1$ and either not all $a_i$ are $0$ or $b = 0$), | there can be a unique solution (if $m = 1$ and either not all $a_i$ are $0$ or $b = 0$), or | there can be no solutions at all (if all $a_i$ are $0$ and $b \\neq 0$). | . We will see this dichotomy continues to hold for systems of linear equations. ",
-    "url": "http://localhost:4000/notes/solving_linear_systems/linear_equations/#linear-equations",
-    "relUrl": "/notes/solving_linear_systems/linear_equations/#linear-equations"
-  },"89": {
-    "doc": "Linear Equations",
-    "title": "Linear Equations",
-    "content": " ",
-    "url": "http://localhost:4000/notes/solving_linear_systems/linear_equations/",
-    "relUrl": "/notes/solving_linear_systems/linear_equations/"
-  },"90": {
-    "doc": "Matrices",
-    "title": "Matrices",
-    "content": "Conceptually, a matrix is a list of vectors. But, as we will see, how that is done precisely depends on some convention and we will want to appeal to both conventions. A matrix $A$ of size $n \\times m$ is a list of numbers $a_{ij}$ (we will also sometimes write $A_{ij}$) indexed by pairs $(i,j)$ for $1 \\leq i \\leq n$ and $1 \\leq j \\leq m$. We write a $A$ as \\(\\begin{pmatrix} a_{11} &amp; a_{12} &amp; \\cdots &amp; a_{1m} \\\\ a_{21} &amp; a_{22} &amp; \\cdots &amp; a_{2m} \\\\ \\vdots &amp; \\vdots &amp; \\ddots &amp; \\vdots \\\\ a_{n1} &amp; a_{n2} &amp; \\cdots &amp; a_{nm} \\end{pmatrix}\\) . Our convention is that reading left-to-right increases the second index while reading up-to-down increase the first index. (Other conventions are fine but we all need to pick one and stick to it. This is it.) . A matrix is square if $n = m$. The diagonal of $A$ is the set of where the two indices are equal, i.e. $a_{11}, a_{22}, \\ldots, a_{dd}$ where $d = \\operatorname{min}(m,n)$. We can extract lists of vectors from a matrix $A$ in (at least) two ways: . | The set of columns vectors of $A$ is the collection \\(\\begin{pmatrix} a_{11} \\\\ a_{21} \\\\ \\vdots \\\\ a_{n1} \\end{pmatrix} \\ , \\ \\begin{pmatrix} a_{12} \\\\ a_{22} \\\\ \\vdots \\\\ a_{n2} \\end{pmatrix} \\ , \\ \\cdots \\ , \\ \\begin{pmatrix} a_{1m} \\\\ a_{2m} \\\\ \\vdots \\\\ a_{nm} \\end{pmatrix}\\) Note that we get $m$ vectors of length $n$ in this fashion. Each vector comes from reading down a single column. | The set of row vectors of $A$ is the collection \\(\\begin{pmatrix} a_{11} \\\\ a_{12} \\\\ \\vdots \\\\ a_{1m} \\end{pmatrix} \\ , \\ \\begin{pmatrix} a_{21} \\\\ a_{22} \\\\ \\vdots \\\\ a_{2m} \\end{pmatrix} \\ , \\ \\cdots \\ , \\ \\begin{pmatrix} a_{n1} \\\\ a_{n2} \\\\ \\vdots \\\\ a_{nm} \\end{pmatrix}\\) Note that we get $n$ vectors of length $m$ in this fashion. Each vector comes from reading across a single row of $A$. | . Here you might notice that the strange notational choice for scalar multiplication of vectors would yield a more natural way of extracting the rows \\(\\begin{pmatrix} a_{11} &amp; a_{12} &amp; \\cdots &amp; a_{1m} \\end{pmatrix} \\ , \\ \\begin{pmatrix} a_{21} &amp; a_{22} &amp; \\cdots &amp; a_{2m} \\end{pmatrix} \\ , \\ \\cdots \\ , \\ \\begin{pmatrix} a_{n1} &amp; a_{n2} &amp; \\cdots &amp; a_{nm} \\end{pmatrix}\\) It is natural to therefore think of both $n \\times 1$ and $1 \\times m$ matrices as being vectors since are both lists with a single index. In fact, there is a natural operation on matrices which exchanges row and column vectors. Given a matrix $A = (a_{ij})$, its transpose $A^t$ flips the two indices. More precisely, \\(A^t := \\begin{pmatrix} a_{11} &amp; a_{21} &amp; \\cdots &amp; a_{n1} \\\\ a_{12} &amp; a_{22} &amp; \\cdots &amp; a_{n2} \\\\ \\vdots &amp; \\vdots &amp; \\ddots &amp; \\vdots \\\\ a_{1m} &amp; a_{2m} &amp; \\cdots &amp; a_{mn} \\end{pmatrix}\\) . The notation might be seem subtle to you so let’s see an example. Suppose \\(A = \\begin{pmatrix} 1 &amp; 2 \\\\ 3 &amp; 4 \\\\ 5 &amp; 6 \\end{pmatrix}\\) Then the column vectors of $A$ are \\(\\begin{pmatrix} 1 \\\\ 3 \\\\ 5 \\end{pmatrix} \\ , \\ \\begin{pmatrix} 2 \\\\ 4 \\\\ 6 \\end{pmatrix}\\) while the row vectors of $A$ are \\(\\begin{pmatrix} 1 \\\\ 2 \\end{pmatrix} \\ , \\ \\begin{pmatrix} 3 \\\\ 4 \\end{pmatrix} \\ , \\ \\begin{pmatrix} 5 \\\\ 6 \\end{pmatrix}\\) . We can compute the transpose \\(\\begin{pmatrix} 1 &amp; 2 \\\\ 3 &amp; 4 \\\\ 5 &amp; 6 \\end{pmatrix}^t = \\begin{pmatrix} 1 &amp; 3 &amp; 5 \\\\ 2 &amp; 4 &amp; 6 \\end{pmatrix}\\) The entries $1$ and $4$ on the diagonal don’t move and everything else is reflected over it. ",
-    "url": "http://localhost:4000/notes/solving_linear_systems/matrices/",
-    "relUrl": "/notes/solving_linear_systems/matrices/"
-  },"91": {
-    "doc": "Matrices",
-    "title": "Addition of matrices",
-    "content": "Addition of matrices works in the same way as for vectors: you add the entries (or components) individually with the big caveat that you can only add matrices of the same size. $ \\begin{pmatrix} a_{11} &amp; a_{12} &amp; \\cdots &amp; a_{1m} \\\\ a_{21} &amp; a_{22} &amp; \\cdots &amp; a_{2m} \\\\ \\vdots &amp; \\vdots &amp; \\ddots &amp; \\vdots \\\\ a_{n1} &amp; a_{n2} &amp; \\cdots &amp; a_{nm} \\end{pmatrix} + \\begin{pmatrix} b_{11} &amp; b_{12} &amp; \\cdots &amp; b_{1m} \\\\ b_{21} &amp; b_{22} &amp; \\cdots &amp; b_{2m} \\\\ \\vdots &amp; \\vdots &amp; \\ddots &amp; \\vdots \\\\ b_{n1} &amp; b_{n2} &amp; \\cdots &amp; b_{nm} \\end{pmatrix} = \\begin{pmatrix} a_{11} + b_{11} &amp; a_{12} + b_{12} &amp; \\cdots &amp; a_{1m} + b_{1m} \\\\ a_{21} + b_{21} &amp; a_{22} + b_{22} &amp; \\cdots &amp; a_{2m} + b_{2m} \\\\ \\vdots &amp; \\vdots &amp; \\ddots &amp; \\vdots \\\\ a_{n1} + b_{n1} &amp; a_{n2} + b_{n2} &amp; \\cdots &amp; a_{nm} + b_{nm} \\end{pmatrix} $ ",
-    "url": "http://localhost:4000/notes/solving_linear_systems/matrices/#addition-of-matrices",
-    "relUrl": "/notes/solving_linear_systems/matrices/#addition-of-matrices"
-  },"92": {
-    "doc": "Matrices",
-    "title": "Multiplication of matrices",
-    "content": "Scalar multiplication . Given a scalar $a$ and a matrix $B$, we can multiply them to yield a new matrix $aB$ \\(a \\begin{pmatrix} b_{11} &amp; b_{12} &amp; \\cdots &amp; b_{1m} \\\\ b_{21} &amp; b_{22} &amp; \\cdots &amp; b_{2m} \\\\ \\vdots &amp; \\vdots &amp; \\ddots &amp; \\vdots \\\\ b_{n1} &amp; b_{n2} &amp; \\cdots &amp; b_{nm} \\end{pmatrix} = \\begin{pmatrix} ab_{11} &amp; ab_{12} &amp; \\cdots &amp; ab_{1m} \\\\ ab_{21} &amp; ab_{22} &amp; \\cdots &amp; ab_{2m} \\\\ \\vdots &amp; \\vdots &amp; \\ddots &amp; \\vdots \\\\ ab_{n1} &amp; ab_{n2} &amp; \\cdots &amp; ab_{nm} \\end{pmatrix}\\) Similar to multiplication of a scalar and a vector we scale each entry of $B$ by $a$. Matrix multiplication . We now arrive at a type of multiplication that might seem new and strange to some. Given an $A$ an $n \\times m$ matrix and $B$ an $m \\times k$ matrix, we can multiply them to yield $AB$ an $n \\times k$ matrix. Let me repeat: you can only multiply $A$ and $B$ if the number of columns of $A$ equals the number of rows of $B$. An observant reader will notice that this is not a symmetric condition in general. A $2 \\times 3$ multiplied by a $3 \\times 1$ matrix is fine. But $3 \\times 1$ times $2 \\times 3$ is not. The formula for the $(i,j)$ entry in the product $AB$ is \\((AB)_{ij} := \\sum_{s = 1}^m A_{is}B_{sj}\\) . You might recognize a similarity to the formula for multiplication of vectors. Indeed, if $A$ is a $1 \\times m$ matrix and $B$ is a $m \\times 1$ matrix, then $AB$ is exactly the product of $A$ and $B$ considered as vectors. The general formula can be understand this way: the $(i,j)$ entry of $AB$ is the product of the $i$-th row vector of $A$ and the $j$-th column vector of $B$. Let us see this in an example. Take \\(A = \\begin{pmatrix} 1 &amp; 2 \\\\ 3 &amp; 4 \\\\ 5 &amp; 6 \\end{pmatrix} \\ , \\ B = \\begin{pmatrix} 0 &amp; -1 &amp; -2 &amp; -3 \\\\ -4 &amp; -5 &amp; -6 &amp; -7 \\end{pmatrix}\\) Then $AB$ is well-defined but $BA$ is not. We break $A$ into its row vectors \\(\\begin{pmatrix} 1 &amp; 2 \\end{pmatrix} \\ , \\ \\begin{pmatrix} 3 &amp; 4 \\end{pmatrix} \\ , \\ \\begin{pmatrix} 5 &amp; 6 \\end{pmatrix}\\) and $B$ into its column vectors \\(\\begin{pmatrix} 0 \\\\ -4 \\end{pmatrix} \\ , \\ \\begin{pmatrix} -1 \\\\ -5 \\end{pmatrix} \\ , \\ \\begin{pmatrix} -2 \\\\ -6 \\end{pmatrix} \\ , \\ \\begin{pmatrix} -3 \\\\ -7 \\end{pmatrix}\\) Now we compute each product of a row vector of $A$ with a column vector of $B$. There are 12. Click to see the calculations $$ \\begin{pmatrix} 1 &amp; 2 \\end{pmatrix} \\begin{pmatrix} 0 \\\\ -4 \\end{pmatrix} = -8 \\\\ {} \\\\ \\begin{pmatrix} 1 &amp; 2 \\end{pmatrix} \\begin{pmatrix} -1 \\\\ -5 \\end{pmatrix} = -11 \\\\ {} \\\\ \\begin{pmatrix} 1 &amp; 2 \\end{pmatrix} \\begin{pmatrix} -2 \\\\ -6 \\end{pmatrix} = -14 \\\\ {} \\\\ \\begin{pmatrix} 1 &amp; 2 \\end{pmatrix} \\begin{pmatrix} -3 \\\\ -7 \\end{pmatrix} = -17 \\\\ {} \\\\ \\begin{pmatrix} 3 &amp; 4 \\end{pmatrix} \\begin{pmatrix} 0 \\\\ -4 \\end{pmatrix} = -16 \\\\ {} \\\\ \\begin{pmatrix} 3 &amp; 4 \\end{pmatrix} \\begin{pmatrix} -1 \\\\ -5 \\end{pmatrix} = -23 \\\\ {} \\\\ \\begin{pmatrix} 3 &amp; 4 \\end{pmatrix} \\begin{pmatrix} -2 \\\\ -6 \\end{pmatrix} = -30 \\\\ {} \\\\ \\begin{pmatrix} 3 &amp; 4 \\end{pmatrix} \\begin{pmatrix} -3 \\\\ -7 \\end{pmatrix} = -27 \\\\ {} \\\\ \\begin{pmatrix} 5 &amp; 6 \\end{pmatrix} \\begin{pmatrix} 0 \\\\ -4 \\end{pmatrix} = -24 \\\\ {} \\\\ \\begin{pmatrix} 5 &amp; 6 \\end{pmatrix} \\begin{pmatrix} -1 \\\\ -5 \\end{pmatrix} = -35 \\\\ {} \\\\ \\begin{pmatrix} 5 &amp; 6 \\end{pmatrix} \\begin{pmatrix} -2 \\\\ -6 \\end{pmatrix} = -46 \\\\ {} \\\\ \\begin{pmatrix} 5 &amp; 6 \\end{pmatrix} \\begin{pmatrix} -3 \\\\ -7 \\end{pmatrix} = -57 $$ The product is \\(AB = \\begin{pmatrix} -8 &amp; -11 &amp; -14 &amp; -17 \\\\ -16 &amp; -23 &amp; -30 &amp; -37 \\\\ -24 &amp; -35 &amp; -46 &amp; -47 \\end{pmatrix}\\) . Next we turn to translating systems of linear equations into matrix equations . ",
-    "url": "http://localhost:4000/notes/solving_linear_systems/matrices/#multiplication-of-matrices",
-    "relUrl": "/notes/solving_linear_systems/matrices/#multiplication-of-matrices"
-  },"93": {
-    "doc": "Matrix Equations",
-    "title": "From systems of linear equations to matrix equations",
-    "content": "Let’s start with a system of linear equations \\(a_{11} x_1 + a_{12}x_2 + \\cdots a_{1m} x_m = b_1 \\\\ a_{21} x_1 + a_{22}x_2 + \\cdots a_{2m} x_m = b_2 \\\\ \\vdots \\\\ a_{n1} x_1 + a_{n2}x_2 + \\cdots a_{nm} x_m = b_n \\\\\\) . If we set \\(A = \\begin{pmatrix} a_{11} &amp; a_{12} &amp; \\cdots &amp; a_{1m} \\\\ a_{21} &amp; a_{22} &amp; \\cdots &amp; a_{2m} \\\\ \\vdots &amp; \\vdots &amp; \\ddots &amp; \\vdots \\\\ a_{n1} &amp; a_{n2} &amp; \\cdots &amp; a_{nm} \\end{pmatrix} \\ , \\ \\mathbf{x} = \\begin{pmatrix} x_1 \\\\ x_2 \\\\ \\vdots \\\\ x_m \\end{pmatrix} \\ , \\ \\mathbf{b} = \\begin{pmatrix} b_1 \\\\ b_2 \\\\ \\vdots \\\\ b_n \\end{pmatrix}\\) then the system of can be captured using the simple matrix equation \\(A \\mathbf{x} = \\mathbf{b}.\\) . Similarly, we can reverse the direction. Writing out $A \\mathbf{x} = \\mathbf{b}$ explicitly will yield the original system of linear equations. Thus, we lose no information when using the matrix language. Augmented matrices . An extended notation for matrix equations will be useful, particularly for solving linear systems. Given a matrix equation $A \\mathbf{x} = \\mathbf{b}$, the augmented matrix is denoted \\(\\begin{pmatrix} a_{11} &amp; a_{12} &amp; \\cdots &amp; a_{1m} &amp;\\bigg| &amp; b_1 \\\\ a_{21} &amp; a_{22} &amp; \\cdots &amp; a_{2m} &amp;\\bigg| &amp; b_2 \\\\ \\vdots &amp; \\vdots &amp; \\ddots &amp; \\vdots &amp;\\bigg| &amp; \\vdots \\\\ a_{n1} &amp; a_{n2} &amp; \\cdots &amp; a_{nm} &amp;\\bigg| &amp; b_n \\end{pmatrix}\\) . Our next task is to understand how we can enhance our understanding of solutions of linear systems by using matrices. We will study which operations on (augmented) matrices can simplify the matrix without losing information about the solution set of the linear system. ",
-    "url": "http://localhost:4000/notes/solving_linear_systems/matrix_equations/#from-systems-of-linear-equations-to-matrix-equations",
-    "relUrl": "/notes/solving_linear_systems/matrix_equations/#from-systems-of-linear-equations-to-matrix-equations"
-  },"94": {
-    "doc": "Matrix Equations",
-    "title": "Matrix Equations",
-    "content": " ",
-    "url": "http://localhost:4000/notes/solving_linear_systems/matrix_equations/",
-    "relUrl": "/notes/solving_linear_systems/matrix_equations/"
-  },"95": {
-    "doc": "Row Operations",
-    "title": "Coming soon",
-    "content": " ",
-    "url": "http://localhost:4000/notes/solving_linear_systems/row_operations/#coming-soon",
-    "relUrl": "/notes/solving_linear_systems/row_operations/#coming-soon"
-  },"96": {
-    "doc": "Row Operations",
-    "title": "Row Operations",
-    "content": " ",
-    "url": "http://localhost:4000/notes/solving_linear_systems/row_operations/",
-    "relUrl": "/notes/solving_linear_systems/row_operations/"
-  },"97": {
+  },"61": {
     "doc": "Schedule",
     "title": "Weekly Schedule",
     "content": ". | 8:00 AM | 8:30 AM | 9:00 AM | 9:30 AM | 10:00 AM | 10:30 AM | 11:00 AM | 11:30 AM | 12:00 PM | 12:30 PM | 1:00 PM | 1:30 PM | 2:00 PM | 2:30 PM | 3:00 PM | 3:30 PM | . | ",
     "url": "http://localhost:4000/schedule/#weekly-schedule",
     "relUrl": "/schedule/#weekly-schedule"
-  },"98": {
+  },"62": {
     "doc": "Schedule",
     "title": "Monday",
     "content": "| ",
     "url": "http://localhost:4000/schedule/",
     "relUrl": "/schedule/"
-  },"99": {
+  },"63": {
     "doc": "Schedule",
     "title": "Tuesday",
-    "content": ". | Class 8:30 AM–9:45 AM COL 3007 | Office Hours 11:30 AM–1:00 PM COL 1022C | . | ",
+    "content": ". | Class 10:05 AM–11:20 AM COL 3006B | Office Hours 11:30 AM–1:00 PM COL 1022C | . | ",
     "url": "http://localhost:4000/schedule/",
     "relUrl": "/schedule/"
-  },"100": {
+  },"64": {
     "doc": "Schedule",
     "title": "Wednesday",
     "content": "| ",
     "url": "http://localhost:4000/schedule/",
     "relUrl": "/schedule/"
-  },"101": {
+  },"65": {
     "doc": "Schedule",
     "title": "Thursday",
-    "content": ". | Class 8:30 AM–9:45 AM COL 3007 | Office Hours 11:30 AM–1:00 PM COL 1022C | . | ",
+    "content": ". | Class 10:05 AM–11:20 AM COL 3006B | Office Hours 11:30 AM–1:00 PM COL 1022C | . | ",
     "url": "http://localhost:4000/schedule/",
     "relUrl": "/schedule/"
-  },"102": {
+  },"66": {
     "doc": "Schedule",
     "title": "Friday",
     "content": "| . ",
     "url": "http://localhost:4000/schedule/",
     "relUrl": "/schedule/"
-  },"103": {
+  },"67": {
     "doc": "Schedule",
     "title": "Schedule",
     "content": " ",
     "url": "http://localhost:4000/schedule/",
     "relUrl": "/schedule/"
-  },"104": {
+  },"68": {
     "doc": "Me",
     "title": "Staff",
     "content": " ",
     "url": "http://localhost:4000/staff/#staff",
     "relUrl": "/staff/#staff"
-  },"105": {
+  },"69": {
     "doc": "Me",
     "title": "Instructor",
     "content": "Matthew Ballard . ballard@math.sc.edu . Schedule an appointment . I am an Associate Professor in the Department of Mathematics at the University of South Carolina. I have been teaching mathematics for almost two decades and have guided nearly 1000 students from all levels through math courses. A mindset focused on growth is essential for learning mathematics. Each day is a small step forward. When we turn around at the end of the course, only then, do we see how far we have truly traveled. For more of my pedagogical philosophy and experience, take a look at the teaching page. As an extension of teaching, I take pride in mentoring researchers at any stage. For a brief introduction to my mentees see the mentoring page. In my research, I study algebraic geometry and am particularly interested in questions arising from Homological Mirror Symmetry. Much of my current work focuses on derived categories and their relation to more classical questions. My research has been partially supported by the Simons Foundation and the National Science Foundation. It has also benefited from a membership at the Institute for Advanced Study, funding from UofSC, and the Southeastern Conference. For more information about me, see my CV. For a research summary and a list of my papers, take a look at my research page. I regularly organize mathematical events, even virtual ones. For the full list of events, see the organizing page. If you are interested in participating, contact me. ",
     "url": "http://localhost:4000/staff/#instructor",
     "relUrl": "/staff/#instructor"
-  },"106": {
+  },"70": {
     "doc": "Me",
     "title": "Me",
     "content": " ",
     "url": "http://localhost:4000/staff/",
     "relUrl": "/staff/"
-  },"107": {
-    "doc": "Systems",
-    "title": "Systems of linear equations",
-    "content": "With our knowledge of linear equations, the notion of a system is pretty quick to state. A system of linear equations in the variables $x_1,\\ldots,x_m$ is a (finite) set of linear equations in $x_i$’s. Let us use $n$ to denote the number of equations we have. Then, we are saying that, for any $1 \\leq i \\leq n$ and $1 \\leq j \\leq m$, there are $a_{ij}$ and $b_i$ and equations . \\[a_{11} x_1 + a_{12}x_2 + \\cdots a_{1m} x_m = b_1 \\\\ a_{21} x_1 + a_{22}x_2 + \\cdots a_{2m} x_m = b_2 \\\\ \\vdots \\\\ a_{n1} x_1 + a_{n2}x_2 + \\cdots a_{nm} x_m = b_n \\\\\\] We need two indices now: one to account for the number of equations and another for the number of unknowns. We were already introduced to an example \\(0 = \\frac{1}{4} x - \\frac{1}{3} y \\\\ {} \\\\ 0 = - \\frac{1}{2} x + \\frac{1}{3} y\\) . In this case $n = m = 2$. For a system where $n = m$, we will call it square. We can generalize our method for computing solutions to the linear equations to handle systems in a straightforward manner. Let us see it in effect for the example above. First, we pick a nonzero coefficient, called a pivot in general. In this case lets take the $1/4$ on the $x$. Now we try to solve out \\(0 = \\frac{1}{4} x - \\frac{1}{3} y\\) for $x$. We get \\(x = \\frac{4}{3} y.\\) . Now we can substitute $x = 4y/3$ to eliminate $x$ from the next equation: \\(0 = -\\frac{1}{2} \\left( \\frac{4}{3} y \\right) + \\frac{1}{3} y = - \\frac{1}{3} y\\) which we can solve for $y$ to get $y = 0$. Now we can substitute $y = 0$ back into $x = 4y/3$ and get $x = 0$. We can now answer the question in the original motivating example: the only steady state solution is where there are no aliens of either type. Sensible but perhaps not particularly interesting. From this, we can see that this algorithm for solving a system of linear equations just repeatedly applies the algorithm for solving a single linear equation until there are no more linear equations or we run into No Solution. Algorithm for solving a system of linear equations: . We can write this algorithm for a general system in pseudo-code. We write algorithm_single_equation(l) for the application of the algorithm for a single linear equation to a linear equation l. variables = [x_1,...,x_m] linear equations = [l_1,...,l_n] while number of equations != 0: pick l in linear equations if algorithm_single_equation(l) == No Solution: return No Solution else: if algorithm_single_equation(l)[i] != x_i: set x_i = algorithm_single_equation(l)[i] remove l from linear equations for each l' in linear equations: substitute algorithm_single_equation(l) into l' return [x_1,...,x_m] . In words, we pick a nonzero linear equation. Either we eliminate a variable or we have a contradiction (where $0$ equals $\\neq 0$). If we have a contradiction, we stop because we have no solution. Otherwise, we eliminate the chosen variable by rewriting it using the chosen equation. Then, we substitute back into all the remaining equations and repeat until we have no more equations left. This algorithm is a bit more opaque than the one for a single equation. Ask yourself: is it clear that we always output either . | No Solution | A single solution | Infinitely many solutions? | . It also is not the most efficient one. To gain better understanding and more power, we need some tools - vectors and matrices. ",
-    "url": "http://localhost:4000/notes/solving_linear_systems/systems/#systems-of-linear-equations",
-    "relUrl": "/notes/solving_linear_systems/systems/#systems-of-linear-equations"
-  },"108": {
-    "doc": "Systems",
-    "title": "Systems",
-    "content": " ",
-    "url": "http://localhost:4000/notes/solving_linear_systems/systems/",
-    "relUrl": "/notes/solving_linear_systems/systems/"
-  },"109": {
-    "doc": "Vectors",
-    "title": "Vectors",
-    "content": "A vector is just a list of numbers. Given a list $b_1,\\ldots,b_n$ we usually write a vector vertically \\(\\begin{pmatrix} b_1 \\\\ b_2 \\\\ \\vdots \\\\ b_m \\end{pmatrix}\\) as in a single column. We often write $\\mathbf{v}$ to denote a vector. The entries of $\\mathbf{v}$ are called the components of $\\mathbf{v}$. The length of the $\\mathbf{v}$ is number of entries in $\\mathbf{v}$. A scalar is another name for a vector of length 1. We typically omit the parentheses when writing a scalar. We have some basic, but useful, operations we can do with vectors. Vector addition . If $\\mathbf{v}$ and $\\mathbf{w}$ are vectors of the same length, we can add them. We do this by adding their components. More precisely, if \\(\\mathbf{v} = \\begin{pmatrix} v_1 \\\\ v_2 \\\\ \\vdots \\\\ v_m \\end{pmatrix} \\ , \\ \\mathbf{w} = \\begin{pmatrix} w_1 \\\\ w_2 \\\\ \\vdots \\\\ w_m \\end{pmatrix}\\) then \\(\\mathbf{v} + \\mathbf{w} := \\begin{pmatrix} v_1 + w_1 \\\\ v_2 + w_2 \\\\ \\vdots \\\\ v_m + w_m \\end{pmatrix}\\) . For example, \\(\\begin{pmatrix} -1 \\\\ 4 \\\\ 3 \\end{pmatrix} + \\begin{pmatrix} 5 \\\\ -6 \\\\ 0 \\end{pmatrix} = \\begin{pmatrix} 4 \\\\ -2 \\\\ 3 \\end{pmatrix}\\) . Note: We cannot add vectors of different lengths. ",
-    "url": "http://localhost:4000/notes/solving_linear_systems/vectors/",
-    "relUrl": "/notes/solving_linear_systems/vectors/"
-  },"110": {
-    "doc": "Vectors",
-    "title": "Vectors and multiplication",
-    "content": "There are standard ways to multiply vectors but, like with addition, there are some restrictions on the operations. Scalar multiplication . Given a scalar $a$ and a vector $\\mathbf{v}$ we get another vector $a \\mathbf{v}$ as \\(a \\begin{pmatrix} v_1 \\\\ v_2 \\\\ \\vdots \\\\ v_m \\end{pmatrix} = \\begin{pmatrix} av_1 \\\\ av_2 \\\\ \\vdots \\\\ av_m \\end{pmatrix}\\) In other words, we scale each component of $\\mathbf{v}$ by $a$. For example, \\(3 \\begin{pmatrix} -1 \\\\ 2 \\\\ 0 \\end{pmatrix} = \\begin{pmatrix} -3 \\\\ -6 \\\\ 0 \\end{pmatrix}\\) . Multiplication of vectors . Given two vectors $\\mathbf{v}$ and $\\mathbf{w}$ of the same length, we can multiply them and return a scalar. When we write the formula, we do something a little strange. We turn the first vector into a row, in the notation. The formula is \\(\\begin{pmatrix} v_1 &amp; v_2 &amp; \\cdots &amp; v_m \\end{pmatrix} \\begin{pmatrix} w_1 \\\\ w_2 \\\\ \\vdots \\\\ w_m \\end{pmatrix} := \\sum_{i=1}^m v_i w_i.\\) . For example, . $ \\begin{pmatrix} 1 &amp; 2 &amp; 3 &amp; 4 \\end{pmatrix} \\begin{pmatrix} -1 \\\\ 0 \\\\ 1 \\\\ 2 \\end{pmatrix} = 1(-1) + 2(0) + 3(1) + 4(2) = 10. $ Next, we look at matrices. ",
-    "url": "http://localhost:4000/notes/solving_linear_systems/vectors/#vectors-and-multiplication",
-    "relUrl": "/notes/solving_linear_systems/vectors/#vectors-and-multiplication"
   }
 }

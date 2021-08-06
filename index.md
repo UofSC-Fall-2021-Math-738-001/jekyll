@@ -32,9 +32,7 @@ The [notes tab]({% link notes/intro.md %}) is where you can find the course note
 
 ## Homework
 
-There are tabs for class [homework]({% link homework/index.md %}).
-
-For more information, see the [Syllabus]({% link about.md %}).
+There is also a tab for class [homework]({% link homework/index.md %}).
 
 ## Weekly schedule 
 
