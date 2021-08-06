@@ -1,0 +1,101 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole site, values
+# which you are expected to set up once and rarely edit after that. If you find
+# yourself editing these this file very often, consider using Jekyll's data files
+# feature for the data you need to update frequently.
+#
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'jekyll serve'. If you change this file, please restart the server process.
+
+# Site settings
+# These are used to personalize your new site. If you look in the HTML files,
+# you will see them accessed via {{ site.title }}, {{ site.github_repo }}, and so on.
+# You can create any custom variable you would like, and they will be accessible
+# in the templates via {{ site.myvariable }}.
+title: Linear Algebra
+tagline: Fall 2021 Math 544 at UofSC
+description: In this course, we explore transformations that take lines to other lines. It is a surprisingly well-structured setting with applications all over the place.
+author: Matthew Ballard
+baseurl: '' # the subpath of your site, e.g. /blog
+url: 'https://544.f21.matthewrobertballard.com' # the base hostname & protocol for your site, e.g. http://example.com
+exclude: ["Gemfile", "Gemfile.lock", "LICENSE", "README.md"]
+# logo: '/assets/images/beta.png'
+
+# Theme settings
+# remote_theme: pmarsceill/just-the-docs@v0.3.3
+# theme: "just-the-docs"
+color_scheme: usc
+search_enabled: true
+heading_anchors: true
+permalink: pretty
+aux_links:
+  Matthew Ballard:
+    - 'https://www.matthewrobertballard.com'
+  Microsoft Teams:
+    - 'https://teams.microsoft.com/l/channel/19%3aJgLzdLZpFCbmrJptHxrA2E7bvjwXsxJFPmFdJmn1-CI1%40thread.tacv2/General?groupId=5ff176b0-5dbd-44cb-a436-ec0c668e897e&tenantId=4b2a4b19-d135-420e-8bb2-b1cd238998cc'
+footer_content: '<a href="https://544.f21.matthewrobertballard.com/about_this_webpage/">About this webpage.</a> Copyright &copy; 2021 Matthew Ballard. Distributed with an <a href="https://github.com/UofSC-Fall-2021-Math-544-H01-UofSC-Fall-2021-Math-544-H01.github.io/tree/master/LICENSE.txt\">MIT license.</a> '
+
+# Collections for website data
+collections:
+  staffers:
+  modules:
+  schedules:
+  announcements:
+  citables: 
+    output: true
+  homework:
+  worksheet: 
+# Default layouts for each collection type
+defaults:
+  - scope:
+      path: ''
+      type: staffers
+    values:
+      layout: staffer
+      subpath: '/assets/images/'
+  - scope:
+      path: ''
+      type: modules
+    values:
+      layout: module
+  - scope:
+      path: ''
+      type: schedules
+    values:
+      layout: schedule
+  - scope:
+      path: ''
+      type: announcements
+    values:
+      layout: announcement
+  - scope:
+      path: ''
+      type: citables
+    values:
+      layout: citable
+  - scope:
+      path: ''
+      type: homework
+    values:
+      layout: page 
+  - scope:
+      path: ''
+      type: worksheets
+    values:
+      layout: page
+
+compress_html:
+  clippings: all
+  comments: all
+  endings: all
+  startings: []
+  blanklines: false
+  profile: false
+
+kramdown:
+  math_engine: nil
+
+plugins:
+  - jekyll-seo-tag
+#  - jekyll-katex
