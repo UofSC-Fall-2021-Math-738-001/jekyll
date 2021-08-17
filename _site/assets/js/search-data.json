@@ -1,13 +1,13 @@
 {"0": {
-    "doc": "Homework 1",
-    "title": "Homework 1",
-    "content": "Due 2021-12-31 . | TBD | . ",
+    "doc": "Homework 0",
+    "title": "Homework 0",
+    "content": "Due 2021-08-24 . | Complete homework 0 on the GitHub Classroom. | . ",
     "url": "http://localhost:4000/homework/1/",
     "relUrl": "/homework/1/"
   },"1": {
     "doc": "About",
     "title": "Syllabus",
-    "content": ". | Course Information . | Course Name and Number | Term | Meeting Time and Location | Instructor Information | Office Hours | Full Course Description | Prerequisites | Learning Outcomes | Course Materials | . | Course Requirements . | Course Format | Course Communication | Technology | Minimal Technical Skills Needed | Technical Support | . | Course Assignments and Grading . | Homework | Paper | Evaluation and Grading Scale . | Assignment Weights | Grading Scale | . | Assignment Submission | Revisions | . | Academic Success . | Accessibility | University Library Resources | Teams and Technology | Counseling Services | . | Course Policies and Procedures . | Attendance Policy and COVID Reporting | Academic Integrity | Plagiarism | Group Work | Class Conduct | Late Work/Make-up Policy | Incomplete Grades | Diversity and Inclusion | Title IX and Gendered Identity | Expectations of the Instructor | Copyright/Fair Use Statement | . | . ",
+    "content": ". | Course Information . | Course Name and Number | Term | Meeting Time and Location | Instructor Information | Office Hours | Full Course Description | Prerequisites | Learning Outcomes | Course Materials | . | Course Requirements . | Course Format | Course Communication | Technology | Minimal Technical Skills Needed | Technical Support | . | Course Assignments and Grading . | Homework | Paper | Evaluation and Grading Scale . | Assignment Weights | Grading Scale | . | Assignment Submission | Revisions | . | Academic Success . | Accessibility | University Library Resources | Teams and Technology | Counseling Services | . | Course Policies and Procedures . | Attendance Policy and COVID Reporting | COVID Policies . | Questions You May Have | . | Academic Integrity | Plagiarism | Group Work | Class Conduct | Late Work/Make-up Policy | Incomplete Grades | Diversity and Inclusion | Title IX and Gendered Identity | Expectations of the Instructor | Copyright/Fair Use Statement | . | . ",
     "url": "http://localhost:4000/about/#syllabus",
     "relUrl": "/about/#syllabus"
   },"2": {
@@ -67,7 +67,7 @@
   },"11": {
     "doc": "About",
     "title": "Course Materials",
-    "content": "The main resources for materials are the course website, the course channel in the SCAGNT Zulip and the Microsoft Team for the course. Supplemental course materials will be linked as necessary. All course materials comply with copyright/fair use policies. ",
+    "content": "The main resources for materials are . | the course website, | the course channel in the SCAGNT Zulip | the GitHub Classroom, and | the Microsoft Team for the course. | . Supplemental course materials will be linked as necessary. All course materials comply with copyright/fair use policies. ",
     "url": "http://localhost:4000/about/#course-materials",
     "relUrl": "/about/#course-materials"
   },"12": {
@@ -91,19 +91,19 @@
   },"15": {
     "doc": "About",
     "title": "Technology",
-    "content": "To participate in learning activities and complete assignments, you will need: . | Access to a working computer that has a current operating system with updates installed with a modern web browser installed; . | Reliable Internet access and a USC email account; . | If you plan to submit handwritten assignments, a scanning device such as a smartphone with the Microsoft Office Lens app. | The main hub for this course is the Microsoft Teams team [COTEAM-BALLARMR-MATH-738-001-FALL-2021]https://teams.microsoft.com/l/team/19%3am7sMpRskwXsB5SC5HX4uuaTIG2Ux56ChImvB3o2aMB41%40thread.tacv2/conversations?groupId=a8908864-beb6-45da-9c7d-2bb454080245&amp;tenantId=4b2a4b19-d135-420e-8bb2-b1cd238998cc) run through UofSC’s Microsoft Teams account. To access the team for the first time on your desktop/laptop, use the join link included in your welcome email. | We will be using a chat service called zulip to aid our learning. It exceeds Team’s capabilities with regards to typsetting mathematics content. To access the SCAGNT zulip chat for the first time on your desktop/laptop, use the join link included in your welcome email. | . ",
+    "content": "To participate in learning activities and complete assignments, you will need: . | Access to a working computer that has a current operating system with updates installed with a modern web browser installed; . | Reliable Internet access and a USC email account; . | If you plan to submit handwritten assignments, a scanning device such as a smartphone with the Microsoft Office Lens app. | We are using the Microsoft Teams with the team COTEAM-BALLARMR-MATH-738-001-FALL-2021 run through your UofSC Microsoft account. To access the team for the first time on your desktop/laptop, use the join link included in your welcome email. | For dissemination, collection of, and feedback on homework assignments, we will be using GitHub Classroom. To access the classroom for the first time on your desktop/laptop, use the join link included in your welcome email. | For chat, We will be using a service called Zulip to aid our learning. It exceeds Team’s capabilities with regards to typsetting mathematics content. To access the SCAGNT Zulip chat for the first time on your desktop/laptop, use the join link included in your welcome email. | . ",
     "url": "http://localhost:4000/about/#technology",
     "relUrl": "/about/#technology"
   },"16": {
     "doc": "About",
     "title": "Minimal Technical Skills Needed",
-    "content": "Minimal technical skills are needed in this course. All work in this course must be completed and submitted online. Therefore, you must have consistent and reliable access to a computer and the Internet. The minimal technical skills you have include the ability to: . | Organize and save electronic files; . | Check and use the course, Zulip, and Microsoft Teams sites daily; . | Download and upload documents; . | Locate and enter information with a browser. | . ",
+    "content": "Minimal technical skills are needed in this course. All work in this course must be completed and submitted online. Therefore, you must have consistent and reliable access to a computer and the Internet. The minimal technical skills you have include the ability to: . | Organize and save electronic files; . | Check and use the course, GitHub Classroom, Zulip, and Microsoft Teams sites regularly; . | Download and upload documents; . | Locate and enter information with a browser; . | Edit and compile TeX documents. | . ",
     "url": "http://localhost:4000/about/#minimal-technical-skills-needed",
     "relUrl": "/about/#minimal-technical-skills-needed"
   },"17": {
     "doc": "About",
     "title": "Technical Support",
-    "content": "If you have problems with your computer, technology, IT-related questions, support, including Microsoft Teams, please contact the Division of Information Technology (DoIT) Service Desk at (803) 777-1800 or submit an online request through the Self-Service Portal or visit the Carolina Tech Zone. The Service Desk is open Monday – Friday from 8:00 AM – 6:00 PM (Eastern Daylight Time). The Thomas Cooper Library at USC has computers for you to use in case you encounter computer issues/problems. If you have problems with Zulip, contact me. ",
+    "content": "If you have problems with your computer, technology, IT-related questions, support, including Microsoft Teams, please contact the Division of Information Technology (DoIT) Service Desk at (803) 777-1800 or submit an online request through the Self-Service Portal or visit the Carolina Tech Zone. The Service Desk is open Monday – Friday from 8:00 AM – 6:00 PM (Eastern Daylight Time). The Thomas Cooper Library at USC has computers for you to use in case you encounter computer issues/problems. If you have problems with Zulip or GitHub Classroom, contact me. ",
     "url": "http://localhost:4000/about/#technical-support",
     "relUrl": "/about/#technical-support"
   },"18": {
@@ -115,7 +115,7 @@
   },"19": {
     "doc": "About",
     "title": "Homework",
-    "content": "Homework can be completed in groups of 1-4. All sources utilized must be cited. Latex should be submitted as pdfs compiled via Latex. The assignments will be available in and must be returned through Microsoft Teams. All homework assignments are due by 11:59 pm (Eastern Time) on the day indicated on the course schedule. Homework will be graded for correctness. You will be allowed up to two revisions on each homework assignment. ",
+    "content": "Except for the zeroth one, homework can be completed in groups of 1-4. All sources utilized must be cited. Homework is submitted as TeX files. The assignments will be available in and must be returned through GitHub Classroom. As part of the homework, you will learn how to use git. ",
     "url": "http://localhost:4000/about/#homework",
     "relUrl": "/about/#homework"
   },"20": {
@@ -127,13 +127,13 @@
   },"21": {
     "doc": "About",
     "title": "Evaluation and Grading Scale",
-    "content": "All grades will be posted on Teams. A final letter grade will be assigned based on weighting below. Assignment Weights . | Component | Percent of total | . | Participation | 33% | . | Homework | 33% | . | Project | 33% | . Grading Scale . | Final total intervals | Letter Grade | . | [90,100] | A | . | [85,90) | B+ | . | [80,85) | B | . | [75,80) | C+ | . | [70,75) | C | . | [65,70) | D+ | . | [60,65) | D | . | [0,60) | F | . ",
+    "content": "All grades will be posted on Teams. A final letter grade will be assigned based on weighting below. Assignment Weights . | Component | Percent of total | . | Participation | 33% | . | Homework | 33% | . | Paper | 33% | . Grading Scale . | Final total intervals | Letter Grade | . | [90,100] | A | . | [85,90) | B+ | . | [80,85) | B | . | [75,80) | C+ | . | [70,75) | C | . | [65,70) | D+ | . | [60,65) | D | . | [0,60) | F | . ",
     "url": "http://localhost:4000/about/#evaluation-and-grading-scale",
     "relUrl": "/about/#evaluation-and-grading-scale"
   },"22": {
     "doc": "About",
     "title": "Assignment Submission",
-    "content": "All written assignments are required to be submitted through Teams. Unless otherwise specified in the problem, you will be able to enter text directly through Teams or upload a scan of handwritten work. If you choose to upload a scan, then . | the handwriting must be clear and legible – otherwise you will receive no credit . | you will need to use the Office 365 Lens app to scan and upload you work to your university OneDrive account before attaching to the assignment. No HEIC extensions are allowed. | . ",
+    "content": "Assignment submission will be through the GitHub Classroom for the course. ",
     "url": "http://localhost:4000/about/#assignment-submission",
     "relUrl": "/about/#assignment-submission"
   },"23": {
@@ -186,239 +186,245 @@
     "relUrl": "/about/#attendance-policy-and-covid-reporting"
   },"31": {
     "doc": "About",
+    "title": "COVID Policies",
+    "content": "I strongly encourage the use of face-coverings and getting vaccinated. I encourage physical distancing. While not always possible, I will strive to keep everyone at least three feet apart, even when working in groups, which we will do regularly. If you feel uncomfortable with group work in my class, please come talk with me and I don’t mind letting you work independently at all. I have been requested to keep a seating chart. I have been urged to keep this seating chart for contact tracing purposes and will do my best to abide by the University policy. Questions You May Have . What if I get sick with COVID? Two things have to occur: Isolation: Students who have been diagnosed with COVID-19 are released from isolation when a medical professional has determined, based on the current CDC and DHEC guidelines, that they have recovered. Currently, these guidelines include being fever-free for at least 24 hours and at least 10 days from their first symptom or positive test if they are asymptomatic. Quarantine: Unvaccinated students who are deemed a close contact with a confirmed COVID-19 case will be quarantined for 7-14 days from their last contact with the infected individual. More specifically, students who test negative on day 5, 6, or 7 can leave quarantine after 7 full days; individuals who did not test but remain asymptomatic can leave after 10 full days. Individuals who are symptomatic or have other health concerns may be advised to remain under quarantine for 14 days.  . What is the attendance policy if I get COVID? In brief, I must provide make-up course work including content and assignments when students have excused absences which include (but are not limited to) being in quarantine or isolation, religious holidays, medical conditions related to pregnancy, and military duty. However, recorded classes and hybrid/online options are not required and should not be expected. All excused absences must have documentation. See syllabus for further attendance policies. How will the Dr. Ballard know if I am absent due to quarantine or isolation? COVID-19 related absences must be document through the Student Ombudsman.  Students who have been diagnosed with COVID-19 or have been exposed and require quarantining should complete the COVID-19 Student Report Form and instructors should request this form in order to excuse the absence.  . Can I inquire about classmates condition with COVID? Sadly, not with me. These are health issues and the information is protected by state and federal law. If an individual student has questions about whether they should quarantine or believe that they have been in close contact, have them reach out to the COVID Phone Bank (803-576-8511). Would we ever change to go online if too many people are sick? Only in the rare instance that 30% or more of students have documented excused absences may I take the course online. This is not to be expected and very complicated according to the current policies. What if Dr. Ballard gets sick with COVID? I have been fully vaccinated and breakthrough infection symptoms most often resemble the common cold. In the event of a breakthrough infection, I will enter the self-isolation period and the course will switch modality to synchronous online temporarily. In the rare circumstance I am unable to teach remotely, a substitute instructor will take over the course. For more information on this semester’s COVID policies see the guidance from the Provost. ",
+    "url": "http://localhost:4000/about/#covid-policies",
+    "relUrl": "/about/#covid-policies"
+  },"32": {
+    "doc": "About",
     "title": "Academic Integrity",
     "content": "You are expected to practice the highest possible standards of academic integrity. Any deviation from this expectation will result in a minimum academic penalty of your failing the assignment, and will result in additional disciplinary measures. This includes improper citation of sources, using another student’s work, and any other form of academic misrepresentation. The first tenet of the Carolinian Creed is, “I will practice personal and academic integrity.” . Below are some websites for you to visit to learn more about University policies: . | Carolinian Creed . | Academic Responsibility . | Office of Student Conduct and Academic Integrity . | Information Security Policy and Standards . | . ",
     "url": "http://localhost:4000/about/#academic-integrity",
     "relUrl": "/about/#academic-integrity"
-  },"32": {
+  },"33": {
     "doc": "About",
     "title": "Plagiarism",
     "content": "Using the words or ideas of another as if they were one’s own is a serious form of academic dishonesty. If another person’s complete sentence, syntax, key words, or the specific or unique ideas and information are used, one must give that person credit through proper citation. You should in particular cite any resources, person, text, or otherwise, you used to assist in preparation of your work. Copying proofs or problem solutions is strictly forbidden. ",
     "url": "http://localhost:4000/about/#plagiarism",
     "relUrl": "/about/#plagiarism"
-  },"33": {
+  },"34": {
     "doc": "About",
     "title": "Group Work",
     "content": "Group work should be performed in safe manner. Remote work will certainly form a larger component of a career going forward. You are encouraged to take advantage of Microsoft Teams video conferencing and Zulip chat abilities to aid in collaboration. ",
     "url": "http://localhost:4000/about/#group-work",
     "relUrl": "/about/#group-work"
-  },"34": {
+  },"35": {
     "doc": "About",
     "title": "Class Conduct",
     "content": "Professionalism will be expected at all times, but most especially with your interactions online and in person. Because the university classroom is a place designed for the free exchange of ideas, we must show respect for one another in all circumstances. We will show respect for one another by exhibiting patience and courtesy in our exchanges. Appropriate language and restraint from verbal attacks upon those whose perspectives differ from your own is a minimum requirement. Courtesy and kindness is the norm for those who participate in the class. Mistakes, in particular during the running phase, are expected and natural. Mistakes are how learning happens. All students should recognize and respect the bravery of a student presenting a proof or solution. If you ever feel uncomfortable beyond the intellectual challenge of the course, please contact me. Teams is a way for you to share your ideas and learning with your colleagues in this class. We do this as colleagues in learning, and the online space is meant to be a safe and respectful environment for us to conduct these discussions. Some general netiquette rules: . | Treat one another with respect. It will be expected that we will not attack one another personally for holding different opinions. | Do not use all CAPITAL LETTERS in emails or discussion board postings. This is considered “shouting” and is seen as impolite or aggressive. | Begin emails with a proper salutation (Examples: Dr. Name; Ms. Name; Hello Professor Name; Good afternoon Mr. Name). Starting an email without a salutation or a simple “Hey” is not appropriate. | When sending an email, please include a detailed subject line. Additionally, make sure you reference the course number (Ex. ENGL 287) in the message and sign the mail with your name. | Use proper grammar, spelling, punctuation, and capitalization. Text messaging language is not acceptable. | Use good taste when communicating. Profanity should be avoided. | Re-Read, think, and edit your message before you click “Send/Submit/Post.” . | Please remember when posting to be respectful and courteous to your colleagues, and limit your communication to topics of this course and the assignments. | . ",
     "url": "http://localhost:4000/about/#class-conduct",
     "relUrl": "/about/#class-conduct"
-  },"35": {
+  },"36": {
     "doc": "About",
     "title": "Late Work/Make-up Policy",
     "content": "All assignments due by the deadline as posted on the course schedule. Late work is not accepted and not eligible for revision. Please plan accordingly, and complete these assignments in advance of their deadlines to ensure any unanticipated circumstances do not result in a missed assignment. User error does not qualify you for any kind of makeup or retake opportunity. Completing and submitting the assignments by the due date is the sole responsibility of you. If you fail to submit the assignment or test by the due date, then your score for that assignment will be recorded as “zero.” . You will be allowed to access the assignments an unlimited number of times until the due date/time. If you are concerned about missing a deadline, post your assignment the day before the deadline. Be Careful: The clock on your computer may be different than the clock in Teams. If the clock is different by one second, you will be locked out of the assignment. Plan accordingly. ",
     "url": "http://localhost:4000/about/#late-workmake-up-policy",
     "relUrl": "/about/#late-workmake-up-policy"
-  },"36": {
+  },"37": {
     "doc": "About",
     "title": "Incomplete Grades",
     "content": "The grade of Incomplete will be granted only in accordance with university policy. ",
     "url": "http://localhost:4000/about/#incomplete-grades",
     "relUrl": "/about/#incomplete-grades"
-  },"37": {
+  },"38": {
     "doc": "About",
     "title": "Diversity and Inclusion",
     "content": "The university is committed to a campus environment that is inclusive, safe, and respectful for all persons, and one that fully embraces the Carolinian Creed: “I will discourage bigotry, while striving to learn from differences in people, ideas and opinions.” Likewise, the Student Code of Conduct stresses, “The University of South Carolina strives to maintain an educational community that fosters the development of students who are ethical, civil and responsible persons.” . To that end, all course activities will be conducted in an atmosphere of friendly participation and interaction among colleagues, recognizing and appreciating the unique experiences, background, and point of view each student brings. You are expected at all times to apply the highest academic standards to this course and to treat others with dignity and respect. ",
     "url": "http://localhost:4000/about/#diversity-and-inclusion",
     "relUrl": "/about/#diversity-and-inclusion"
-  },"38": {
+  },"39": {
     "doc": "About",
     "title": "Title IX and Gendered Identity",
     "content": "This course affirms equality and respect for all gendered identities and expressions. Please don’t hesitate to correct me regarding your preferred gender pronoun and/or name if different from what is indicated on the official class roster. Likewise, I am committed to nurturing an environment free from discrimination and harassment. Consistent with Title IX policy, please be aware that I as a responsible employee am obligated to report information that you provide to me about a situation involving sexual harassment or assault. ",
     "url": "http://localhost:4000/about/#title-ix-and-gendered-identity",
     "relUrl": "/about/#title-ix-and-gendered-identity"
-  },"39": {
+  },"40": {
     "doc": "About",
     "title": "Expectations of the Instructor",
     "content": "I am expected to facilitate learning, answer questions appropriately, be fair and objective in grading, provide timely and useful feedback on assignments and treat you as I would like to be treated. ",
     "url": "http://localhost:4000/about/#expectations-of-the-instructor",
     "relUrl": "/about/#expectations-of-the-instructor"
-  },"40": {
+  },"41": {
     "doc": "About",
     "title": "Copyright/Fair Use Statement",
     "content": "I will cite and/or reference any materials that I use in this course that I do not create. Anything that appears on this website is copyright © 2021 Matthew Ballard and is distributed by an MIT license. Course materials that do not appear on this website are copyright © 2021 Matthew Ballard and all rights are reserved. In particular, you may not distribute any of these course materials in any fashion. ",
     "url": "http://localhost:4000/about/#copyrightfair-use-statement",
     "relUrl": "/about/#copyrightfair-use-statement"
-  },"41": {
+  },"42": {
     "doc": "About",
     "title": "About",
     "content": " ",
     "url": "http://localhost:4000/about/",
     "relUrl": "/about/"
-  },"42": {
+  },"43": {
     "doc": "This Website",
     "title": "About this website",
     "content": "This website is hosted on GitHub and relies on Jekyll to generate the content. It uses the Just the Class theme which built off the Just the Docs theme. At material appearing here is copyright © 2021 Matthew Ballard and is distributed with an MIT license. ",
     "url": "http://localhost:4000/about_this_webpage/#about-this-website",
     "relUrl": "/about_this_webpage/#about-this-website"
-  },"43": {
+  },"44": {
     "doc": "This Website",
     "title": "This Website",
     "content": " ",
     "url": "http://localhost:4000/about_this_webpage/",
     "relUrl": "/about_this_webpage/"
-  },"44": {
+  },"45": {
     "doc": "Announcements",
     "title": "Announcements",
     "content": "Announcements are stored in the _announcements directory and rendered according to the layout file, _layouts/announcement.html. ",
     "url": "http://localhost:4000/announcements/",
     "relUrl": "/announcements/"
-  },"45": {
+  },"46": {
     "doc": "Announcements",
-    "title": "Week 0 Announcement",
-    "content": "Aug 5 &middot; 0 min read Hi There . ",
+    "title": "Week 1 Announcement",
+    "content": "Aug 17 &middot; 0 min read Due to an immovable medical appointment, the first class (Aug 19) is rescheduled. We will figure if and how to make it up at a later date. ",
     "url": "http://localhost:4000/announcements/",
     "relUrl": "/announcements/"
-  },"46": {
+  },"47": {
     "doc": "Calendar",
     "title": "Calendar",
     "content": " ",
     "url": "http://localhost:4000/calendar/",
     "relUrl": "/calendar/"
-  },"47": {
-    "doc": "Calendar",
-    "title": "Welcome and Orientation",
-    "content": "Aug 19 Introducing the course and ourselves ",
-    "url": "http://localhost:4000/calendar/#welcome-and-orientation",
-    "relUrl": "/calendar/#welcome-and-orientation"
   },"48": {
+    "doc": "Calendar",
+    "title": "Categories",
+    "content": "Aug 24 Definitions of categories and examples Aug 26 Functors, natural transformations, and equivalences Aug 31 Adjunctions Sept 2 (Naive) localization of categories ",
+    "url": "http://localhost:4000/calendar/#categories",
+    "relUrl": "/calendar/#categories"
+  },"49": {
     "doc": "Homework",
     "title": "Homework",
-    "content": ". | Homework 1. Due Date: December 31 | . ",
+    "content": ". | Homework 0. Due Date: August 24 | . ",
     "url": "http://localhost:4000/homework/",
     "relUrl": "/homework/"
-  },"49": {
+  },"50": {
     "doc": "Derived Categories",
     "title": "Fall 2021 Math 738 at UofSC",
     "content": "We will localize some categories and have fun doing it. ",
     "url": "http://localhost:4000/#fall-2021-math-738-at-uofsc",
     "relUrl": "/#fall-2021-math-738-at-uofsc"
-  },"50": {
+  },"51": {
     "doc": "Derived Categories",
-    "title": "Week 0 Announcement",
-    "content": "Aug 5 &middot; 0 min read Hi There . Announcements . ",
+    "title": "Week 1 Announcement",
+    "content": "Aug 17 &middot; 0 min read Due to an immovable medical appointment, the first class (Aug 19) is rescheduled. We will figure if and how to make it up at a later date. Announcements . ",
     "url": "http://localhost:4000/",
     "relUrl": "/"
-  },"51": {
+  },"52": {
     "doc": "Derived Categories",
     "title": "Syllabus",
     "content": "The syllabus can be found at the about tab. ",
     "url": "http://localhost:4000/#syllabus",
     "relUrl": "/#syllabus"
-  },"52": {
+  },"53": {
     "doc": "Derived Categories",
     "title": "Calendar",
     "content": "At the calendar tab, you will find our topic schedule and due dates for assignments. ",
     "url": "http://localhost:4000/#calendar",
     "relUrl": "/#calendar"
-  },"53": {
+  },"54": {
     "doc": "Derived Categories",
     "title": "Notes",
     "content": "The notes tab is where you can find the course notes. ",
     "url": "http://localhost:4000/#notes",
     "relUrl": "/#notes"
-  },"54": {
+  },"55": {
     "doc": "Derived Categories",
     "title": "Homework",
     "content": "There is also a tab for class homework. ",
     "url": "http://localhost:4000/#homework",
     "relUrl": "/#homework"
-  },"55": {
+  },"56": {
     "doc": "Derived Categories",
     "title": "Weekly schedule",
     "content": "If you ever need to remind yourself about the time and coordinates of our course or my office hours, you can quickly reference at the schedule tab. ",
     "url": "http://localhost:4000/#weekly-schedule",
     "relUrl": "/#weekly-schedule"
-  },"56": {
+  },"57": {
     "doc": "Derived Categories",
     "title": "Me",
     "content": "If you are interested in a bit about who I am and what I do, check out the Me tab or visit my website. ",
     "url": "http://localhost:4000/#me",
     "relUrl": "/#me"
-  },"57": {
+  },"58": {
     "doc": "Derived Categories",
     "title": "Derived Categories",
     "content": " ",
     "url": "http://localhost:4000/",
     "relUrl": "/"
-  },"58": {
+  },"59": {
     "doc": "Notes",
     "title": "Course Notes",
     "content": "We will record notes from the course here. <!-- ",
     "url": "http://localhost:4000/notes/intro/#course-notes",
     "relUrl": "/notes/intro/#course-notes"
-  },"59": {
+  },"60": {
     "doc": "Notes",
     "title": "Rank Nullity Theorem",
     "content": "Let $T : V \\to W$ be a linear tranformation between two finite dimensional vectors $V$ and $W$. Then, \\(\\operatorname{Rank}(T) + \\operatorname{Nullity}(T) = \\dim V.\\) . --> ",
     "url": "http://localhost:4000/notes/intro/#rank-nullity-theorem",
     "relUrl": "/notes/intro/#rank-nullity-theorem"
-  },"60": {
+  },"61": {
     "doc": "Notes",
     "title": "Notes",
     "content": " ",
     "url": "http://localhost:4000/notes/intro/",
     "relUrl": "/notes/intro/"
-  },"61": {
+  },"62": {
     "doc": "Schedule",
     "title": "Weekly Schedule",
     "content": ". | 8:00 AM | 8:30 AM | 9:00 AM | 9:30 AM | 10:00 AM | 10:30 AM | 11:00 AM | 11:30 AM | 12:00 PM | 12:30 PM | 1:00 PM | 1:30 PM | 2:00 PM | 2:30 PM | 3:00 PM | 3:30 PM | . | ",
     "url": "http://localhost:4000/schedule/#weekly-schedule",
     "relUrl": "/schedule/#weekly-schedule"
-  },"62": {
+  },"63": {
     "doc": "Schedule",
     "title": "Monday",
     "content": "| ",
     "url": "http://localhost:4000/schedule/",
     "relUrl": "/schedule/"
-  },"63": {
+  },"64": {
     "doc": "Schedule",
     "title": "Tuesday",
     "content": ". | Class 10:05 AM–11:20 AM COL 3006B | Office Hours 11:30 AM–1:00 PM COL 1022C | . | ",
     "url": "http://localhost:4000/schedule/",
     "relUrl": "/schedule/"
-  },"64": {
+  },"65": {
     "doc": "Schedule",
     "title": "Wednesday",
     "content": "| ",
     "url": "http://localhost:4000/schedule/",
     "relUrl": "/schedule/"
-  },"65": {
+  },"66": {
     "doc": "Schedule",
     "title": "Thursday",
     "content": ". | Class 10:05 AM–11:20 AM COL 3006B | Office Hours 11:30 AM–1:00 PM COL 1022C | . | ",
     "url": "http://localhost:4000/schedule/",
     "relUrl": "/schedule/"
-  },"66": {
+  },"67": {
     "doc": "Schedule",
     "title": "Friday",
     "content": "| . ",
     "url": "http://localhost:4000/schedule/",
     "relUrl": "/schedule/"
-  },"67": {
+  },"68": {
     "doc": "Schedule",
     "title": "Schedule",
     "content": " ",
     "url": "http://localhost:4000/schedule/",
     "relUrl": "/schedule/"
-  },"68": {
+  },"69": {
     "doc": "Me",
     "title": "Staff",
     "content": " ",
     "url": "http://localhost:4000/staff/#staff",
     "relUrl": "/staff/#staff"
-  },"69": {
+  },"70": {
     "doc": "Me",
     "title": "Instructor",
     "content": "Matthew Ballard . ballard@math.sc.edu . Schedule an appointment . I am an Associate Professor in the Department of Mathematics at the University of South Carolina. I have been teaching mathematics for almost two decades and have guided nearly 1000 students from all levels through math courses. A mindset focused on growth is essential for learning mathematics. Each day is a small step forward. When we turn around at the end of the course, only then, do we see how far we have truly traveled. For more of my pedagogical philosophy and experience, take a look at the teaching page. As an extension of teaching, I take pride in mentoring researchers at any stage. For a brief introduction to my mentees see the mentoring page. In my research, I study algebraic geometry and am particularly interested in questions arising from Homological Mirror Symmetry. Much of my current work focuses on derived categories and their relation to more classical questions. My research has been partially supported by the Simons Foundation and the National Science Foundation. It has also benefited from a membership at the Institute for Advanced Study, funding from UofSC, and the Southeastern Conference. For more information about me, see my CV. For a research summary and a list of my papers, take a look at my research page. I regularly organize mathematical events, even virtual ones. For the full list of events, see the organizing page. If you are interested in participating, contact me. ",
     "url": "http://localhost:4000/staff/#instructor",
     "relUrl": "/staff/#instructor"
-  },"70": {
+  },"71": {
     "doc": "Me",
     "title": "Me",
     "content": " ",

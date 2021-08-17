@@ -69,7 +69,12 @@ After successful completion of this course, you will be able to:
 
 ## Course Materials 
 
-The main resources for materials are the [course website](https://738.f21.matthewrobertballard.com), the course channel in the [SCAGNT Zulip](https://scagnt.zulipchat.com) and the [Microsoft Team](https://teams.microsoft.com/l/team/19%3am7sMpRskwXsB5SC5HX4uuaTIG2Ux56ChImvB3o2aMB41%40thread.tacv2/conversations?groupId=a8908864-beb6-45da-9c7d-2bb454080245&tenantId=4b2a4b19-d135-420e-8bb2-b1cd238998cc) for the course. 
+The main resources for materials are 
+
+- the [course website](https://738.f21.matthewrobertballard.com), 
+- the course channel in the [SCAGNT Zulip](https://scagnt.zulipchat.com) 
+- the [GitHub Classroom](https://classroom.github.com/classrooms/88558107-uofsc-fall-2021-math-738-001), and 
+- the [Microsoft Team](https://teams.microsoft.com/l/team/19%3am7sMpRskwXsB5SC5HX4uuaTIG2Ux56ChImvB3o2aMB41%40thread.tacv2/conversations?groupId=a8908864-beb6-45da-9c7d-2bb454080245&tenantId=4b2a4b19-d135-420e-8bb2-b1cd238998cc) for the course. 
 
 Supplemental course materials will be linked as necessary. 
 
@@ -105,9 +110,11 @@ To participate in learning activities and complete assignments, you will need:
 
 - If you plan to submit handwritten assignments, a scanning device such as a smartphone with the Microsoft Office Lens app.  
 
-- The main hub for this course is the Microsoft Teams team [COTEAM-BALLARMR-MATH-738-001-FALL-2021]https://teams.microsoft.com/l/team/19%3am7sMpRskwXsB5SC5HX4uuaTIG2Ux56ChImvB3o2aMB41%40thread.tacv2/conversations?groupId=a8908864-beb6-45da-9c7d-2bb454080245&tenantId=4b2a4b19-d135-420e-8bb2-b1cd238998cc) run through UofSC’s Microsoft Teams account. To access the team for the first time on your desktop/laptop, use the join link included in your welcome email.
+- We are using the Microsoft Teams with the team [COTEAM-BALLARMR-MATH-738-001-FALL-2021](https://teams.microsoft.com/l/team/19%3am7sMpRskwXsB5SC5HX4uuaTIG2Ux56ChImvB3o2aMB41%40thread.tacv2/conversations?groupId=a8908864-beb6-45da-9c7d-2bb454080245&tenantId=4b2a4b19-d135-420e-8bb2-b1cd238998cc) run through your UofSC Microsoft account. To access the team for the first time on your desktop/laptop, use the join link included in your welcome email.
 
-- We will be using a chat service called [zulip](https://zulip.com/) to aid our learning. It exceeds Team's capabilities with regards to typsetting mathematics content. To access the [SCAGNT zulip chat](https://scagnt.zulipchat.com) for the first time on your desktop/laptop, use the join link included in your welcome email.
+- For dissemination, collection of, and feedback on homework assignments, we will be using [GitHub Classroom](https://classroom.github.com/classrooms/88558107-uofsc-fall-2021-math-738-001). To access the classroom for the first time on your desktop/laptop, use the join link included in your welcome email.
+
+- For chat, We will be using a service called [Zulip](https://zulip.com/) to aid our learning. It exceeds Team's capabilities with regards to typsetting mathematics content. To access the [SCAGNT Zulip chat](https://scagnt.zulipchat.com) for the first time on your desktop/laptop, use the join link included in your welcome email.
  
 ## Minimal Technical Skills Needed  
 
@@ -115,27 +122,29 @@ Minimal technical skills are needed in this course. All work in this course must
 
 - Organize and save electronic files; 
 
-- Check and use the course, Zulip, and Microsoft Teams sites daily; 
+- Check and use the course, GitHub Classroom, Zulip, and Microsoft Teams sites regularly; 
 
 - Download and upload documents; 
 
-- Locate and enter information with a browser. 
+- Locate and enter information with a browser; 
+
+- Edit and compile TeX documents. 
 
 ## Technical Support  
 
 If you have problems with your computer, technology, IT-related questions, support, including Microsoft Teams, please contact the Division of Information Technology (DoIT) Service Desk at (803) 777-1800 or submit an online request through the [Self-Service Portal](https://scprod.service-now.com/sp) or visit the [Carolina Tech Zone](https://www.sc.edu/about/offices_and_divisions/university_technology_services/support/ctz.php). The Service Desk is open Monday – Friday from 8:00 AM – 6:00 PM (Eastern Daylight Time). The Thomas Cooper Library at USC has computers for you to use in case you encounter computer issues/problems. 
 
-If you have problems with Zulip, [contact me](mailto:ballard@math.sc.edu). 
+If you have problems with Zulip or GitHub Classroom, [contact me](mailto:ballard@math.sc.edu). 
 
 # Course Assignments and Grading 
 
 ## Homework	 
 
-Homework can be completed in groups of 1-4. All sources utilized must be cited. 
+Except for the zeroth one, homework can be completed in groups of 1-4. All sources utilized must be cited. 
 
-Latex should be submitted as pdfs compiled via Latex. 
+Homework is submitted as TeX files. 
 
-The assignments will be available in and must be returned through Microsoft Teams. All homework assignments are due by 11:59 pm (Eastern Time) on the day indicated on the course schedule. Homework will be graded for correctness. You will be allowed up to two revisions on each homework assignment. 
+The assignments will be available in and must be returned through GitHub Classroom. As part of the homework, you will learn how to use `git`.
 
 ## Paper 
 
@@ -151,7 +160,7 @@ All grades will be posted on Teams. A final letter grade will be assigned based 
 | :---------:   | :---------:    |
 | Participation |      33%       |
 | Homework      |      33%       |
-| Project       |      33%       |
+| Paper         |      33%       |
 
 ### Grading Scale 
 
@@ -168,11 +177,7 @@ All grades will be posted on Teams. A final letter grade will be assigned based 
 
 ## Assignment Submission 
 
-All written assignments are required to be submitted through Teams. Unless otherwise specified in the problem, you will be able to enter text directly through Teams or upload a scan of handwritten work. If you choose to upload a scan, then  
-
-- the handwriting must be clear and legible – otherwise you will receive no credit 
-
-- you will need to use the Office 365 Lens app to scan and upload you work to your university OneDrive account before attaching to the assignment. No HEIC extensions are allowed.    
+Assignment submission will be through the [GitHub Classroom](https://classroom.github.com/classrooms/88558107-uofsc-fall-2021-math-738-001) for the course. 
 
 ## Revisions 
 
@@ -209,6 +214,31 @@ If regularly attending class becomes difficult for any reason, please contact me
 In accordance with [university policy](https://sc.edu/about/offices_and_divisions/faculty_senate/faculty-toolbox/documents/attendance_policy_approved_for_21_22.pdf), a grade penalty of 10% may be imposed if a student has unexcused absensces exceeding 5% of the total number of courses. For this course, that means missing TWO courses without excuse. 
 
 All absences due to documented illness or quarantine will be excused, and no grade penalty will be assessed for missing classes for this reason. If you experience COVID-19 symptoms, please stay home, contact the COVID-19 Student Health Services (SHS) nurse line (803-576-8511), complete the COVID-19 Student Report Form and select the option allowing the Student Ombuds to contact your professors. When talking with the SHS nurse, be sure to ask for documentation of the consult as you will need this to document why you missed class. You will also use the COVID-19 Student Report Form if you have tested positive for COVID-19 or if you have been ordered to quarantine because of close contact with a person who was COVID-19 positive. In each of these situations you will be provided appropriate documentation that can be shared through the Student Report Form. 
+
+## COVID Policies 
+
+**I strongly encourage the use of face-coverings and getting vaccinated**. 
+
+**I encourage physical distancing**. While not always possible, I will strive to keep everyone at least three feet apart, even when working in groups, which we will do regularly. If you feel uncomfortable with group work in my class, please come talk with me and I don’t mind letting you work independently at all.
+
+**I have been requested to keep a seating chart**. I have been urged to keep this seating chart for contact tracing purposes and will do my best to abide by the University policy.
+
+### Questions You May Have
+**What if I get sick with COVID?** Two things have to occur: Isolation: Students who have been diagnosed with COVID-19 are released from isolation when a medical professional has determined, based on the current CDC and DHEC guidelines, that they have recovered. Currently, these guidelines include being fever-free for at least 24 hours and at least 10 days from their first symptom or positive test if they are asymptomatic. Quarantine: Unvaccinated students who are deemed a close contact with a confirmed COVID-19 case will be quarantined for 7-14 days from their last contact with the infected individual. More specifically, students who test negative on day 5, 6, or 7 can leave quarantine after 7 full days; individuals who did not test but remain asymptomatic can leave after 10 full days. Individuals who are symptomatic or have other health concerns may be advised to remain under quarantine for 14 days. 
+
+**What is the attendance policy if I get COVID?** In brief, I must provide make-up course work including content and assignments when students have excused absences which include (but are not limited to) being in quarantine or isolation, religious holidays, medical conditions related to pregnancy, and military duty. However, recorded classes and hybrid/online options are not required and should not be expected. All excused absences must have documentation.  See syllabus for further attendance policies.
+
+**How will the Dr. Ballard know if I am absent due to quarantine or isolation?** COVID-19 related absences must be document through the Student Ombudsman.  Students who have been diagnosed with COVID-19 or have been exposed and require quarantining should complete the COVID-19 Student Report Form and instructors should request this form in order to excuse the absence. 
+
+**Can I inquire about classmates condition with COVID?** Sadly, not with me. These are health issues and the information is protected by state and federal law. If an individual student has questions about whether they should quarantine or believe that they have been in close contact, have them reach out to the COVID Phone Bank (803-576-8511).
+
+**Would we ever change to go online if too many people are sick?** Only in the rare instance that 30% or more of students have documented excused absences may I take the course online. This is not to be expected and very complicated according to the current policies. 
+
+**What if Dr. Ballard gets sick with COVID?** I have been fully vaccinated and breakthrough infection symptoms most often resemble the common cold. In the event of a breakthrough infection, I will enter the self-isolation period and the course will switch modality to synchronous online temporarily. 
+
+In the rare circumstance I am unable to teach remotely, a substitute instructor will take over the course. 
+
+For more information on this semester's COVID policies see the [guidance](https://sc.edu/about/offices_and_divisions/provost/academicpriorities/keepteaching/guidance/index.php) from the Provost. 
 
 ## Academic Integrity 
 

@@ -1,7 +1,16 @@
 ---
-title: Welcome and Orientation
+title: Categories
 ended: false 
 ---
 
-Aug 19 
-: **Introducing the course and ourselves**
+Aug 24 
+: **Definitions of categories and examples**
+
+Aug 26 
+: **Functors, natural transformations, and equivalences**
+
+Aug 31
+: **Adjunctions** 
+
+Sept 2
+: **(Naive) localization of categories** 
