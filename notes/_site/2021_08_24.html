@@ -1,0 +1,26 @@
+<h2 id="caution">Caution</h2>
+
+<p>We are suppressing set-theoretic hazards for categories here. For a concise bit on 
+universes and some motivation see <a href="https://mathoverflow.net/questions/255425/what-is-the-use-of-grothendieck-universes-in-category-theory">this post</a>
+on Stack Overflow.</p>
+
+<h2 id="definition-of-categories">Definition of categories</h2>
+
+<p>A category $\mathcal C$ is</p>
+<ul>
+  <li>a set of objects $\operatorname{Ob} \mathcal C$</li>
+  <li>for any two $X, Y \in \operatorname{Ob} \mathcal C$, written also as 
+$X, Y \in \mathcal $, a set 
+\(\operatorname{Hom}_{\mathcal C}(X,Y)\)
+where elements are written $f: X \to Y$,</li>
+  <li>and for any $X, Y, Z \in \mathcal C$, a composition 
+\(\circ: \operatorname{Hom}_{\mathcal C}(X,Y) \times \operatorname{Hom}_{\mathcal C}(Y,Z) \to \operatorname{Hom}_{\mathcal C}(X,Z)\)
+satisfying
+    <ul>
+      <li>associativity $f \circ (g \circ h) = (f \circ g) \circ h$ and</li>
+      <li>unitality: for each $X \in \mathcal C$ there exists $1_X : X \to X$ so that for any $f: X \to Y$ and $g : Y \to X$ we 
+  \(f \circ 1_X = f \ , \ 1_X \circ g = g\)</li>
+    </ul>
+  </li>
+</ul>
+
