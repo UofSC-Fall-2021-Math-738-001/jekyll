@@ -13,4 +13,7 @@ Aug 31
 : **Adjunctions** 
 
 Sept 2
-: **(Naive) localization of categories** 
+: **Representable functors and Yoneda** 
+
+Sept 7
+: **Abelian categories**

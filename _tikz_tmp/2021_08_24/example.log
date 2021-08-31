@@ -1,12 +1,12 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.8.31)  31 AUG 2021 14:29
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.12.29)  31 AUG 2021 16:05
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**/home/matt/Dropbox/Teaching/USC/21fall/738/website/_tikz_tmp/2021_08_24/examp
-le.tex
-
-(/home/matt/Dropbox/Teaching/USC/21fall/738/website/_tikz_tmp/2021_08_24/exampl
+**/home/matt/Dropbox/Teaching/USC/21fall/738/jekyll/_tikz_tmp/2021_08_24/exampl
 e.tex
+
+(/home/matt/Dropbox/Teaching/USC/21fall/738/jekyll/_tikz_tmp/2021_08_24/example
+.tex
 LaTeX2e <2020-02-02> patch level 2
 L3 programming layer <2020-02-14>
 (/usr/share/texlive/texmf-dist/tex/latex/standalone/standalone.cls
@@ -373,8 +373,8 @@ File: l3backend-pdfmode.def 2020-02-03 L3 backend support: PDF mode
 \l__kernel_color_stack_int=\count199
 \l__pdf_internal_box=\box57
 )
-(/home/matt/Dropbox/Teaching/USC/21fall/738/website/_tikz_tmp/2021_08_24/exampl
-e.aux)
+(/home/matt/Dropbox/Teaching/USC/21fall/738/jekyll/_tikz_tmp/2021_08_24/example
+.aux)
 \openout1 = `example.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 3.
@@ -422,20 +422,20 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
-(/home/matt/Dropbox/Teaching/USC/21fall/738/website/_tikz_tmp/2021_08_24/exampl
-e.aux) ) 
+(/home/matt/Dropbox/Teaching/USC/21fall/738/jekyll/_tikz_tmp/2021_08_24/example
+.aux) ) 
 Here is how much of TeX's memory you used:
- 11919 strings out of 481239
- 245183 string characters out of 5920377
- 452471 words of memory out of 5000000
- 26989 multiletter control sequences out of 15000+600000
+ 11965 strings out of 481239
+ 246046 string characters out of 5920376
+ 452473 words of memory out of 5000000
+ 27035 multiletter control sequences out of 15000+600000
  532338 words of font info for 24 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 60i,7n,60p,484b,524s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pf
-b>
-Output written on /home/matt/Dropbox/Teaching/USC/21fall/738/website/_tikz_tmp/
-2021_08_24/example.pdf (1 page, 8507 bytes).
+ 60i,7n,60p,483b,572s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb
+>
+Output written on /home/matt/Dropbox/Teaching/USC/21fall/738/jekyll/_tikz_tmp/2
+021_08_24/example.pdf (1 page, 8650 bytes).
 PDF statistics:
  15 PDF objects out of 1000 (max. 8388607)
  10 compressed objects within 1 object stream

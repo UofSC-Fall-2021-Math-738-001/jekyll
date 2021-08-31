@@ -98,9 +98,9 @@ compress_html:
   blanklines: false
   profile: false
 
-kramdown:
-  math_engine: null
+# kramdown:
+#   math_engine: nil
 
 plugins:
   - jekyll-seo-tag
-#  - jekyll-katex
+  # - jekyll-katex
