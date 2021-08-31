@@ -1,27 +1,3 @@
-# Authored my Maxfan http://github.com/Maxfan-zone http://maxfan.org
-# This is used to convert tikz code into svg file and load in you jekyll site
-#
-# Install:
-#
-#   1. Copy this file in your _plugins/ directory. You can customize it, of course.
-#   2. Make sure texlive and pdf2svg are installed on your computer.
-#   3. Set path to pdf2svg in _config.yml in "pdf2svg" variable
-#
-# Input:
-#   
-#   {% tikz filename %}
-#     \tikz code goes here 
-#   {% endtikz %}
-#
-# This will generate a /img/post-title-from-filename/filename.svg in your jekyll directory
-# 
-# And then return this in your HTML output file:
-#   
-#   <embed src="/img/post-title-from-filename/tikz-filename.svg" type="image/svg+xml" />
-#   
-# Note that it will generate a /_tikz_tmp directory to save tmp files.
-#
-
 module Jekyll
   module Tags
     class Tikz < Liquid::Block
@@ -50,7 +26,7 @@ module Jekyll
         pdf_path = File.join(tmp_directory, "#{@file_name}.pdf")
         FileUtils.mkdir_p tmp_directory
 
-        dest_directory = File.join(Dir.pwd, "svg", File.basename(context["page"]["url"], ".*"))
+        dest_directory = File.join(Dir.pwd, "assets/images/svg", File.basename(context["page"]["url"], ".*"))
         dest_path = File.join(dest_directory, "#{@file_name}.svg")
         FileUtils.mkdir_p dest_directory
 
@@ -63,7 +39,7 @@ module Jekyll
           system("#{pdf2svg_path} #{pdf_path} #{dest_path}")
         end
 
-        web_dest_path = File.join("/svg", File.basename(context["page"]["url"], ".*"), "#{@file_name}.svg")
+        web_dest_path = File.join("/assets/images/svg", File.basename(context["page"]["url"], ".*"), "#{@file_name}.svg")
         "<embed src=\"#{web_dest_path}\" type=\"image/svg+xml\" />"
       end
 

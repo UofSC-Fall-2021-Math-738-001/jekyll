@@ -99,7 +99,7 @@ compress_html:
   profile: false
 
 kramdown:
-  math_engine: nil
+  math_engine: null
 
 plugins:
   - jekyll-seo-tag
