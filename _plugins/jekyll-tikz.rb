@@ -8,6 +8,7 @@ module Jekyll
         @header = <<-'END'
         \documentclass{standalone}
         \usepackage{tikz}
+        \usepackage{amsmath}
         \begin{document}
         \begin{tikzpicture}
         END
