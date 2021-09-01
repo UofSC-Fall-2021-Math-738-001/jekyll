@@ -46,7 +46,7 @@ Tuesdays and Thursdays 10:05-11:20 AM in Room 3006B of the [Carolina Coliseum](h
 
 ## Office Hours
 
-Tuesdays and Thursdays 11:30-1:00 or by appointment 
+Tuesdays and Thursdays 7:45-8:30 and 11:30-12:15 or by appointment 
 
 
 ## Full Course Description 
