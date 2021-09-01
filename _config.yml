@@ -18,7 +18,7 @@ tagline: Fall 2021 Math 738 at UofSC
 description: We will localize some categories and have fun doing it. 
 author: Matthew Ballard
 baseurl: '' # the subpath of your site, e.g. /blog
-url: 'https://738.f21.matthewrobertballard.com' # the base hostname & protocol for your site, e.g. http://example.com
+url: https://738.f21.matthewrobertballard.com # the base hostname & protocol for your site, e.g. http://example.com
 exclude: ["Gemfile", "Gemfile.lock", "LICENSE", "README.md"]
 pdf2svg: '/usr/bin/pdf2svg'
 # logo: '/assets/images/beta.png'
