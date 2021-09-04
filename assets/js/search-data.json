@@ -133,436 +133,454 @@
   },"22": {
     "doc": "2021-09-02",
     "title": "Representing functors by objects",
-    "content": "Given $F$, when does it have a left adjoint? A right adjoint? There are some necessary conditions. But, we need to first introduce a central construction in category theory. ",
+    "content": "We say a functor $F : \\mathcal C^{op} \\to \\operatorname{Set}$ is representable if there exists $X \\in \\mathcal C$ and a natural isomorphism $h^X \\cong F$. Constructing a functor and then seeking representability is a basic technique in category theory. In general, you can dream up functors more freely than objects. Being the representable object then gives a strong understanding of how $X$ interacts with all objects in $\\mathcal C$. ",
     "url": "https://738.f21.matthewrobertballard.com/notes/2021_09_02/#representing-functors-by-objects",
     "relUrl": "/notes/2021_09_02/#representing-functors-by-objects"
   },"23": {
+    "doc": "2021-09-02",
+    "title": "Examples",
+    "content": "We will look at some common choices for $F$ and the construction of representing objects in $\\operatorname{Set}, \\operatorname{Mod-}R,$ and $R\\operatorname{-Alg}$ where the last one is the category of commutative $R$-algebras for a commutative ring $R$. | Let $\\ast$ be a one-element set. We can make a functor \\(\\begin{aligned} FX &amp; := \\ast \\\\ F(f) &amp; := 1_{\\ast} \\end{aligned}\\) On its face this functor seems silly. If $h^X \\cong F$, then we know that \\(\\operatorname{Hom}_{\\mathcal C}(Y,X) = \\ast\\) for any $Y \\in \\mathcal C$. In other words, for any $Y$ there is a unique map $X \\to Y$. We call such $X$ a terminal object of $\\mathcal C$ if it exists. | . In $\\operatorname{Set}$, the terminal object is $\\ast$. In $\\operatorname{Mod-}R$, the terminal object is $0$. In $R\\operatorname{-Alg}$, the terminal object is $0$ as a $R$-algebra. | Assume we have a collection of objects $X_i \\in \\mathcal C$ indexed by a set $I$. Then, we can set \\(\\begin{aligned} FX &amp; := \\prod_{i \\in I} \\operatorname{Hom}_{\\mathcal C}(X,X_i) \\\\ F(f) &amp; := \\prod_{i \\in I} \\operatorname{Hom}_{\\mathcal C}(f,X_i) \\end{aligned}\\) Here representing objects are called products and denoted by $\\prod_{i \\in I} X_i$. | . In $\\operatorname{Set}$, $\\prod_{i \\in I} X_i$ is the Cartesian product. In $\\operatorname{Mod-}R$, $\\prod_{i \\in I} M_i$ is the Cartesian product with component-wise addition and action of $R$. In $R\\operatorname{-Alg}$, $\\prod_{i \\in I} R_i$ is the Cartesian product with component-wise addition and multiplication and with \\(\\begin{aligned} R &amp; \\to \\prod_i R_i \\\\ r &amp; \\mapsto \\prod_i r \\end{aligned}\\) . | Let $I$ be a partially-ordered set. We can view $I$ as a category with \\(\\operatorname{Ob} I := I\\) and \\(\\operatorname{Hom}_I(i,j) := \\begin{cases} \\ast &amp; i &gt; j \\\\ \\empty &amp; \\text{ otherwise} \\end{cases}\\) Assume we have a functor $\\phi : I \\to \\mathcal C$. This is the data of objects $X_i$ for $i \\in I$ and maps $\\phi_{ij} : X_i \\to X_j$ if $i &gt; j$ satisfying the condition that \\(\\phi_{ij} \\phi_{jk} = \\phi_{ik}\\) Often this called a diagram of shape $I$ in $\\mathcal C$. | . Recall the (inverse) limit of a diagram of sets $X_i$ is \\(\\operatorname{lim}_I X_i := \\left\\lbrace x \\in \\prod_{i \\in I} X_i \\mid \\phi_{ij}(x_i) = x_j \\right\\rbrace\\) Using this, for a general $I$-diagram in $\\mathcal C$, we can consider \\(\\begin{aligned} FX := &amp; \\lim \\operatorname{Hom}_{\\mathcal C}(X,X_i) \\\\ Ff := &amp; \\lim \\operatorname{Hom}_{\\mathcal C}(f,X_i) \\end{aligned}\\) . We already saw the construction of limits in $\\operatorname{Set}$. In $\\operatorname{Mod} R$ and $R\\operatorname{-Alg}$, the set-theoretic construction carries a natural structure of an $R$-module or an $R$-algebra. One particularly common diagram is . The limit over this diagram is called the fiber product or pullback of the diagram. One might think that we can always reduce to an “underlying set-theoretic” construction for representing objects. This is not always the case. Beyond the fact that functors do not need to be representable, the representing object is not necessarily induced from the construction when we are able to forget down to sets. The opposite category of commutative rings is equivalent a category of topological spaces with extra structure and the product in this category does not forget to the set-theoretic product. We can also consider functors $F : \\mathcal C \\to \\operatorname{Set}$ that are represented in the other slot: $h_X \\cong F$ for some $X \\in \\mathcal C$. Each of the functors described above as co version. | If we have an object (co-)representing the functor $FX = \\ast$, then it is called the initial object. | . For $\\operatorname{Set}$, the initial object is $\\empty$. For $\\operatorname{Mod} R$, it is $0$ again. Finally for $R\\operatorname{-Alg}$, the initial object is $R$ itself. | Given a collection of objects $X_i \\in \\mathcal C$ for $i \\in I$ we have \\(FX := \\prod_{i \\in I} \\operatorname{Hom}_{\\mathcal C}(X_i,X)\\) The object representing this functor is a called the coproduct of the $X_i$. It is often denoted by $\\bigsqcup_{i \\in I} X_i$. | . For $\\operatorname{Set}$, it is the disjoint union. For $\\operatorname{Mod} R$, it is the direct sum $\\bigoplus_i M_i$. For finite coproducts in $R\\operatorname{-Alg}$, the construction is the tensor product $\\bigotimes_R R_i$. Let’s take a moment to see why. For each $R_i$, we have a homomorphism \\(\\begin{aligned} \\ell_i : R_i &amp; \\to R_1 \\otimes_R \\cdots \\otimes_R R_s \\\\ r_i &amp; \\to 1 \\otimes \\cdots \\otimes r_i \\otimes \\cdots \\otimes 1 \\end{aligned}\\) Given $f : \\bigotimes_R R_i \\to S$, we get $f \\circ \\ell_i : R_i \\to S$. In the inverse direction, if we have $f_i : R_i \\to S$, we can set \\(f\\left( \\sum r_1 \\otimes \\cdots \\otimes r_s \\right) := \\sum f_1(r_1) \\cdots f(r_s)\\) . Infinite coproducts in $R\\operatorname{-Alg}$ also exist. It is the subring of the infinite tensor product generated by elementary tensors with all but finitely entries equal to $1$. | Given a poset $I$ and a diagram $I^{op} \\to \\mathcal C$ we can consider \\(FX := \\lim \\operatorname{Hom}_{\\mathcal C}(X_i,X)\\) which is represented by the colimit, when it exists. It is denoted by $\\operatorname{colim}_I X_i$. | . In $\\operatorname{Set}$, the colimit is given by the quotient \\(\\left( \\bigsqcup_{i \\in I} X_i \\right)/\\sim\\) where $\\phi_{ij}(x_j) \\sim x_i$. In $\\operatorname{Mod} R$, the colimit takes a similar form \\(\\bigoplus_i M_i / (\\phi_{ij}(m_j)-m_i).\\) . Finally, for $R\\operatorname{-Alg}$, the analogous formula works. Taking our diagram from from before and reversing the arrows (plus rotating a bit) ask us to fill in the missing node in the square . The resulting object is fiber coproduct or pushout of the diagram. In $R\\operatorname{-Alg}$, the pushout of . is given by the tensor product $S_1 \\otimes_T S_2$. ",
+    "url": "https://738.f21.matthewrobertballard.com/notes/2021_09_02/#examples",
+    "relUrl": "/notes/2021_09_02/#examples"
+  },"24": {
+    "doc": "2021-09-02",
+    "title": "Yoneda",
+    "content": "Referring to “the” limit or “the” initial object is justified by the following theorem. Lemma. The functor \\(h^\\bullet: \\mathcal C \\to \\operatorname{Func}(\\mathcal C^{op},\\operatorname{Set})\\) is fully-faithful. Corollary. If there is a natural isomorphism $h^X \\cong h^Y$, then there is an isomorphism $X \\cong Y$. Proof (of Yoneda Lemma). We first look at the space of natural transformation $\\nu : h^X \\to F$ for a general $F$. Evaluating at $X$ gives a function \\(\\nu_X : \\operatorname{Hom}_{\\mathcal C}(X,X) \\to F(X)\\) We set $\\phi_X := \\nu_X(1_X)$. This defines a map \\(\\phi : \\operatorname{Hom}(h^X,F) \\to F(X).\\) . Given $f : Y \\to X$, we want to understand $\\nu_Y(f)$. We have a commutative diagram . Tracing $1_X$ through says that \\(\\nu_Y(f) = F(f)(\\phi_X)\\) Thus $\\nu$ is uniquely determined by $\\phi_X$. Moreover, given $\\phi_X \\in F(X)$ and defining \\(\\nu_Y(f) := F(f)(\\phi_X)\\) gives a natural transformation $\\nu : h^X \\to F$. Thus, $\\phi$ is a bijection. Now, let’s look at the case $F = h^Y$. Then $h^Y(X) = \\operatorname{Hom}(X,Y)$ and we see that the only natural transformations $h^X \\to h^Y$ are $h^f$ for $f : X \\to Y$. ",
+    "url": "https://738.f21.matthewrobertballard.com/notes/2021_09_02/#yoneda",
+    "relUrl": "/notes/2021_09_02/#yoneda"
+  },"25": {
+    "doc": "2021-09-02",
+    "title": "Revisting adjunctions",
+    "content": "Say we start with a functor $F: \\mathcal C \\to \\mathcal D$. Then we can make \\(h_{F,Y} := \\operatorname{Hom}_{\\mathcal D}(F(-),Y) : \\mathcal C^{op} \\to \\operatorname{Set}\\) Is this representable? . If so, then there is some $G(Y) \\in \\mathcal D$ with \\(\\operatorname{Hom}_{\\mathcal D}(F(-),Y) \\cong \\operatorname{Hom}_{\\mathcal D}(-,G(Y))\\) . If we can represent this functor for any $Y$, we get pretty close to an adjunction. Lemma. $F$ has a right adjoint if and only if $h_{F,Y}$ is representable for any $Y$. The analogous statement holds for left adjoints. No proof is given here but you should think about the details. Finally, let’s note that adjoints necessarily commute with some universal construction. For example, let’s assume we have a diagram $I^{op} \\to \\mathcal C$ and its limit $\\lim X_i$. Then, we can use adjunction and the definition of representability to produce a natural isomorphism \\(\\begin{aligned} \\lim \\operatorname{Hom}(X,G(X_i)) &amp; \\cong \\lim \\operatorname{Hom}(F(X),X_i) \\\\ &amp; \\cong \\operatorname{Hom}(F(X),\\lim X_i) \\\\ &amp; \\cong \\operatorname{Hom}(X,G(\\lim X_i)) \\end{aligned}\\) Thus, $\\lim G(X_i) \\to G(\\lim X_i)$ is an isomorphism. Similarly, left adjoints automatically commute with formation of colimits. In fact, this observation can be taken further. Under appropriate and reasonable conditions, all your need for a right/left adjoint is commutation colimits/limits. For examples, see these notes for a proof of one such version. ",
+    "url": "https://738.f21.matthewrobertballard.com/notes/2021_09_02/#revisting-adjunctions",
+    "relUrl": "/notes/2021_09_02/#revisting-adjunctions"
+  },"26": {
     "doc": "2021-09-02",
     "title": "2021-09-02",
     "content": " ",
     "url": "https://738.f21.matthewrobertballard.com/notes/2021_09_02/",
     "relUrl": "/notes/2021_09_02/"
-  },"24": {
+  },"27": {
     "doc": "About",
     "title": "Syllabus",
     "content": ". | Course Information . | Course Name and Number | Term | Meeting Time and Location | Instructor Information | Office Hours | Full Course Description | Prerequisites | Learning Outcomes | Course Materials | . | Course Requirements . | Course Format | Course Communication | Technology | Minimal Technical Skills Needed | Technical Support | . | Course Assignments and Grading . | Homework | Paper | Evaluation and Grading Scale . | Assignment Weights | Grading Scale | . | Assignment Submission | Revisions | . | Academic Success . | Accessibility | University Library Resources | Teams and Technology | Counseling Services | . | Course Policies and Procedures . | Attendance Policy and COVID Reporting | COVID Policies . | Questions You May Have | . | Academic Integrity | Plagiarism | Group Work | Class Conduct | Late Work/Make-up Policy | Incomplete Grades | Diversity and Inclusion | Title IX and Gendered Identity | Expectations of the Instructor | Copyright/Fair Use Statement | . | . ",
     "url": "https://738.f21.matthewrobertballard.com/about/#syllabus",
     "relUrl": "/about/#syllabus"
-  },"25": {
+  },"28": {
     "doc": "About",
     "title": "Course Information",
     "content": " ",
     "url": "https://738.f21.matthewrobertballard.com/about/#course-information",
     "relUrl": "/about/#course-information"
-  },"26": {
+  },"29": {
     "doc": "About",
     "title": "Course Name and Number",
     "content": "Selected Topics in Geometry and Topology: Derived categories in algebraic geometry I – Math 738 . ",
     "url": "https://738.f21.matthewrobertballard.com/about/#course-name-and-number",
     "relUrl": "/about/#course-name-and-number"
-  },"27": {
+  },"30": {
     "doc": "About",
     "title": "Term",
     "content": "Fall 2021 . ",
     "url": "https://738.f21.matthewrobertballard.com/about/#term",
     "relUrl": "/about/#term"
-  },"28": {
+  },"31": {
     "doc": "About",
     "title": "Meeting Time and Location",
     "content": "Tuesdays and Thursdays 10:05-11:20 AM in Room 3006B of the Carolina Coliseum . ",
     "url": "https://738.f21.matthewrobertballard.com/about/#meeting-time-and-location",
     "relUrl": "/about/#meeting-time-and-location"
-  },"29": {
+  },"32": {
     "doc": "About",
     "title": "Instructor Information",
     "content": ". | Instructor Name and Preferred Title: Prof. Matthew (Matt) Ballard | Preferred pronouns: He/Him/His | Office : Carolina Coliseum Room 1022C | E-mail: ballard@math.sc.edu | . ",
     "url": "https://738.f21.matthewrobertballard.com/about/#instructor-information",
     "relUrl": "/about/#instructor-information"
-  },"30": {
+  },"33": {
     "doc": "About",
     "title": "Office Hours",
-    "content": "Tuesdays and Thursdays 11:30-1:00 or by appointment . ",
+    "content": "Tuesdays and Thursdays 7:45-8:30 and 11:30-12:15 or by appointment . ",
     "url": "https://738.f21.matthewrobertballard.com/about/#office-hours",
     "relUrl": "/about/#office-hours"
-  },"31": {
+  },"34": {
     "doc": "About",
     "title": "Full Course Description",
     "content": "This is the first in a two-semester course. This semester we will introduce derived categories of abelian categories with a particular emphasis on the category $\\operatorname{Mod} R$ of $R$-modules over a ring $R$. Time allowing we will introduce the necessary ideas and facts from Algebraic Geometry for the category $\\operatorname{Qcoh} X$ of quasi-coherent sheaves on a scheme $X$. ",
     "url": "https://738.f21.matthewrobertballard.com/about/#full-course-description",
     "relUrl": "/about/#full-course-description"
-  },"32": {
+  },"35": {
     "doc": "About",
     "title": "Prerequisites",
     "content": "None . ",
     "url": "https://738.f21.matthewrobertballard.com/about/#prerequisites",
     "relUrl": "/about/#prerequisites"
-  },"33": {
+  },"36": {
     "doc": "About",
     "title": "Learning Outcomes",
     "content": "After successful completion of this course, you will be able to: . | Localize abelian categories for fun and profit | Draw confusing diagrams that claim to explain the octohedral axiom | Day dream about stable $\\infty$-categories | . ",
     "url": "https://738.f21.matthewrobertballard.com/about/#learning-outcomes",
     "relUrl": "/about/#learning-outcomes"
-  },"34": {
+  },"37": {
     "doc": "About",
     "title": "Course Materials",
     "content": "The main resources for materials are . | the course website, | the course channel in the SCAGNT Zulip | the GitHub Classroom, and | the Microsoft Team for the course. | . Supplemental course materials will be linked as necessary. All course materials comply with copyright/fair use policies. ",
     "url": "https://738.f21.matthewrobertballard.com/about/#course-materials",
     "relUrl": "/about/#course-materials"
-  },"35": {
+  },"38": {
     "doc": "About",
     "title": "Course Requirements",
     "content": " ",
     "url": "https://738.f21.matthewrobertballard.com/about/#course-requirements",
     "relUrl": "/about/#course-requirements"
-  },"36": {
+  },"39": {
     "doc": "About",
     "title": "Course Format",
     "content": "The course is a standard lecture course with homeworks to test your understanding. At the end of the class, a paper will be due in place of a final exam. ",
     "url": "https://738.f21.matthewrobertballard.com/about/#course-format",
     "relUrl": "/about/#course-format"
-  },"37": {
+  },"40": {
     "doc": "About",
     "title": "Course Communication",
     "content": "If you need to get in touch with me, the best method is via Zulip chat or email. Generally, I will reply within 24 hours and will provide feedback on assignments within one week. You may also post questions pertaining to the course in the Questions channel in the course team. These questions will be answered within 24 hours. I encourage all students to take a stab at answering any question. If you are having trouble with this course or its material, you should contact me via Zulip chat or email to discuss the issues. Announcements will be posted to this course whenever necessary. If there is any other information I think is important, I will send it to your preferred university email address. It is your responsibility to ensure that your email account works properly in order to receive email. If you are unsure of your preferred email, check your account at myaccount.sc.edu. For more information on setting your preferred university email, please see the Knowledge Base Article How To Change Your Primary University Email Address. ",
     "url": "https://738.f21.matthewrobertballard.com/about/#course-communication",
     "relUrl": "/about/#course-communication"
-  },"38": {
+  },"41": {
     "doc": "About",
     "title": "Technology",
     "content": "To participate in learning activities and complete assignments, you will need: . | Access to a working computer that has a current operating system with updates installed with a modern web browser installed; . | Reliable Internet access and a USC email account; . | If you plan to submit handwritten assignments, a scanning device such as a smartphone with the Microsoft Office Lens app. | We are using the Microsoft Teams with the team COTEAM-BALLARMR-MATH-738-001-FALL-2021 run through your UofSC Microsoft account. To access the team for the first time on your desktop/laptop, use the join link included in your welcome email. | For dissemination, collection of, and feedback on homework assignments, we will be using GitHub Classroom. To access the classroom for the first time on your desktop/laptop, use the join link included in your welcome email. | For chat, We will be using a service called Zulip to aid our learning. It exceeds Team’s capabilities with regards to typsetting mathematics content. To access the SCAGNT Zulip chat for the first time on your desktop/laptop, use the join link included in your welcome email. | . ",
     "url": "https://738.f21.matthewrobertballard.com/about/#technology",
     "relUrl": "/about/#technology"
-  },"39": {
+  },"42": {
     "doc": "About",
     "title": "Minimal Technical Skills Needed",
     "content": "Minimal technical skills are needed in this course. All work in this course must be completed and submitted online. Therefore, you must have consistent and reliable access to a computer and the Internet. The minimal technical skills you have include the ability to: . | Organize and save electronic files; . | Check and use the course, GitHub Classroom, Zulip, and Microsoft Teams sites regularly; . | Download and upload documents; . | Locate and enter information with a browser; . | Edit and compile TeX documents. | . ",
     "url": "https://738.f21.matthewrobertballard.com/about/#minimal-technical-skills-needed",
     "relUrl": "/about/#minimal-technical-skills-needed"
-  },"40": {
+  },"43": {
     "doc": "About",
     "title": "Technical Support",
     "content": "If you have problems with your computer, technology, IT-related questions, support, including Microsoft Teams, please contact the Division of Information Technology (DoIT) Service Desk at (803) 777-1800 or submit an online request through the Self-Service Portal or visit the Carolina Tech Zone. The Service Desk is open Monday – Friday from 8:00 AM – 6:00 PM (Eastern Daylight Time). The Thomas Cooper Library at USC has computers for you to use in case you encounter computer issues/problems. If you have problems with Zulip or GitHub Classroom, contact me. ",
     "url": "https://738.f21.matthewrobertballard.com/about/#technical-support",
     "relUrl": "/about/#technical-support"
-  },"41": {
+  },"44": {
     "doc": "About",
     "title": "Course Assignments and Grading",
     "content": " ",
     "url": "https://738.f21.matthewrobertballard.com/about/#course-assignments-and-grading",
     "relUrl": "/about/#course-assignments-and-grading"
-  },"42": {
+  },"45": {
     "doc": "About",
     "title": "Homework",
     "content": "Except for the zeroth one, homework can be completed in groups of 1-4. All sources utilized must be cited. Homework is submitted as TeX files. The assignments will be available in and must be returned through GitHub Classroom. As part of the homework, you will learn how to use git. ",
     "url": "https://738.f21.matthewrobertballard.com/about/#homework",
     "relUrl": "/about/#homework"
-  },"43": {
+  },"46": {
     "doc": "About",
     "title": "Paper",
     "content": "In lieu of a finals, papers on more in depth topics are required. Contact me to arrange for a topic. Suggestions will be provided as we progress. ",
     "url": "https://738.f21.matthewrobertballard.com/about/#paper",
     "relUrl": "/about/#paper"
-  },"44": {
+  },"47": {
     "doc": "About",
     "title": "Evaluation and Grading Scale",
     "content": "All grades will be posted on Teams. A final letter grade will be assigned based on weighting below. Assignment Weights . | Component | Percent of total | . | Participation | 33% | . | Homework | 33% | . | Paper | 33% | . Grading Scale . | Final total intervals | Letter Grade | . | [90,100] | A | . | [85,90) | B+ | . | [80,85) | B | . | [75,80) | C+ | . | [70,75) | C | . | [65,70) | D+ | . | [60,65) | D | . | [0,60) | F | . ",
     "url": "https://738.f21.matthewrobertballard.com/about/#evaluation-and-grading-scale",
     "relUrl": "/about/#evaluation-and-grading-scale"
-  },"45": {
+  },"48": {
     "doc": "About",
     "title": "Assignment Submission",
     "content": "Assignment submission will be through the GitHub Classroom for the course. ",
     "url": "https://738.f21.matthewrobertballard.com/about/#assignment-submission",
     "relUrl": "/about/#assignment-submission"
-  },"46": {
+  },"49": {
     "doc": "About",
     "title": "Revisions",
     "content": "All homework turned in on-time is eligible for revision at full credit. Each assignment can undergo at most two revisions. Revisions must be resubmitted within one week of receiving a marked assignment or revision. ",
     "url": "https://738.f21.matthewrobertballard.com/about/#revisions",
     "relUrl": "/about/#revisions"
-  },"47": {
+  },"50": {
     "doc": "About",
     "title": "Academic Success",
     "content": " ",
     "url": "https://738.f21.matthewrobertballard.com/about/#academic-success",
     "relUrl": "/about/#academic-success"
-  },"48": {
+  },"51": {
     "doc": "About",
     "title": "Accessibility",
     "content": "The Student Disability Resource Center (SDRC) empowers students to manage challenges and limitations imposed by disabilities. Students with disabilities are encouraged to contact me to discuss the logistics of any accommodations needed to fulfill course requirements (within the first week of the semester). In order to receive reasonable accommodations from me, you must be registered with the Student Disability Resource Center (1705 College Street Close-Hipp, Suite 102 Columbia, SC 29208, 803-777-6142). Any student with a documented disability should contact the SDRC to make arrangements for appropriate accommodations. ",
     "url": "https://738.f21.matthewrobertballard.com/about/#accessibility",
     "relUrl": "/about/#accessibility"
-  },"49": {
+  },"52": {
     "doc": "About",
     "title": "University Library Resources",
     "content": "University Libraries has access to books, articles, subject specific resources, citation help, and more. If you are not sure where to start, please Ask a Librarian! Assistance is available at sc.edu/libraries/ask.  . Remember that if you use anything that is not your own writing or media (quotes from books, articles, interviews, websites, movies – everything) you must cite the source in MLA (or other appropriate and approved) format. ",
     "url": "https://738.f21.matthewrobertballard.com/about/#university-library-resources",
     "relUrl": "/about/#university-library-resources"
-  },"50": {
+  },"53": {
     "doc": "About",
     "title": "Teams and Technology",
     "content": "Teams and Technology. As a student in this course, you have access to support from the Division of Information Technology (DoIT) for Teams and computer issues. The service desk can be reached at 803-777-1800. ",
     "url": "https://738.f21.matthewrobertballard.com/about/#teams-and-technology",
     "relUrl": "/about/#teams-and-technology"
-  },"51": {
+  },"54": {
     "doc": "About",
     "title": "Counseling Services",
     "content": "The University offers counseling and crisis services as well as outreach services and self-help. ",
     "url": "https://738.f21.matthewrobertballard.com/about/#counseling-services",
     "relUrl": "/about/#counseling-services"
-  },"52": {
+  },"55": {
     "doc": "About",
     "title": "Course Policies and Procedures",
     "content": " ",
     "url": "https://738.f21.matthewrobertballard.com/about/#course-policies-and-procedures",
     "relUrl": "/about/#course-policies-and-procedures"
-  },"53": {
+  },"56": {
     "doc": "About",
     "title": "Attendance Policy and COVID Reporting",
     "content": "You are expected to participate actively in each course. If you anticipate an excused absence, you need to contact me in advance. You should submit a request in writing (email is acceptable) stating the dates of the anticipated absence, explaining the reason for absence, providing supporting documentation as required above, and including any request for make-up work. You should submit this request no later than the end of the second week of regularly scheduled classes in a full fall or spring semester term and within twice the length of the drop/add period for any other term. If regularly attending class becomes difficult for any reason, please contact me to discuss the issue. In accordance with university policy, a grade penalty of 10% may be imposed if a student has unexcused absensces exceeding 5% of the total number of courses. For this course, that means missing TWO courses without excuse. All absences due to documented illness or quarantine will be excused, and no grade penalty will be assessed for missing classes for this reason. If you experience COVID-19 symptoms, please stay home, contact the COVID-19 Student Health Services (SHS) nurse line (803-576-8511), complete the COVID-19 Student Report Form and select the option allowing the Student Ombuds to contact your professors. When talking with the SHS nurse, be sure to ask for documentation of the consult as you will need this to document why you missed class. You will also use the COVID-19 Student Report Form if you have tested positive for COVID-19 or if you have been ordered to quarantine because of close contact with a person who was COVID-19 positive. In each of these situations you will be provided appropriate documentation that can be shared through the Student Report Form. ",
     "url": "https://738.f21.matthewrobertballard.com/about/#attendance-policy-and-covid-reporting",
     "relUrl": "/about/#attendance-policy-and-covid-reporting"
-  },"54": {
+  },"57": {
     "doc": "About",
     "title": "COVID Policies",
     "content": "As of 8/17/2021, UofSC requires face coverings, including in this class. For more information on this semester’s COVID policies see the guidance from the Provost. I strongly encourage getting vaccinated. I encourage physical distancing. While not always possible, I will strive to keep everyone at least three feet apart, even when working in groups, which we will do regularly. If you feel uncomfortable with group work in my class, please come talk with me and I don’t mind letting you work independently at all. I have been requested to keep a seating chart. I have been urged to keep this seating chart for contact tracing purposes and will do my best to abide by the University policy. Questions You May Have . What if I get sick with COVID? Two things have to occur: Isolation: Students who have been diagnosed with COVID-19 are released from isolation when a medical professional has determined, based on the current CDC and DHEC guidelines, that they have recovered. Currently, these guidelines include being fever-free for at least 24 hours and at least 10 days from their first symptom or positive test if they are asymptomatic. Quarantine: Unvaccinated students who are deemed a close contact with a confirmed COVID-19 case will be quarantined for 7-14 days from their last contact with the infected individual. More specifically, students who test negative on day 5, 6, or 7 can leave quarantine after 7 full days; individuals who did not test but remain asymptomatic can leave after 10 full days. Individuals who are symptomatic or have other health concerns may be advised to remain under quarantine for 14 days.  . What is the attendance policy if I get COVID? In brief, I must provide make-up course work including content and assignments when students have excused absences which include (but are not limited to) being in quarantine or isolation, religious holidays, medical conditions related to pregnancy, and military duty. However, recorded classes and hybrid/online options are not required and should not be expected. All excused absences must have documentation. See syllabus for further attendance policies. How will the Dr. Ballard know if I am absent due to quarantine or isolation? COVID-19 related absences must be document through the Student Ombudsman.  Students who have been diagnosed with COVID-19 or have been exposed and require quarantining should complete the COVID-19 Student Report Form and instructors should request this form in order to excuse the absence.  . Can I inquire about classmates condition with COVID? Sadly, not with me. These are health issues and the information is protected by state and federal law. If an individual student has questions about whether they should quarantine or believe that they have been in close contact, have them reach out to the COVID Phone Bank (803-576-8511). Would we ever change to go online if too many people are sick? Only in the rare instance that 30% or more of students have documented excused absences may I take the course online. This is not to be expected and very complicated according to the current policies. What if Dr. Ballard gets sick with COVID? I have been fully vaccinated and breakthrough infection symptoms most often resemble the common cold. In the event of a breakthrough infection, I will enter the self-isolation period and the course will switch modality to synchronous online temporarily. In the rare circumstance I am unable to teach remotely, a substitute instructor will take over the course. ",
     "url": "https://738.f21.matthewrobertballard.com/about/#covid-policies",
     "relUrl": "/about/#covid-policies"
-  },"55": {
+  },"58": {
     "doc": "About",
     "title": "Academic Integrity",
     "content": "You are expected to practice the highest possible standards of academic integrity. Any deviation from this expectation will result in a minimum academic penalty of your failing the assignment, and will result in additional disciplinary measures. This includes improper citation of sources, using another student’s work, and any other form of academic misrepresentation. The first tenet of the Carolinian Creed is, “I will practice personal and academic integrity.” . Below are some websites for you to visit to learn more about University policies: . | Carolinian Creed . | Academic Responsibility . | Office of Student Conduct and Academic Integrity . | Information Security Policy and Standards . | . ",
     "url": "https://738.f21.matthewrobertballard.com/about/#academic-integrity",
     "relUrl": "/about/#academic-integrity"
-  },"56": {
+  },"59": {
     "doc": "About",
     "title": "Plagiarism",
     "content": "Using the words or ideas of another as if they were one’s own is a serious form of academic dishonesty. If another person’s complete sentence, syntax, key words, or the specific or unique ideas and information are used, one must give that person credit through proper citation. You should in particular cite any resources, person, text, or otherwise, you used to assist in preparation of your work. Copying proofs or problem solutions is strictly forbidden. ",
     "url": "https://738.f21.matthewrobertballard.com/about/#plagiarism",
     "relUrl": "/about/#plagiarism"
-  },"57": {
+  },"60": {
     "doc": "About",
     "title": "Group Work",
     "content": "Group work should be performed in safe manner. Remote work will certainly form a larger component of a career going forward. You are encouraged to take advantage of Microsoft Teams video conferencing and Zulip chat abilities to aid in collaboration. ",
     "url": "https://738.f21.matthewrobertballard.com/about/#group-work",
     "relUrl": "/about/#group-work"
-  },"58": {
+  },"61": {
     "doc": "About",
     "title": "Class Conduct",
     "content": "Professionalism will be expected at all times, but most especially with your interactions online and in person. Because the university classroom is a place designed for the free exchange of ideas, we must show respect for one another in all circumstances. We will show respect for one another by exhibiting patience and courtesy in our exchanges. Appropriate language and restraint from verbal attacks upon those whose perspectives differ from your own is a minimum requirement. Courtesy and kindness is the norm for those who participate in the class. Mistakes, in particular during the running phase, are expected and natural. Mistakes are how learning happens. All students should recognize and respect the bravery of a student presenting a proof or solution. If you ever feel uncomfortable beyond the intellectual challenge of the course, please contact me. Teams is a way for you to share your ideas and learning with your colleagues in this class. We do this as colleagues in learning, and the online space is meant to be a safe and respectful environment for us to conduct these discussions. Some general netiquette rules: . | Treat one another with respect. It will be expected that we will not attack one another personally for holding different opinions. | Do not use all CAPITAL LETTERS in emails or discussion board postings. This is considered “shouting” and is seen as impolite or aggressive. | Begin emails with a proper salutation (Examples: Dr. Name; Ms. Name; Hello Professor Name; Good afternoon Mr. Name). Starting an email without a salutation or a simple “Hey” is not appropriate. | When sending an email, please include a detailed subject line. Additionally, make sure you reference the course number (Ex. ENGL 287) in the message and sign the mail with your name. | Use proper grammar, spelling, punctuation, and capitalization. Text messaging language is not acceptable. | Use good taste when communicating. Profanity should be avoided. | Re-Read, think, and edit your message before you click “Send/Submit/Post.” . | Please remember when posting to be respectful and courteous to your colleagues, and limit your communication to topics of this course and the assignments. | . ",
     "url": "https://738.f21.matthewrobertballard.com/about/#class-conduct",
     "relUrl": "/about/#class-conduct"
-  },"59": {
+  },"62": {
     "doc": "About",
     "title": "Late Work/Make-up Policy",
     "content": "All assignments due by the deadline as posted on the course schedule. Late work is not accepted and not eligible for revision. Please plan accordingly, and complete these assignments in advance of their deadlines to ensure any unanticipated circumstances do not result in a missed assignment. User error does not qualify you for any kind of makeup or retake opportunity. Completing and submitting the assignments by the due date is the sole responsibility of you. If you fail to submit the assignment or test by the due date, then your score for that assignment will be recorded as “zero.” . You will be allowed to access the assignments an unlimited number of times until the due date/time. If you are concerned about missing a deadline, post your assignment the day before the deadline. Be Careful: The clock on your computer may be different than the clock in Teams. If the clock is different by one second, you will be locked out of the assignment. Plan accordingly. ",
     "url": "https://738.f21.matthewrobertballard.com/about/#late-workmake-up-policy",
     "relUrl": "/about/#late-workmake-up-policy"
-  },"60": {
+  },"63": {
     "doc": "About",
     "title": "Incomplete Grades",
     "content": "The grade of Incomplete will be granted only in accordance with university policy. ",
     "url": "https://738.f21.matthewrobertballard.com/about/#incomplete-grades",
     "relUrl": "/about/#incomplete-grades"
-  },"61": {
+  },"64": {
     "doc": "About",
     "title": "Diversity and Inclusion",
     "content": "The university is committed to a campus environment that is inclusive, safe, and respectful for all persons, and one that fully embraces the Carolinian Creed: “I will discourage bigotry, while striving to learn from differences in people, ideas and opinions.” Likewise, the Student Code of Conduct stresses, “The University of South Carolina strives to maintain an educational community that fosters the development of students who are ethical, civil and responsible persons.” . To that end, all course activities will be conducted in an atmosphere of friendly participation and interaction among colleagues, recognizing and appreciating the unique experiences, background, and point of view each student brings. You are expected at all times to apply the highest academic standards to this course and to treat others with dignity and respect. ",
     "url": "https://738.f21.matthewrobertballard.com/about/#diversity-and-inclusion",
     "relUrl": "/about/#diversity-and-inclusion"
-  },"62": {
+  },"65": {
     "doc": "About",
     "title": "Title IX and Gendered Identity",
     "content": "This course affirms equality and respect for all gendered identities and expressions. Please don’t hesitate to correct me regarding your preferred gender pronoun and/or name if different from what is indicated on the official class roster. Likewise, I am committed to nurturing an environment free from discrimination and harassment. Consistent with Title IX policy, please be aware that I as a responsible employee am obligated to report information that you provide to me about a situation involving sexual harassment or assault. ",
     "url": "https://738.f21.matthewrobertballard.com/about/#title-ix-and-gendered-identity",
     "relUrl": "/about/#title-ix-and-gendered-identity"
-  },"63": {
+  },"66": {
     "doc": "About",
     "title": "Expectations of the Instructor",
     "content": "I am expected to facilitate learning, answer questions appropriately, be fair and objective in grading, provide timely and useful feedback on assignments and treat you as I would like to be treated. ",
     "url": "https://738.f21.matthewrobertballard.com/about/#expectations-of-the-instructor",
     "relUrl": "/about/#expectations-of-the-instructor"
-  },"64": {
+  },"67": {
     "doc": "About",
     "title": "Copyright/Fair Use Statement",
     "content": "I will cite and/or reference any materials that I use in this course that I do not create. Anything that appears on this website is copyright © 2021 Matthew Ballard and is distributed by an MIT license. Course materials that do not appear on this website are copyright © 2021 Matthew Ballard and all rights are reserved. In particular, you may not distribute any of these course materials in any fashion. ",
     "url": "https://738.f21.matthewrobertballard.com/about/#copyrightfair-use-statement",
     "relUrl": "/about/#copyrightfair-use-statement"
-  },"65": {
+  },"68": {
     "doc": "About",
     "title": "About",
     "content": " ",
     "url": "https://738.f21.matthewrobertballard.com/about/",
     "relUrl": "/about/"
-  },"66": {
+  },"69": {
     "doc": "This Website",
     "title": "About this website",
     "content": "This website is hosted on GitHub and relies on Jekyll to generate the content. It uses the Just the Class theme which built off the Just the Docs theme. At material appearing here is copyright © 2021 Matthew Ballard and is distributed with an MIT license. ",
     "url": "https://738.f21.matthewrobertballard.com/about_this_webpage/#about-this-website",
     "relUrl": "/about_this_webpage/#about-this-website"
-  },"67": {
+  },"70": {
     "doc": "This Website",
     "title": "This Website",
     "content": " ",
     "url": "https://738.f21.matthewrobertballard.com/about_this_webpage/",
     "relUrl": "/about_this_webpage/"
-  },"68": {
+  },"71": {
     "doc": "Announcements",
     "title": "Announcements",
     "content": "Announcements are stored in the _announcements directory and rendered according to the layout file, _layouts/announcement.html. ",
     "url": "https://738.f21.matthewrobertballard.com/announcements/",
     "relUrl": "/announcements/"
-  },"69": {
+  },"72": {
     "doc": "Announcements",
     "title": "Week 1 Announcement",
     "content": "Aug 17 &middot; 0 min read Due to an immovable medical appointment, the first class (Aug 19) is rescheduled. We will figure if and how to make it up at a later date. ",
     "url": "https://738.f21.matthewrobertballard.com/announcements/",
     "relUrl": "/announcements/"
-  },"70": {
+  },"73": {
     "doc": "Calendar",
     "title": "Calendar",
     "content": " ",
     "url": "https://738.f21.matthewrobertballard.com/calendar/",
     "relUrl": "/calendar/"
-  },"71": {
+  },"74": {
     "doc": "Calendar",
     "title": "Categories",
     "content": "Aug 24 Definitions of categories and examples Aug 26 Functors, natural transformations, and equivalences Aug 31 Adjunctions Sept 2 Representable functors and Yoneda Sept 7 Abelian categories ",
     "url": "https://738.f21.matthewrobertballard.com/calendar/#categories",
     "relUrl": "/calendar/#categories"
-  },"72": {
+  },"75": {
     "doc": "Homework",
     "title": "Homework",
     "content": ". | Homework 1. Due Date: September 15 . | Homework 0. Due Date: August 26 . | . ",
     "url": "https://738.f21.matthewrobertballard.com/homework/",
     "relUrl": "/homework/"
-  },"73": {
+  },"76": {
     "doc": "Derived Categories",
     "title": "Fall 2021 Math 738 at UofSC",
     "content": "We will localize some categories and have fun doing it. ",
     "url": "https://738.f21.matthewrobertballard.com/#fall-2021-math-738-at-uofsc",
     "relUrl": "/#fall-2021-math-738-at-uofsc"
-  },"74": {
+  },"77": {
     "doc": "Derived Categories",
     "title": "Week 1 Announcement",
     "content": "Aug 17 &middot; 0 min read Due to an immovable medical appointment, the first class (Aug 19) is rescheduled. We will figure if and how to make it up at a later date. Announcements . ",
     "url": "https://738.f21.matthewrobertballard.com/",
     "relUrl": "/"
-  },"75": {
+  },"78": {
     "doc": "Derived Categories",
     "title": "Syllabus",
     "content": "The syllabus can be found at the about tab. ",
     "url": "https://738.f21.matthewrobertballard.com/#syllabus",
     "relUrl": "/#syllabus"
-  },"76": {
+  },"79": {
     "doc": "Derived Categories",
     "title": "Calendar",
     "content": "At the calendar tab, you will find our topic schedule and due dates for assignments. ",
     "url": "https://738.f21.matthewrobertballard.com/#calendar",
     "relUrl": "/#calendar"
-  },"77": {
+  },"80": {
     "doc": "Derived Categories",
     "title": "Notes",
     "content": "The notes tab is where you can find the course notes. ",
     "url": "https://738.f21.matthewrobertballard.com/#notes",
     "relUrl": "/#notes"
-  },"78": {
+  },"81": {
     "doc": "Derived Categories",
     "title": "Homework",
     "content": "There is also a tab for class homework. ",
     "url": "https://738.f21.matthewrobertballard.com/#homework",
     "relUrl": "/#homework"
-  },"79": {
+  },"82": {
     "doc": "Derived Categories",
     "title": "Weekly schedule",
     "content": "If you ever need to remind yourself about the time and coordinates of our course or my office hours, you can quickly reference at the schedule tab. ",
     "url": "https://738.f21.matthewrobertballard.com/#weekly-schedule",
     "relUrl": "/#weekly-schedule"
-  },"80": {
+  },"83": {
     "doc": "Derived Categories",
     "title": "Me",
     "content": "If you are interested in a bit about who I am and what I do, check out the Me tab or visit my website. ",
     "url": "https://738.f21.matthewrobertballard.com/#me",
     "relUrl": "/#me"
-  },"81": {
+  },"84": {
     "doc": "Derived Categories",
     "title": "Derived Categories",
     "content": " ",
     "url": "https://738.f21.matthewrobertballard.com/",
     "relUrl": "/"
-  },"82": {
+  },"85": {
     "doc": "Notes",
     "title": "Course Notes",
     "content": "We will record notes from the course here. <!-- ",
     "url": "https://738.f21.matthewrobertballard.com/notes/intro/#course-notes",
     "relUrl": "/notes/intro/#course-notes"
-  },"83": {
+  },"86": {
     "doc": "Notes",
     "title": "Rank Nullity Theorem",
     "content": "Let $T : V \\to W$ be a linear tranformation between two finite dimensional vectors $V$ and $W$. Then, \\(\\operatorname{Rank}(T) + \\operatorname{Nullity}(T) = \\dim V.\\) . --> ",
     "url": "https://738.f21.matthewrobertballard.com/notes/intro/#rank-nullity-theorem",
     "relUrl": "/notes/intro/#rank-nullity-theorem"
-  },"84": {
+  },"87": {
     "doc": "Notes",
     "title": "Notes",
     "content": " ",
     "url": "https://738.f21.matthewrobertballard.com/notes/intro/",
     "relUrl": "/notes/intro/"
-  },"85": {
+  },"88": {
     "doc": "Schedule",
     "title": "Weekly Schedule",
     "content": ". | 7:30 AM | 8:00 AM | 8:30 AM | 9:00 AM | 9:30 AM | 10:00 AM | 10:30 AM | 11:00 AM | 11:30 AM | 12:00 PM | 12:30 PM | 1:00 PM | 1:30 PM | 2:00 PM | 2:30 PM | 3:00 PM | 3:30 PM | . | ",
     "url": "https://738.f21.matthewrobertballard.com/schedule/#weekly-schedule",
     "relUrl": "/schedule/#weekly-schedule"
-  },"86": {
+  },"89": {
     "doc": "Schedule",
     "title": "Monday",
     "content": "| ",
     "url": "https://738.f21.matthewrobertballard.com/schedule/",
     "relUrl": "/schedule/"
-  },"87": {
+  },"90": {
     "doc": "Schedule",
     "title": "Tuesday",
     "content": ". | Class 10:05 AM–11:20 AM COL 3006B | Office Hours 7:45 AM–8:30 AM COL 1022C | Office Hours 11:30 AM–12:15 PM COL 1022C | . | ",
     "url": "https://738.f21.matthewrobertballard.com/schedule/",
     "relUrl": "/schedule/"
-  },"88": {
+  },"91": {
     "doc": "Schedule",
     "title": "Wednesday",
     "content": "| ",
     "url": "https://738.f21.matthewrobertballard.com/schedule/",
     "relUrl": "/schedule/"
-  },"89": {
+  },"92": {
     "doc": "Schedule",
     "title": "Thursday",
     "content": ". | Class 10:05 AM–11:20 AM COL 3006B | Office Hours 7:45 AM–8:30 AM COL 1022C | Office Hours 11:30 AM–12:15 PM COL 1022C | . | ",
     "url": "https://738.f21.matthewrobertballard.com/schedule/",
     "relUrl": "/schedule/"
-  },"90": {
+  },"93": {
     "doc": "Schedule",
     "title": "Friday",
     "content": "| . ",
     "url": "https://738.f21.matthewrobertballard.com/schedule/",
     "relUrl": "/schedule/"
-  },"91": {
+  },"94": {
     "doc": "Schedule",
     "title": "Schedule",
     "content": " ",
     "url": "https://738.f21.matthewrobertballard.com/schedule/",
     "relUrl": "/schedule/"
-  },"92": {
+  },"95": {
     "doc": "Me",
     "title": "Staff",
     "content": " ",
     "url": "https://738.f21.matthewrobertballard.com/staff/#staff",
     "relUrl": "/staff/#staff"
-  },"93": {
+  },"96": {
     "doc": "Me",
     "title": "Instructor",
     "content": "Matthew Ballard . ballard@math.sc.edu . Schedule an appointment . I am an Associate Professor in the Department of Mathematics at the University of South Carolina. I have been teaching mathematics for almost two decades and have guided nearly 1000 students from all levels through math courses. A mindset focused on growth is essential for learning mathematics. Each day is a small step forward. When we turn around at the end of the course, only then, do we see how far we have truly traveled. For more of my pedagogical philosophy and experience, take a look at the teaching page. As an extension of teaching, I take pride in mentoring researchers at any stage. For a brief introduction to my mentees see the mentoring page. In my research, I study algebraic geometry and am particularly interested in questions arising from Homological Mirror Symmetry. Much of my current work focuses on derived categories and their relation to more classical questions. My research has been partially supported by the Simons Foundation and the National Science Foundation. It has also benefited from a membership at the Institute for Advanced Study, funding from UofSC, and the Southeastern Conference. For more information about me, see my CV. For a research summary and a list of my papers, take a look at my research page. I regularly organize mathematical events, even virtual ones. For the full list of events, see the organizing page. If you are interested in participating, contact me. ",
     "url": "https://738.f21.matthewrobertballard.com/staff/#instructor",
     "relUrl": "/staff/#instructor"
-  },"94": {
+  },"97": {
     "doc": "Me",
     "title": "Me",
     "content": " ",
