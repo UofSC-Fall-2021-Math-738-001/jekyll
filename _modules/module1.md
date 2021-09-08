@@ -1,6 +1,6 @@
 ---
 title: Categories
-ended: false 
+ended: true 
 ---
 
 Aug 24 
@@ -14,6 +14,3 @@ Aug 31
 
 Sept 2
 : **Representable functors and Yoneda** 
-
-Sept 7
-: **Abelian categories**

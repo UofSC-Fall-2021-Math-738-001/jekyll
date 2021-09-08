@@ -88,10 +88,10 @@
 <path style="fill:none;stroke-width:0.3985;stroke-linecap:butt;stroke-linejoin:miter;stroke:rgb(0%,0%,0%);stroke-opacity:1;stroke-dasharray:2.98883,2.98883;stroke-miterlimit:10;" d="M -7.263875 -7.266031 L -48.427938 -48.422281 " transform="matrix(1,0,0,-1,70.467,7.066)"/>
 <path style="fill:none;stroke-width:0.31879;stroke-linecap:round;stroke-linejoin:round;stroke:rgb(0%,0%,0%);stroke-opacity:1;stroke-miterlimit:10;" d="M -1.194823 1.592933 C -1.095337 0.996301 0.00133499 0.0986649 0.299663 -0.000751881 C 0.00135046 -0.100215 -1.095181 -0.998022 -1.194575 -1.59467 " transform="matrix(-0.70714,0.70703,0.70703,0.70714,22.04056,55.48788)"/>
 <g style="fill:rgb(0%,0%,0%);fill-opacity:1;">
-  <use xlink:href="#glyph3-1" x="23.792" y="29.614"/>
+  <use xlink:href="#glyph3-1" x="20.471" y="29.614"/>
 </g>
 <g style="fill:rgb(0%,0%,0%);fill-opacity:1;">
-  <use xlink:href="#glyph2-5" x="29.327" y="29.614"/>
+  <use xlink:href="#glyph2-5" x="26.006" y="29.614"/>
 </g>
 <g style="fill:rgb(0%,0%,0%);fill-opacity:1;">
   <use xlink:href="#glyph2-6" x="34.134" y="26.985"/>
