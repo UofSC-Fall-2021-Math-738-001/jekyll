@@ -1,9 +1,12 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.9.3)  4 SEP 2021 01:10
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.12.29)  9 SEP 2021 15:35
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**/home/matt/jekyll/_tikz_tmp/2021_09_02/pushout_bullet.tex
-(/home/matt/jekyll/_tikz_tmp/2021_09_02/pushout_bullet.tex
+**/home/matt/Dropbox/Teaching/USC/21fall/738/jekyll/_tikz_tmp/2021_09_02/pushou
+t_bullet.tex
+
+(/home/matt/Dropbox/Teaching/USC/21fall/738/jekyll/_tikz_tmp/2021_09_02/pushout
+_bullet.tex
 LaTeX2e <2020-02-02> patch level 2
 L3 programming layer <2020-02-14>
 (/usr/share/texlive/texmf-dist/tex/latex/standalone/standalone.cls
@@ -365,7 +368,15 @@ File: pgfmodulematrix.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 zlibrarytopaths.code.tex
 File: tikzlibrarytopaths.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 )))
-(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
+zlibraryarrows.code.tex
+File: tikzlibraryarrows.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/pgflibraryarrows.code.
+tex
+File: pgflibraryarrows.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+\arrowsize=\dimen187
+)) (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
 Package: amsmath 2020/01/20 v2.17e AMS math features
 \@mathmargin=\skip49
 
@@ -376,11 +387,11 @@ Package: amstext 2000/06/29 v2.01 AMS text
 (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0 generic functions
 \@emptytoks=\toks28
-\ex@=\dimen187
+\ex@=\dimen188
 ))
 (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
-\pmbraise@=\dimen188
+\pmbraise@=\dimen189
 )
 (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty
 Package: amsopn 2016/03/08 v2.02 operator names
@@ -397,7 +408,7 @@ LaTeX Info: Redefining \dots on input line 489.
 LaTeX Info: Redefining \cdots on input line 610.
 \Mathstrutbox@=\box57
 \strutbox@=\box58
-\big@size=\dimen189
+\big@size=\dimen190
 LaTeX Font Info:    Redeclaring font encoding OML on input line 733.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 734.
 \macc@depth=\count270
@@ -410,12 +421,12 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 734.
 \column@=\count275
 \maxfields@=\count276
 \andhelp@=\toks30
-\eqnshift@=\dimen190
-\alignsep@=\dimen191
-\tagshift@=\dimen192
-\tagwidth@=\dimen193
-\totwidth@=\dimen194
-\lineht@=\dimen195
+\eqnshift@=\dimen191
+\alignsep@=\dimen192
+\tagshift@=\dimen193
+\tagwidth@=\dimen194
+\totwidth@=\dimen195
+\lineht@=\dimen196
 \@envbody=\toks31
 \multlinegap=\skip50
 \multlinetaggap=\skip51
@@ -423,98 +434,86 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 734.
 LaTeX Info: Redefining \[ on input line 2859.
 LaTeX Info: Redefining \] on input line 2860.
 )
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+)
 (/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdfmode.def
 File: l3backend-pdfmode.def 2020-02-03 L3 backend support: PDF mode
 \l__kernel_color_stack_int=\count277
 \l__pdf_internal_box=\box59
 )
-(/home/matt/jekyll/_tikz_tmp/2021_09_02/pushout_bullet.aux)
+(/home/matt/Dropbox/Teaching/USC/21fall/738/jekyll/_tikz_tmp/2021_09_02/pushout
+_bullet.aux)
 \openout1 = `pushout_bullet.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 4.
-LaTeX Font Info:    ... okay on input line 4.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 4.
-LaTeX Font Info:    ... okay on input line 4.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 4.
-LaTeX Font Info:    ... okay on input line 4.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 4.
-LaTeX Font Info:    ... okay on input line 4.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 4.
-LaTeX Font Info:    ... okay on input line 4.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 4.
-LaTeX Font Info:    ... okay on input line 4.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 4.
-LaTeX Font Info:    ... okay on input line 4.
-
-ABD: EveryShipout initializing macros
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 6.
+LaTeX Font Info:    ... okay on input line 6.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 6.
+LaTeX Font Info:    ... okay on input line 6.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 6.
+LaTeX Font Info:    ... okay on input line 6.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 6.
+LaTeX Font Info:    ... okay on input line 6.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 6.
+LaTeX Font Info:    ... okay on input line 6.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 6.
+LaTeX Font Info:    ... okay on input line 6.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 6.
+LaTeX Font Info:    ... okay on input line 6.
+ ABD: EveryShipout initializing macros
 (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count278
-\scratchdimen=\dimen196
+\scratchdimen=\dimen197
 \scratchbox=\box60
 \nofMPsegments=\count279
 \nofMParguments=\count280
 \everyMPshowfont=\toks33
 \MPscratchCnt=\count281
-\MPscratchDim=\dimen197
+\MPscratchDim=\dimen198
 \MPnumerator=\count282
 \makeMPintoPDFobject=\count283
 \everyMPtoPDFconversion=\toks34
 ) (/usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
-
-(/usr/share/texlive/texmf-dist/tex/generic/infwarerr/infwarerr.sty
-Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
-)
-(/usr/share/texlive/texmf-dist/tex/latex/grfext/grfext.sty
-Package: grfext 2019/12/03 v1.3 Manage graphics extensions (HO)
-
-(/usr/share/texlive/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty
-Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
-))
-(/usr/share/texlive/texmf-dist/tex/latex/kvoptions/kvoptions.sty
-Package: kvoptions 2019/11/29 v3.13 Key value format for package options (HO)
-
-(/usr/share/texlive/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
-Package: ltxcmds 2019/12/15 v1.24 LaTeX kernel commands for general use (HO)
-)
-(/usr/share/texlive/texmf-dist/tex/generic/kvsetkeys/kvsetkeys.sty
-Package: kvsetkeys 2019/12/15 v1.18 Key value parser (HO)
-))
-(/usr/share/texlive/texmf-dist/tex/latex/pdftexcmds/pdftexcmds.sty
-Package: pdftexcmds 2019/11/24 v0.31 Utility functions of pdfTeX for LuaTeX (HO
-)
-Package pdftexcmds Info: \pdf@primitive is available.
-Package pdftexcmds Info: \pdf@ifprimitive is available.
-Package pdftexcmds Info: \pdfdraftmode found.
-)
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 85.
-Package grfext Info: Graphics extension search list:
-(grfext)             [.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPE
-G,.JBIG2,.JB2,.eps]
-(grfext)             \AppendGraphicsExtensions on input line 504.
 
 (/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-[1
+LaTeX Font Info:    Trying to load font information for U+msa on input line 9.
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 9.
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+) [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
-(/home/matt/jekyll/_tikz_tmp/2021_09_02/pushout_bullet.aux) ) 
+(/home/matt/Dropbox/Teaching/USC/21fall/738/jekyll/_tikz_tmp/2021_09_02/pushout
+_bullet.aux) ) 
 Here is how much of TeX's memory you used:
- 13002 strings out of 481239
- 260004 string characters out of 5920378
- 473432 words of memory out of 5000000
- 28027 multiletter control sequences out of 15000+600000
- 532792 words of font info for 26 fonts, out of 8000000 for 9000
+ 13179 strings out of 481239
+ 268324 string characters out of 5920376
+ 473537 words of memory out of 5000000
+ 28210 multiletter control sequences out of 15000+600000
+ 534037 words of font info for 32 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 60i,7n,60p,462b,558s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/share/texliv
-e/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on /home/matt/jekyll/_tikz_tmp/2021_09_02/pushout_bullet.pdf (1 
-page, 8632 bytes).
+ 60i,7n,60p,497b,560s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cms
+y10.pfb>
+Output written on /home/matt/Dropbox/Teaching/USC/21fall/738/jekyll/_tikz_tmp/2
+021_09_02/pushout_bullet.pdf (1 page, 8645 bytes).
 PDF statistics:
  15 PDF objects out of 1000 (max. 8388607)
  10 compressed objects within 1 object stream

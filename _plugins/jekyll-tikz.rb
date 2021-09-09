@@ -8,7 +8,9 @@ module Jekyll
         @header = <<-'END'
         \documentclass{standalone}
         \usepackage{tikz}
+        \usetikzlibrary{arrows}
         \usepackage{amsmath}
+        \usepackage{amsfonts}
         \begin{document}
         \begin{tikzpicture}
         END
