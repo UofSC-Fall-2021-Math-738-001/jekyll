@@ -1,4 +1,5 @@
 module Jekyll
+  module Tags
     class RenderProof < Liquid::Block
   
       def render(context)
@@ -16,6 +17,7 @@ module Jekyll
         return output
       end
     end
+  end
 end
 
-Liquid::Template.register_tag('proof', Jekyll::RenderProof)
+Liquid::Template.register_tag('proof', Jekyll::Tags::RenderProof)
