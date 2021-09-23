@@ -211,7 +211,7 @@
   },"35": {
     "doc": "2021-09-09",
     "title": "Adapted objects",
-    "content": "For what modules $M$ is $\\operatorname{Hom}_R(M,-)$ exact? $- \\otimes_R M$? $\\operatorname{Hom}_R(-,M)$ . Projectives . We already saw that if $F$ is free $R$-module then $\\operatorname{Hom}_R(F,-)$ is exact. We can take one step away from this. Recall that $X$ is a retract of an object $Y$ in a category $\\mathcal C$ if there exists maps \\(\\begin{aligned} i : X &amp; \\to Y \\\\ \\pi : Y &amp; \\to X \\end{aligned}\\) with $\\pi \\circ i = 1_X$. If $P$ is a retract of $F$, then $\\operatorname{Hom}_R(P,-)$ is exact also. Indeed, we have a retraction of functors \\(\\begin{aligned} \\operatorname{Hom}_R(\\pi,-) : \\operatorname{Hom}_R(P,-) &amp; \\to \\operatorname{Hom}_R(F,-) \\\\ \\operatorname{Hom}_R(i,-) : \\operatorname{Hom}_R(F,-) &amp; \\to \\operatorname{Hom}_R(P,-) \\end{aligned}\\) so we only need to establish that retracts of exact complexes are again exact. We should promote chain complexes to a category by providing morphisms between chain complexes. A morphism $\\phi_\\bullet : (A_\\bullet, \\delta^A_\\bullet) \\to (B_\\bullet, \\delta^B_\\bullet)$ is a collection of morphisms $\\phi_i : A_i \\to B_i$ for which all squares . commute. Given an abelian category $\\mathcal A$, we denote the category of chain complexes by $Ch(\\mathcal A)$. Assume we have a retraction in $Ch(\\mathcal A)$. This translates into a commutative diagram of which we prune at bit . Given $a \\in A_{i+1}$ with $\\delta_{i+1} (a) = 0$, then its image $b$ in $B_{i+1}$ also satisfies $\\delta_{i+1}(b) = 0$. From exactness of $B_\\bullet$, there exists a $b^\\prime$ with $\\delta_i(b^\\prime) = b$. Applying the map to $A_\\bullet$ gives an element of $A_i$, $a^\\prime$, with $\\delta_i(a^\\prime) = a$. We can represent this “diagram chase” via the following picture: . Definition. A object $P$ of an abelian category is projective if $\\operatorname{Hom}_{\\mathcal A}(P,-)$ is exact. Proposition. In $\\operatorname{Mod} R$, the projective objects are exactly the retracts of free modules. Proof. The above shows that in $\\operatorname{Mod} R$ retracts of free modules are projective. Assume that $P$ is a projective object. There exists a surjection $F \\overset{\\pi}{\\to} P \\to 0$. We can lift the identity . which exhibits $P$ as a retract of $F$. This is satisfying statement: we have an explicit construction of all projective objects. As a consequence, we have enough projectives in $\\operatorname{Mod} R$. In an abelian category $\\mathcal A$, we say have enough projectives if for any objects $X$ there exists $P \\twoheadrightarrow X$ for some projective $P$. Let us also note that if $P_i$ are projective for $i \\in I$, then $\\bigoplus_{i \\in I} P_i$ is also projective in a general $\\mathcal A$. Since \\(\\operatorname{Hom}_{\\mathcal A}\\left( \\bigoplus P_i, M \\right) \\cong \\prod \\operatorname{Hom}_{\\mathcal A}(P_i, M)\\) and products of exact sequences remain exact. Injectives . Definition. In an abelian category, we call an object $I$ injective if $\\operatorname{Hom}_{\\mathcal A}(-,I)$ is exact. This is the extension problem . Let’s look at injective objects of $\\operatorname{Mod} R$. Assume that $I$ is an injective module. Then we have a more easily-verified extension problem. For any ideal $J \\leq R$, we know that we can extend over inclusions of ideals . This is enough to characterize injectives. Lemma. (Baer’s Criteria) If $I$ extends over any $J \\leq R$, then $I$ is injective. Proof. Assume we have the diagram . and form a partially order set \\(\\lbrace (M^\\prime, \\psi^\\prime) \\mid N \\subseteq M^\\prime \\subseteq M \\text{ and } \\psi^\\prime|_{N} = \\psi \\rbrace\\) We say $(M_1^\\prime, \\psi_1^\\prime) &lt; (M_2^\\prime, \\psi_2^\\prime)$ if $M_1^\\prime \\subseteq M_2^\\prime$ and $\\psi_2^\\prime|_{M_1^\\prime} = \\psi_1^\\prime$. Then we have a partially order set and we can form upper bounds for any chain by taking unions. By Zorn’s Lemma, we just need to check the maximal element is all of $M$. Assume not and let $m \\in M \\setminus M^\\prime$ for maximal $(M^\\prime, \\psi^\\prime)$. Let \\(J := Rm \\cap M^\\prime \\leq R/\\operatorname{Ann}(m)\\) If $J = 0$, we can extend the map by setting $\\psi^\\prime(m) = 0$. Otherwise, let $\\tilde{J} = \\pi^{-1}(J)$ for the projection $\\pi: R \\to R/\\operatorname{Ann}(m)$. It suffices to solve the extension problem . By assumption we can do exactly this. Using this we can get some injectives in $\\operatorname{Ab} = \\operatorname{Mod} \\mathbb{Z}$. Any ideal in $\\mathbb{Z}$ is of the form $(m)$ for some $m \\in \\mathbb{Z}$. Thus, to extend . we need to find a $x \\in I$ with $mx = \\psi(m)$. In other words, we need to divide $x$ by $m$. We can always do this for $\\mathbb{Q}$ and $\\mathbb{Q}/\\mathbb{Z}$ - giving two injective modules. Using $\\mathbb{Q}/\\mathbb{Z}$ and some tricks, we demonstrate that $\\operatorname{Mod} R$ has enough injectives. Definition. An abelian category $\\mathcal A$ has enough injectives if for any object $X$ there exists $X \\hookrightarrow I$ with $I$ injective. Proposition. $\\operatorname{Mod} R$ has enough injectives. Proof. Let \\(I := \\operatorname{Hom}_\\mathbb{Z}(R,\\mathbb{Q}/\\mathbb{Z})\\) . Note that, by tensor-Hom adjunction, we have \\(\\operatorname{Hom}_R(M,I) \\cong \\operatorname{Hom}_\\mathbb{Z}(M,\\mathbb{Q}/\\mathbb{Z})\\) Since \\(M \\mapsto \\operatorname{Hom}_\\mathbb{Z}(M,\\mathbb{Q}/\\mathbb{Z})\\) is exact, we see that $I$ is injective. One can check that for any abelian group $A$ \\(\\operatorname{Hom}_\\mathbb{Z}(A,\\mathbb{Q}/\\mathbb{Z}) = 0\\) Pick some $0 \\neq a \\in A$ and then $\\mathbb{Z}a = \\mathbb{Z}$ or $\\mathbb{Z}/m\\mathbb{Z}$. \\(\\begin{aligned} \\operatorname{Hom}_\\mathbb{Z}(\\mathbb{Z},\\mathbb{Q}/\\mathbb{Z}) &amp; = \\mathbb{Q}/\\mathbb{Z} \\neq 0 \\\\\\ \\operatorname{Hom}_\\mathbb{Z}(\\mathbb{Z}/m\\mathbb{Z},\\mathbb{Q}/\\mathbb{Z}) &amp; = (\\mathbb{Q}/\\mathbb{Z})_m \\neq 0 \\end{aligned}\\) where $(-)_m$ is the $m$-torsion. (Note here is where $\\mathbb{Q}$ doesn’t work.) We have a map \\(\\operatorname{Hom}_\\mathbb{Z}(A,\\mathbb{Q}/\\mathbb{Z}) \\twoheadrightarrow \\operatorname{Hom}_\\mathbb{Z}(\\mathbb{Z}a,\\mathbb{Q}/\\mathbb{Z})\\) since $\\mathbb{Q}/\\mathbb{Z}$ is injective. Thus, $\\operatorname{Hom}_\\mathbb{Z}(A,\\mathbb{Q}/\\mathbb{Z}) \\neq 0$. Set $M^\\vee := \\operatorname{Hom}_R(M,I)$. Since $I$ is naturally a $R$-bimodule, $M^\\vee$ remains a $R$-module. We claim the map \\(M \\to M^{\\vee\\vee}\\) is injective. If $M \\neq 0$, we know that $M^\\vee \\neq 0$. If we take the kernel $K$ of $M \\to M^{\\vee\\vee}$, then \\(K^{\\vee\\vee} \\hookrightarrow M^{\\vee\\vee}\\) as $I$ is injective. But $K \\to M^{\\vee\\vee}$ is the zero map. Thus $K \\to K^{\\vee\\vee}$ must also be $0$. This implies that $K^\\vee = 0$. Since otherwise, there would be an element $k \\in K$ and nonzero function $\\phi:K \\to I$ with $\\phi(k)$. Thus \\(M \\hookrightarrow M^{\\vee\\vee}\\) . To finish, we choose $F \\twoheadrightarrow M^\\vee$ for a free module $F \\cong R^{\\oplus X}$. Then, we get \\(M \\hookrightarrow M^{\\vee\\vee} = \\operatorname{Hom}_R(M^\\vee, I) \\hookrightarrow \\operatorname{Hom}_R(F,I) \\cong \\prod_X I\\) and note that if $I_j$ for $j \\in J$ are injective then so is $\\prod_J I_J$. Flat modules . Definition. An $R$-module $M$ is called flat if $- \\otimes_R M$ is exact. We have seen that free modules are flat. Similar to the argument above, retracts of free modules are also flat. Thus, projective modules are flat. But in general flat modules are projective. Consider the localization $k[x]_x$ as a $k[x]$-module. This is flat as localization is an exact functor. However it is not projective since any map $k[x]_x \\to k[x]$ must send $1$ to $p \\in k[x]$ which satisfies $x^iq_i = p$ for some $q_i$ any $i \\geq 0$. The only choice for $p$ is $0$. There exists a criteria analogous to Baer’s for flatness. Proposition. $M$ is flat if and only if \\(J \\otimes_R M \\hookrightarrow R \\otimes_R M \\cong M\\) for any ideal $J \\leq R$. We omit the proof. ",
+    "content": "For what modules $M$ is $\\operatorname{Hom}_R(M,-)$ exact? $- \\otimes_R M$? $\\operatorname{Hom}_R(-,M)$ . Projectives . We already saw that if $F$ is free $R$-module then $\\operatorname{Hom}_R(F,-)$ is exact. We can take one step away from this. Recall that $X$ is a retract of an object $Y$ in a category $\\mathcal C$ if there exists maps \\(\\begin{aligned} i : X &amp; \\to Y \\\\ \\pi : Y &amp; \\to X \\end{aligned}\\) with $\\pi \\circ i = 1_X$. If $P$ is a retract of $F$, then $\\operatorname{Hom}_R(P,-)$ is exact also. Indeed, we have a retraction of functors \\(\\begin{aligned} \\operatorname{Hom}_R(\\pi,-) : \\operatorname{Hom}_R(P,-) &amp; \\to \\operatorname{Hom}_R(F,-) \\\\ \\operatorname{Hom}_R(i,-) : \\operatorname{Hom}_R(F,-) &amp; \\to \\operatorname{Hom}_R(P,-) \\end{aligned}\\) so we only need to establish that retracts of exact complexes are again exact. We should promote chain complexes to a category by providing morphisms between chain complexes. A morphism $\\phi_\\bullet : (A_\\bullet, \\delta^A_\\bullet) \\to (B_\\bullet, \\delta^B_\\bullet)$ is a collection of morphisms $\\phi_i : A_i \\to B_i$ for which all squares . commute. Given an abelian category $\\mathcal A$, we denote the category of chain complexes by $Ch(\\mathcal A)$. Assume we have a retraction in $Ch(\\mathcal A)$. This translates into a commutative diagram of which we prune at bit . Given $a \\in A_{i+1}$ with $\\delta_{i+1} (a) = 0$, then its image $b$ in $B_{i+1}$ also satisfies $\\delta_{i+1}(b) = 0$. From exactness of $B_\\bullet$, there exists a $b^\\prime$ with $\\delta_i(b^\\prime) = b$. Applying the map to $A_\\bullet$ gives an element of $A_i$, $a^\\prime$, with $\\delta_i(a^\\prime) = a$. We can represent this “diagram chase” via the following picture: . Definition. A object $P$ of an abelian category is projective if $\\operatorname{Hom}_{\\mathcal A}(P,-)$ is exact. Proposition. In $\\operatorname{Mod} R$, the projective objects are exactly the retracts of free modules. Proof. The above shows that in $\\operatorname{Mod} R$ retracts of free modules are projective. Assume that $P$ is a projective object. There exists a surjection $F \\overset{\\pi}{\\to} P \\to 0$. We can lift the identity . which exhibits $P$ as a retract of $F$. This is satisfying statement: we have an explicit construction of all projective objects. As a consequence, we have enough projectives in $\\operatorname{Mod} R$. In an abelian category $\\mathcal A$, we say have enough projectives if for any objects $X$ there exists $P \\twoheadrightarrow X$ for some projective $P$. Let us also note that if $P_i$ are projective for $i \\in I$, then $\\bigoplus_{i \\in I} P_i$ is also projective in a general $\\mathcal A$. Since \\(\\operatorname{Hom}_{\\mathcal A}\\left( \\bigoplus P_i, M \\right) \\cong \\prod \\operatorname{Hom}_{\\mathcal A}(P_i, M)\\) and products of exact sequences remain exact. Injectives . Definition. In an abelian category, we call an object $I$ injective if $\\operatorname{Hom}_{\\mathcal A}(-,I)$ is exact. This is the extension problem . Let’s look at injective objects of $\\operatorname{Mod} R$. Assume that $I$ is an injective module. Then we have a more easily-verified extension problem. For any ideal $J \\leq R$, we know that we can extend over inclusions of ideals . This is enough to characterize injectives. Lemma. (Baer’s Criteria) If $I$ extends over any $J \\leq R$, then $I$ is injective. Proof. Assume we have the diagram . and form a partially order set \\(\\lbrace (M^\\prime, \\psi^\\prime) \\mid N \\subseteq M^\\prime \\subseteq M \\text{ and } \\psi^\\prime|_{N} = \\psi \\rbrace\\) We say $(M_1^\\prime, \\psi_1^\\prime) &lt; (M_2^\\prime, \\psi_2^\\prime)$ if $M_1^\\prime \\subseteq M_2^\\prime$ and $\\psi_2^\\prime|_{M_1^\\prime} = \\psi_1^\\prime$. Then we have a partially order set and we can form upper bounds for any chain by taking unions. By Zorn’s Lemma, we just need to check the maximal element is all of $M$. Assume not and let $m \\in M \\setminus M^\\prime$ for maximal $(M^\\prime, \\psi^\\prime)$. Let \\(J := Rm \\cap M^\\prime \\leq R/\\operatorname{Ann}(m)\\) If $J = 0$, we can extend the map by setting $\\psi^\\prime(m) = 0$. Otherwise, let $\\tilde{J} = \\pi^{-1}(J)$ for the projection $\\pi: R \\to R/\\operatorname{Ann}(m)$. It suffices to solve the extension problem . By assumption we can do exactly this. Using this we can get some injectives in $\\operatorname{Ab} = \\operatorname{Mod} \\mathbb{Z}$. Any ideal in $\\mathbb{Z}$ is of the form $(m)$ for some $m \\in \\mathbb{Z}$. Thus, to extend . we need to find a $x \\in I$ with $mx = \\psi(m)$. In other words, we need to divide $x$ by $m$. We can always do this for $\\mathbb{Q}$ and $\\mathbb{Q}/\\mathbb{Z}$ - giving two injective modules. Using $\\mathbb{Q}/\\mathbb{Z}$ and some tricks, we demonstrate that $\\operatorname{Mod} R$ has enough injectives. Definition. An abelian category $\\mathcal A$ has enough injectives if for any object $X$ there exists $X \\hookrightarrow I$ with $I$ injective. Proposition. $\\operatorname{Mod} R$ has enough injectives. Proof. Let \\(I := \\operatorname{Hom}_\\mathbb{Z}(R,\\mathbb{Q}/\\mathbb{Z})\\) . Note that, by tensor-Hom adjunction, we have \\(\\operatorname{Hom}_R(M,I) \\cong \\operatorname{Hom}_\\mathbb{Z}(M,\\mathbb{Q}/\\mathbb{Z})\\) Since \\(M \\mapsto \\operatorname{Hom}_\\mathbb{Z}(M,\\mathbb{Q}/\\mathbb{Z})\\) is exact, we see that $I$ is injective. One can check that for any abelian group $A$ \\(\\operatorname{Hom}_\\mathbb{Z}(A,\\mathbb{Q}/\\mathbb{Z}) = 0\\) Pick some $0 \\neq a \\in A$ and then $\\mathbb{Z}a = \\mathbb{Z}$ or $\\mathbb{Z}/m\\mathbb{Z}$. \\(\\begin{aligned} \\operatorname{Hom}_\\mathbb{Z}(\\mathbb{Z},\\mathbb{Q}/\\mathbb{Z}) &amp; = \\mathbb{Q}/\\mathbb{Z} \\neq 0 \\\\\\ \\operatorname{Hom}_\\mathbb{Z}(\\mathbb{Z}/m\\mathbb{Z},\\mathbb{Q}/\\mathbb{Z}) &amp; = (\\mathbb{Q}/\\mathbb{Z})_m \\neq 0 \\end{aligned}\\) where $(-)_m$ is the $m$-torsion. (Note here is where $\\mathbb{Q}$ doesn’t work.) We have a map \\(\\operatorname{Hom}_\\mathbb{Z}(A,\\mathbb{Q}/\\mathbb{Z}) \\twoheadrightarrow \\operatorname{Hom}_\\mathbb{Z}(\\mathbb{Z}a,\\mathbb{Q}/\\mathbb{Z})\\) since $\\mathbb{Q}/\\mathbb{Z}$ is injective. Thus, $\\operatorname{Hom}_\\mathbb{Z}(A,\\mathbb{Q}/\\mathbb{Z}) \\neq 0$. Set $M^\\vee := \\operatorname{Hom}_R(M,I)$. Since $I$ is naturally a $R$-bimodule, $M^\\vee$ remains a $R$-module. We claim the map \\(M \\to M^{\\vee\\vee}\\) is injective. If $M \\neq 0$, we know that $M^\\vee \\neq 0$. If we take the kernel $K$ of $M \\to M^{\\vee\\vee}$, then \\(K^{\\vee\\vee} \\hookrightarrow M^{\\vee\\vee}\\) as $I$ is injective. But $K \\to M^{\\vee\\vee}$ is the zero map. Thus $K \\to K^{\\vee\\vee}$ must also be $0$. This implies that $K^\\vee = 0$. Since otherwise, there would be an element $k \\in K$ and nonzero function $\\phi:K \\to I$ with $\\phi(k) \\neq 0$. Thus \\(M \\hookrightarrow M^{\\vee\\vee}\\) . To finish, we choose $F \\twoheadrightarrow M^\\vee$ for a free module $F \\cong R^{\\oplus X}$. Then, we get \\(M \\hookrightarrow M^{\\vee\\vee} = \\operatorname{Hom}_R(M^\\vee, I) \\hookrightarrow \\operatorname{Hom}_R(F,I) \\cong \\prod_X I\\) and note that if $I_j$ for $j \\in J$ are injective then so is $\\prod_J I_J$. Flat modules . Definition. An $R$-module $M$ is called flat if $- \\otimes_R M$ is exact. We have seen that free modules are flat. Similar to the argument above, retracts of free modules are also flat. Thus, projective modules are flat. But in general flat modules are projective. Consider the localization $k[x]_x$ as a $k[x]$-module. This is flat as localization is an exact functor. However it is not projective since any map $k[x]_x \\to k[x]$ must send $1$ to $p \\in k[x]$ which satisfies $x^iq_i = p$ for some $q_i$ any $i \\geq 0$. The only choice for $p$ is $0$. There exists a criteria analogous to Baer’s for flatness. Proposition. $M$ is flat if and only if \\(J \\otimes_R M \\hookrightarrow R \\otimes_R M \\cong M\\) for any ideal $J \\leq R$. We omit the proof. ",
     "url": "https://738.f21.matthewrobertballard.com/notes/2021_09_09/#adapted-objects",
     "relUrl": "/notes/2021_09_09/#adapted-objects"
   },"36": {
@@ -221,432 +221,486 @@
     "url": "https://738.f21.matthewrobertballard.com/notes/2021_09_09/",
     "relUrl": "/notes/2021_09_09/"
   },"37": {
+    "doc": "2021-09-14",
+    "title": "Towards the derived category",
+    "content": "We want to build a category where given a free resolution \\(\\cdots F^{-2} \\to F^{-1} \\to F^0 \\to M \\to 0\\) the module $M$ and the complex $F^\\bullet$ are identified. We write $Ch(\\mathcal A)$ for the category of chain complexes of objects of an additive category $\\mathcal A$. The objects are chain complexes and the morphisms are chain maps. There are some common variants which impose vanishing conditions: . | $Ch^-(\\mathcal A)$ is the category of chain complexes $C$ such there exists an $N$ with $C^i = 0$ for $i &gt; N$. This is the category of bounded above chain complexes. | $Ch^+(\\mathcal A)$ is the category of chain complexes $C$ such there exists an $M$ with $C^i = 0$ for $i &lt; M$. This is the category of bounded below chain complexes. | $Ch^b(\\mathcal A)$ has objects in the intersection of the previous two. It is the category of bounded chain complexes. | . We have a functor \\(\\begin{aligned} \\mathcal A &amp; \\to Ch(\\mathcal A) \\\\ A &amp; \\mapsto A[0] \\end{aligned}\\) where \\((A[0])^j = \\begin{cases} A &amp; j = 0 \\\\ 0 &amp; j \\neq 0 \\end{cases}\\) . The category of chain complexes also has built in family of auto-equivalences \\([i] : Ch(\\mathcal A) \\to Ch(\\mathcal A)\\) for $i \\in \\mathbb{Z}$. The functor $[i]$ is shifts (or translates) a complex $i$ steps to the left \\(A[i]^j = A^{i+j}\\) and also translates the differential up to sign \\(\\delta_{A[i]}^j = (-1)^i \\delta_A^{i+j}\\) . ",
+    "url": "https://738.f21.matthewrobertballard.com/notes/2021_09_14/#towards-the-derived-category",
+    "relUrl": "/notes/2021_09_14/#towards-the-derived-category"
+  },"38": {
+    "doc": "2021-09-14",
+    "title": "Quasi-isomorphisms",
+    "content": "For a map of chain complexes $\\phi: C \\to D$, since $\\delta_D^i \\phi^i = \\phi^{i+1} \\delta_C^i$, we have well-defined maps \\(\\phi^i: \\ker \\delta_C^i \\to \\ker \\delta_D^i \\\\ \\phi^i: \\operatorname{im} \\delta_C^i \\to \\operatorname{im} \\delta_D^i\\) and hence an induced map \\(H^i(\\phi) : H^i(C) \\to H^i(D)\\) between the homologies. Definition. A quasi-isomorphism is a chain map $\\phi : C \\to D$ such that \\(H^i(\\phi) : H^i(C) \\to H^i(D)\\) is an isomorphism for all $i \\in \\mathbb{Z}$. For an example of a quasi-isomorphism, we come back to our free resolution $F \\to M$ from above. We can “kink” our complex . and get a map of complexes. Since \\(\\cdots F^{-2} \\to F^{-1} \\to F^0 \\to M \\to 0\\) is exact, we know that \\(H^i(F) = \\begin{cases} M &amp; i = 0 \\\\ 0 &amp; i \\neq 0 \\end{cases}\\) and moreover the induced map \\(H^0(F) \\to H^0(M)\\) is an isomorphism. This is the prototypical example of a quasi-isomorphism. ",
+    "url": "https://738.f21.matthewrobertballard.com/notes/2021_09_14/#quasi-isomorphisms",
+    "relUrl": "/notes/2021_09_14/#quasi-isomorphisms"
+  },"39": {
+    "doc": "2021-09-14",
+    "title": "Derived category",
+    "content": "Our goal is the produce a category where quasi-isomorphims are inverted (in a controlled fashion). Note that this is necessary. Example. The map of complexes . has no inverse since any map $k[x]/(x) \\to k[x]$ is necessarily $0$. Definition. The derived category of $\\mathcal A$, denoted $D(\\mathcal A)$, for which there exists a functor \\(Q : Ch(\\mathcal A) \\to D(\\mathcal A)\\) such that for any quasi-isomorphism $f: C \\to D$ $Q(f)$ is an isomorphism and whenever we have a functor $F: Ch(\\mathcal A) \\to \\mathcal D$ which also takes quasi-isomorphisms to isomorphisms there exists a unique $\\bar{F}: D(\\mathcal A) \\to \\mathcal D$ and a diagram . which commutes up to natural isomorphism. There is a general localization result that produces the category, ignoring set-theoretic issues. But the resulting category is difficult to wield. To give a construction of $D(\\mathcal A)$ in some special, but sufficiently universal for us, we will work in two stages. | Perform a well-behaved quotient of $Ch(\\mathcal A)$ to obtain a new category $K(\\mathcal A)$. | Identify a full subcategory of $\\mathcal C \\subset K(\\mathcal A)$ where: . | every object of $K(\\mathcal A)$ is quasi-isomorphic to one in $\\mathcal C$ and | for any object $C$ of $\\mathcal C$, the functor $\\operatorname{Hom}(C,-)$ (or $\\operatorname{Hom}(-,C)$) converts quasi-isomorphisms for isomorphisms. | . | . We start with making $K(\\mathcal A)$. ",
+    "url": "https://738.f21.matthewrobertballard.com/notes/2021_09_14/#derived-category",
+    "relUrl": "/notes/2021_09_14/#derived-category"
+  },"40": {
+    "doc": "2021-09-14",
+    "title": "The homotopy category of chain complexes",
+    "content": "The essential complication of managing quasi-isomorphisms is that being a quasi-isomorphism is not a functorial notion. It cannot be expressed via some diagram. We introduce a related notion that is functorial: homotopy. Definition. A homotopy $h$ between two chain maps $f,g: C \\to D$ is a collection of maps in $\\mathcal A$ \\(h^i : C^i \\to D^{i-1}\\) satisfying \\(f^i - g^i = h^{i+1} \\delta^i_C + \\delta_D^{i-1} h^i\\) for all $i \\in \\mathbb{Z}$. We say $f$ and $g$ are homotopic. A morphism is null-homotopic if it is homotopic to $0$. A chain complex $C$ is null-homotopic if $1_C$ is null-homotopic. You can visualize the homotopy identities as saying the sum of thick paths in the diagram . equals $f^i-g^i$. Lemma. Homotopy is an equivalence relation. Moreover, it is a two-sided ideal. Proof. (Expand to view) For reflexivity, we can take $h^i = 0$. For symmetry, we can replace $h^i$ by $-h^i$. For transitivity, we can add the homotopies. For the ideal condition, if $f$ and $g$ are homotopic via homotopy and $u$ is a chain map then $u \\circ h$ is a homotopy between $u \\circ f$ and $u \\circ g$. Similarly, $h \\circ u$ is a homotopy between $f \\circ u$ and $g \\circ u$. &#9632; . Lemma. Homotopic maps induce equal maps on homology. Proof. (Expand to view) If $$ f^i - g^i = h^{i+1} \\delta^i_C + \\delta_D^{i-1} h^i $$ and $\\delta^i_C c = 0$ then, $$ f^i(c) - g^i(c) = \\delta_D^{i-1} h^i(c) $$ meaning that $$ \\overline{f^i(c)} = \\overline{g^i(c)} \\in H^i(D). $$ &#9632; . As a corollary null-homotopic complexes are acyclic, $H^i(C) = 0$ for all $i$. Definition. The homotopy category $K(\\mathcal A)$ has the same objects as $Ch(\\mathcal A)$ but the morphism spaces are \\(\\operatorname{Hom}_{K(\\mathcal A)}(C,D) := \\operatorname{Hom}_{Ch(\\mathcal A)}(C,D)/\\text{homotopy}\\) . This is well-defined and comes with quotient functor $\\pi : Ch(\\mathcal A) \\to K(\\mathcal A)$ which is the identity on the objects and the quotient by the submodule of null-homotopic on morphism spaces. There is useful enhancement of the morphism spaces we can consider. For two complexes $C$ and $D$, let \\(\\operatorname{Hom}^l(C,D) := \\prod_{i \\in \\mathbb{Z}} \\operatorname{Hom}_{\\mathcal A}(C^i,D^{i+l})\\) Equip these abelian groups with the structure of chain complex where \\((\\delta \\phi)^j := \\delta_D^{j+l} \\phi^j - (-1)^l \\phi^{j+1} \\delta_C^j\\) for $\\phi \\in \\operatorname{Hom}^l(C,D)$. Lemma. There are natural isomorphisms \\(H^l(\\operatorname{Hom}^\\bullet(C,D)) \\cong \\operatorname{Hom}_{K(\\mathcal A)}(C,D[l]).\\) . Proof. (Expand to view) First note that $$ \\operatorname{Hom}^l(C,D) = \\operatorname{Hom}^0(C,D) $$ so we can reduce to $l = 0$. For $\\phi \\in \\operatorname{Hom}^0(C,D)$, $\\delta \\phi = 0$ is the same as $$ \\delta_D^{j} \\phi^j = \\phi^{j+1} \\delta_C^j $$ which means $\\phi$ is a chain map. For $\\phi \\in \\operatorname{Hom}^{-1}(C,D)$, $$ (\\delta \\phi)^j = \\delta_D^{j-1} \\phi^j + \\phi^{j+1} \\delta_C^j $$ is saying that $\\delta \\phi$ is null-homotopic with homotopy $\\phi$. &#9632; . ",
+    "url": "https://738.f21.matthewrobertballard.com/notes/2021_09_14/#the-homotopy-category-of-chain-complexes",
+    "relUrl": "/notes/2021_09_14/#the-homotopy-category-of-chain-complexes"
+  },"41": {
+    "doc": "2021-09-14",
+    "title": "2021-09-14",
+    "content": " ",
+    "url": "https://738.f21.matthewrobertballard.com/notes/2021_09_14/",
+    "relUrl": "/notes/2021_09_14/"
+  },"42": {
+    "doc": "2021-09-16",
+    "title": "Triangulated categories",
+    "content": "We will need to utilize some structure of $K(\\mathcal A)$ to facilitate arguments. The abstraction of this structure goes under the name of a triangulated category. Definition. Let $\\mathcal T$ be an additive category equipped with an autoequivalence $[1] : \\mathcal T \\to \\mathcal T$ and with a class of diagrams \\(X \\overset{\\alpha}{\\to} Y \\overset{\\beta}{\\to} Z \\overset{\\gamma}{\\to} X[1],\\) called triangles. If the structure satisfies TR1)-TR4) below, then it is called a triangulated category. TR1) . | For any $X$ \\(X \\overset{1_X}{\\to} X \\to 0 \\to X[1]\\) is a triangle. | For any $f: X \\to Y$ there exists a triangle \\(X \\overset{f}{\\to} Y \\to Z \\to X[1]\\) | Given a triangle \\(X \\to Y \\to Z \\to X[1]\\) and a commutative diagram where the vertical maps are isomorphisms, the diagram \\(X^\\prime \\to Y^\\prime \\to Z^\\prime \\to X^\\prime[1]\\) is also a triangle. | . TR2) If \\(X \\overset{\\alpha}{\\to} Y \\overset{\\beta}{\\to} Z \\overset{\\gamma}{\\to} X[1]\\) is a triangle, then so are \\(Y \\overset{\\beta}{\\to} Z \\overset{\\gamma}{\\to} X[1] \\overset{\\alpha[1]}{\\to} Y[1]\\) and \\(Z[-1] \\overset{\\gamma[-1]}{\\to} X \\overset{\\alpha}{\\to} Y \\overset{\\beta}{\\to} Z\\) . TR3) Given a commutative diagram . with \\(X \\to Y \\to Z \\to X[1]\\) and \\(X^\\prime \\to Y^\\prime \\to Z^\\prime \\to X^\\prime[1]\\) triangles, there exists a map $h: Z \\to Z^\\prime$ making the diagram . commute. TR4) (Octahedral Axiom) Given $\\alpha: X \\to Y$ and $\\beta : Y \\to Z$ we have a commutative diagram . where all rows and columns are triangles. ",
+    "url": "https://738.f21.matthewrobertballard.com/notes/2021_09_16/#triangulated-categories",
+    "relUrl": "/notes/2021_09_16/#triangulated-categories"
+  },"43": {
+    "doc": "2021-09-16",
+    "title": "Basic consequences of the definition",
+    "content": "Triangles are automatically complexes. Lemma. Given a triangle \\(X \\overset{\\alpha}{\\to} Y \\overset{\\beta}{\\to} Z \\overset{\\gamma}{\\to} X[1]\\) we have \\(\\beta\\alpha, \\gamma\\beta, \\alpha[1]\\gamma = 0.\\) . Proof. (Expand to view) From TR3), we can complete the diagram giving $$ \\beta \\alpha = 0. $$ The other cases are handled similarly. &#9632; . Definition. A functor $H : \\mathcal T \\to \\mathcal A$ from a triangulated category to an abelian category is homological if for any triangle \\(X \\to Y \\to Z \\to X[1]\\) the sequence \\(HX \\to HY \\to HZ\\) is exact. If a functor $H: \\mathcal T^{op} \\to \\mathcal A$ is homological, we call it cohomological. The following is an immediate consequence. Lemma. If $H$ is homological, then there is a long exact sequence \\(\\cdots \\to H(Z[-1]) \\to HX \\to HY \\to HZ \\to H(X[1]) \\to \\cdots\\) . Proof. (Expand to view) This is an immediate consequence of TR2). &#9632; . Representable functors are (co)homological. Lemma. For any object $T$ of $\\mathcal T$, the functor $\\operatorname{Hom}_{\\mathcal T}(T,-)$ is homological and $\\operatorname{Hom}_{\\mathcal T}(-,T)$ is cohomological. Proof. (Expand to view) We treat the first case. Since any triangle is a complex, we already know that $$ \\cdots \\to \\operatorname{Hom}(T,X) \\to \\operatorname{Hom}(T,Y) \\to \\operatorname{Hom}(T,Z) \\to \\operatorname{Hom}(T,X[1]) \\to \\cdots $$ is also a complex. Assume that $\\beta f = 0$ for some $f: T \\to Y$. Then, we can complete the diagram giving a $g$ with $\\alpha g = f$. &#9632; . Definition. A candidate triangle is a diagram \\(X \\to Y \\to Z \\to X[1]\\) such that either \\(\\cdots \\to \\operatorname{Hom}(T,X) \\to \\operatorname{Hom}(T,Y) \\to \\operatorname{Hom}(T,Z) \\to \\operatorname{Hom}(T,X[1]) \\to \\cdots\\) is an exact sequence for all $T$ or \\(\\cdots \\to \\operatorname{Hom}(X[1],T) \\to \\operatorname{Hom}(Z,T) \\to \\operatorname{Hom}(Y,T) \\to \\operatorname{Hom}(X,T) \\to \\cdots\\) is an exact sequence for all $T$. A useful lemma in detecting triangles is the following. Lemma. Assume we have a map of candidate triangles . with all maps labeled by $\\sim$ isomorphisms. Then $Z \\to Z^\\prime$ is an isomorphism. In particular, if at least one of the candidate triangles is an actual triangle, so is the other. Proof. (Expand to view) We assume that applying $\\operatorname{Hom}(T,-)$ to our candidate triangle yields an exact sequence. We apply $\\operatorname{Hom}(T,-)$ to the whole diagram giving From the five lemma, we have an isomorphism $$ \\operatorname{Hom}(-,Z^\\prime) \\cong \\operatorname{Hom}(-,Z) $$ and hence by Yoneda $Z^\\prime \\cong Z$. Thus, we have an isomorphism between our triangle and candidate triangle. By TR1), the candidate triangle is triangle. &#9632; . Note that the previous lemma applies in the case both rows are triangles. In particular, it implies that the object $Z$ completing the triangle for $f: X \\to Y$ is unique up to isomorphism. Definition. In a triangle \\(X \\overset{f}{\\to} Y \\to Z \\to X[1]\\) we call $Z$ the cone of the morphism $f$. Lemma. A retract of a triangle is also a triangle. Proof. (Expand to view) Assume we have a diagram Applying $\\operatorname{Hom}(T,-)$ gives a retract of an exact sequence which is also exact. Now complete $f: X^\\prime \\to Y^\\prime$ to a triangle: $$ X^\\prime \\to Y^\\prime \\to \\bar{Z} \\to X^\\prime[1] $$ We can complete the square and compose to get a map By the previous lemma, we have a triangle. &#9632; . We can play a similar strategy with other functorial constructions that preserve exact sequences. Lemma. Let \\(X_i \\to Y_i \\to Z_i \\to X_i[1]\\) be triangles for $i \\in I$. | If \\(\\bigoplus_I X_i \\to \\bigoplus_I Y_i \\to \\bigoplus_I Z_i \\to \\bigoplus_I X_i[1]\\) exists, it is a triangle. | If \\(\\prod_I X_i \\to \\prod_I Y_i \\to \\prod_I Z_i \\to \\prod_I X_i[1]\\) exists, it is a triangle. | . Proof. (Expand to view) We treat $\\bigoplus$ since $\\prod$ follows analogously. Take a triangle $$ \\bigoplus X_i \\to \\bigoplus Y_i \\to Z \\to \\bigoplus X_i[1] $$ Note that the possibile ambiguity in writing $\\bigoplus X_i[1]$ is fine since $[1]$, as an autoequivalence commutes with coproducts. For each $i$ we have a map of triangles which gives a map The top row is a candidate triangle as products of exact sequences of abelian groups remain exact. Applying the previous lemma shows it is a triangle. &#9632; . Finally, we can detect isomorphisms using objects via triangles. Lemma. The map $f : X \\to Y$ is an isomorphism in $\\mathcal T$ if and only if \\(X \\overset{f}{\\to} Y \\to 0 \\to X[1]\\) is a triangle. Proof. (Expand to view) For the forward direction assume $f$ is an isomorphism. Then we can construct a morphism of triangles showing $Z \\cong 0$. In the other direction, we can apply $\\operatorname{Hom}(T,-)$ and conclude that $$ \\operatorname{Hom}(-,f) : \\operatorname{Hom}(-,X) \\to \\operatorname{Hom}(-,Y) $$ is an isomorphism. Hence $f: X \\to Y$ is also. &#9632; . ",
+    "url": "https://738.f21.matthewrobertballard.com/notes/2021_09_16/#basic-consequences-of-the-definition",
+    "relUrl": "/notes/2021_09_16/#basic-consequences-of-the-definition"
+  },"44": {
+    "doc": "2021-09-16",
+    "title": "The homotopy category as a triangulated category",
+    "content": "For $K(\\mathcal A)$ we already have the shift $[1]$. We just need to the collection of triangles. Definition. Given a chain map $\\phi : A \\to B$, the cone of $\\phi$ is the complex \\(C(\\phi)^i = A^{i+1} \\oplus B^i, \\ \\delta^i_{C(\\phi)} = \\begin{pmatrix} -\\delta_A^{i+1} &amp; 0 \\\\ \\phi_{i+1} &amp; \\delta_B^i \\end{pmatrix}\\) There are chain maps given by inclusion \\(B \\to C(\\phi)\\) and by projection \\(C(\\phi) \\to A\\) . The triangles will be diagrams isomorphic to a triangle for the form \\(A \\overset{\\phi}{\\to} B \\to C(\\phi) \\to A[1]\\) for some $\\phi : A \\to B$. Proposition. The homotopy category $K(\\mathcal A)$ with $[1]$ and these triangles is a triangulated category. One important fact to notice: this cone construction is a functorial. Given a square . we have a map of cones \\(\\begin{pmatrix} \\alpha &amp; 0 \\\\ 0 &amp; \\beta \\end{pmatrix} : C(f) \\to C(g)\\) . For a general triangulated category, this is not the case. Next, let’s check (some of) the axioms in order of convenience. TR1) Clearly $C(1_A) \\neq 0$ but we only need it to be null-homotopic. The map \\(\\begin{pmatrix} 0 &amp; 1 \\\\ 0 &amp; 0 \\end{pmatrix} : A_{i+1} \\oplus A_i \\to A_i \\oplus A_{i-1}\\) provides the null-homotopy. The other two conditions here are automatic from the definition of the set of triangle: . | Any map $\\phi : A \\to B$ can be completed to the triangle \\(A \\to B \\to C(\\phi) \\to A[1]\\) | Anything isomorphic to a triangle is itself a triangle as we declared that the set of triangles to be closed under isomorphism as part of the definition. | . TR3) We already mentioned the functoriality of the cone construction. Thus given a commutative square . we can complete it to a map of triangles . TR2) This reduces to the claim that $C(C(\\phi) \\to A[1])$ is homotopic to $B[1]$ and that $C(B \\to C(\\phi))$ is homotopic to $A[1]$. We expand on the later claim. The projection defines a chain map \\(\\rho : C(B \\to C(\\phi)) \\to A[1].\\) The map in the other direction is \\(\\ell : \\begin{pmatrix} \\phi &amp; 1 &amp; 0 \\end{pmatrix} A[1] \\to C(B \\to C(\\phi)).\\) . The composition $\\rho \\ell$ is $1_{A[1]}$. The other composition is homotopic to the identity via \\(\\begin{pmatrix} 0 &amp; 0 &amp; 1 \\\\ 0 &amp; 0 &amp; 0 \\\\ 0 &amp; 0 &amp; 0 \\end{pmatrix} : C(B \\to C(\\phi)) \\to C(B \\to C(\\phi))\\) . Checking the other claim boils down to producing such homotopies similar to some of the following observations that relate the abelian category structure of $Ch(\\mathcal A)$ to cones. Proposition. | The sequence \\(0 \\to B \\to C(\\phi) \\to A \\to 0\\) is an exact sequence of complexes. | Let $K = \\ker \\phi$ and $C = \\operatorname{cok} \\phi$. Then we can factor the map $K \\to A$ as \\(K \\to C(\\phi)[-1] \\to A\\) and the map $B \\to C$ as \\(B \\to C(\\phi) \\to C.\\) | If $\\phi: A \\hookrightarrow B$, then $C(\\phi) \\to C$ is a quasi-isomorphism. | If $\\phi: A \\twoheadrightarrow B$, the $K \\to C(\\phi)[-1]$ is a quasi-isomorphism. | . We leave the details to the reader. Finally, we ignore TR4) until we actually need it (as is tradition). ",
+    "url": "https://738.f21.matthewrobertballard.com/notes/2021_09_16/#the-homotopy-category-as-a-triangulated-category",
+    "relUrl": "/notes/2021_09_16/#the-homotopy-category-as-a-triangulated-category"
+  },"45": {
+    "doc": "2021-09-16",
+    "title": "2021-09-16",
+    "content": " ",
+    "url": "https://738.f21.matthewrobertballard.com/notes/2021_09_16/",
+    "relUrl": "/notes/2021_09_16/"
+  },"46": {
     "doc": "About",
     "title": "Syllabus",
     "content": ". | Course Information . | Course Name and Number | Term | Meeting Time and Location | Instructor Information | Office Hours | Full Course Description | Prerequisites | Learning Outcomes | Course Materials | . | Course Requirements . | Course Format | Course Communication | Technology | Minimal Technical Skills Needed | Technical Support | . | Course Assignments and Grading . | Homework | Paper | Evaluation and Grading Scale . | Assignment Weights | Grading Scale | . | Assignment Submission | Revisions | . | Academic Success . | Accessibility | University Library Resources | Teams and Technology | Counseling Services | . | Course Policies and Procedures . | Attendance Policy and COVID Reporting | COVID Policies . | Questions You May Have | . | Academic Integrity | Plagiarism | Group Work | Class Conduct | Late Work/Make-up Policy | Incomplete Grades | Diversity and Inclusion | Title IX and Gendered Identity | Expectations of the Instructor | Copyright/Fair Use Statement | . | . ",
     "url": "https://738.f21.matthewrobertballard.com/about/#syllabus",
     "relUrl": "/about/#syllabus"
-  },"38": {
+  },"47": {
     "doc": "About",
     "title": "Course Information",
     "content": " ",
     "url": "https://738.f21.matthewrobertballard.com/about/#course-information",
     "relUrl": "/about/#course-information"
-  },"39": {
+  },"48": {
     "doc": "About",
     "title": "Course Name and Number",
     "content": "Selected Topics in Geometry and Topology: Derived categories in algebraic geometry I – Math 738 . ",
     "url": "https://738.f21.matthewrobertballard.com/about/#course-name-and-number",
     "relUrl": "/about/#course-name-and-number"
-  },"40": {
+  },"49": {
     "doc": "About",
     "title": "Term",
     "content": "Fall 2021 . ",
     "url": "https://738.f21.matthewrobertballard.com/about/#term",
     "relUrl": "/about/#term"
-  },"41": {
+  },"50": {
     "doc": "About",
     "title": "Meeting Time and Location",
     "content": "Tuesdays and Thursdays 10:05-11:20 AM in Room 3006B of the Carolina Coliseum . ",
     "url": "https://738.f21.matthewrobertballard.com/about/#meeting-time-and-location",
     "relUrl": "/about/#meeting-time-and-location"
-  },"42": {
+  },"51": {
     "doc": "About",
     "title": "Instructor Information",
     "content": ". | Instructor Name and Preferred Title: Prof. Matthew (Matt) Ballard | Preferred pronouns: He/Him/His | Office : Carolina Coliseum Room 1022C | E-mail: ballard@math.sc.edu | . ",
     "url": "https://738.f21.matthewrobertballard.com/about/#instructor-information",
     "relUrl": "/about/#instructor-information"
-  },"43": {
+  },"52": {
     "doc": "About",
     "title": "Office Hours",
     "content": "Tuesdays and Thursdays 7:45-8:30 and 11:30-12:15 or by appointment . ",
     "url": "https://738.f21.matthewrobertballard.com/about/#office-hours",
     "relUrl": "/about/#office-hours"
-  },"44": {
+  },"53": {
     "doc": "About",
     "title": "Full Course Description",
     "content": "This is the first in a two-semester course. This semester we will introduce derived categories of abelian categories with a particular emphasis on the category $\\operatorname{Mod} R$ of $R$-modules over a ring $R$. Time allowing we will introduce the necessary ideas and facts from Algebraic Geometry for the category $\\operatorname{Qcoh} X$ of quasi-coherent sheaves on a scheme $X$. ",
     "url": "https://738.f21.matthewrobertballard.com/about/#full-course-description",
     "relUrl": "/about/#full-course-description"
-  },"45": {
+  },"54": {
     "doc": "About",
     "title": "Prerequisites",
     "content": "None . ",
     "url": "https://738.f21.matthewrobertballard.com/about/#prerequisites",
     "relUrl": "/about/#prerequisites"
-  },"46": {
+  },"55": {
     "doc": "About",
     "title": "Learning Outcomes",
     "content": "After successful completion of this course, you will be able to: . | Localize abelian categories for fun and profit | Draw confusing diagrams that claim to explain the octohedral axiom | Day dream about stable $\\infty$-categories | . ",
     "url": "https://738.f21.matthewrobertballard.com/about/#learning-outcomes",
     "relUrl": "/about/#learning-outcomes"
-  },"47": {
+  },"56": {
     "doc": "About",
     "title": "Course Materials",
     "content": "The main resources for materials are . | the course website, | the course channel in the SCAGNT Zulip | the GitHub Classroom, and | the Microsoft Team for the course. | . Supplemental course materials will be linked as necessary. All course materials comply with copyright/fair use policies. ",
     "url": "https://738.f21.matthewrobertballard.com/about/#course-materials",
     "relUrl": "/about/#course-materials"
-  },"48": {
+  },"57": {
     "doc": "About",
     "title": "Course Requirements",
     "content": " ",
     "url": "https://738.f21.matthewrobertballard.com/about/#course-requirements",
     "relUrl": "/about/#course-requirements"
-  },"49": {
+  },"58": {
     "doc": "About",
     "title": "Course Format",
     "content": "The course is a standard lecture course with homeworks to test your understanding. At the end of the class, a paper will be due in place of a final exam. ",
     "url": "https://738.f21.matthewrobertballard.com/about/#course-format",
     "relUrl": "/about/#course-format"
-  },"50": {
+  },"59": {
     "doc": "About",
     "title": "Course Communication",
     "content": "If you need to get in touch with me, the best method is via Zulip chat or email. Generally, I will reply within 24 hours and will provide feedback on assignments within one week. You may also post questions pertaining to the course in the Questions channel in the course team. These questions will be answered within 24 hours. I encourage all students to take a stab at answering any question. If you are having trouble with this course or its material, you should contact me via Zulip chat or email to discuss the issues. Announcements will be posted to this course whenever necessary. If there is any other information I think is important, I will send it to your preferred university email address. It is your responsibility to ensure that your email account works properly in order to receive email. If you are unsure of your preferred email, check your account at myaccount.sc.edu. For more information on setting your preferred university email, please see the Knowledge Base Article How To Change Your Primary University Email Address. ",
     "url": "https://738.f21.matthewrobertballard.com/about/#course-communication",
     "relUrl": "/about/#course-communication"
-  },"51": {
+  },"60": {
     "doc": "About",
     "title": "Technology",
     "content": "To participate in learning activities and complete assignments, you will need: . | Access to a working computer that has a current operating system with updates installed with a modern web browser installed; . | Reliable Internet access and a USC email account; . | If you plan to submit handwritten assignments, a scanning device such as a smartphone with the Microsoft Office Lens app. | We are using the Microsoft Teams with the team COTEAM-BALLARMR-MATH-738-001-FALL-2021 run through your UofSC Microsoft account. To access the team for the first time on your desktop/laptop, use the join link included in your welcome email. | For dissemination, collection of, and feedback on homework assignments, we will be using GitHub Classroom. To access the classroom for the first time on your desktop/laptop, use the join link included in your welcome email. | For chat, We will be using a service called Zulip to aid our learning. It exceeds Team’s capabilities with regards to typsetting mathematics content. To access the SCAGNT Zulip chat for the first time on your desktop/laptop, use the join link included in your welcome email. | . ",
     "url": "https://738.f21.matthewrobertballard.com/about/#technology",
     "relUrl": "/about/#technology"
-  },"52": {
+  },"61": {
     "doc": "About",
     "title": "Minimal Technical Skills Needed",
     "content": "Minimal technical skills are needed in this course. All work in this course must be completed and submitted online. Therefore, you must have consistent and reliable access to a computer and the Internet. The minimal technical skills you have include the ability to: . | Organize and save electronic files; . | Check and use the course, GitHub Classroom, Zulip, and Microsoft Teams sites regularly; . | Download and upload documents; . | Locate and enter information with a browser; . | Edit and compile TeX documents. | . ",
     "url": "https://738.f21.matthewrobertballard.com/about/#minimal-technical-skills-needed",
     "relUrl": "/about/#minimal-technical-skills-needed"
-  },"53": {
+  },"62": {
     "doc": "About",
     "title": "Technical Support",
     "content": "If you have problems with your computer, technology, IT-related questions, support, including Microsoft Teams, please contact the Division of Information Technology (DoIT) Service Desk at (803) 777-1800 or submit an online request through the Self-Service Portal or visit the Carolina Tech Zone. The Service Desk is open Monday – Friday from 8:00 AM – 6:00 PM (Eastern Daylight Time). The Thomas Cooper Library at USC has computers for you to use in case you encounter computer issues/problems. If you have problems with Zulip or GitHub Classroom, contact me. ",
     "url": "https://738.f21.matthewrobertballard.com/about/#technical-support",
     "relUrl": "/about/#technical-support"
-  },"54": {
+  },"63": {
     "doc": "About",
     "title": "Course Assignments and Grading",
     "content": " ",
     "url": "https://738.f21.matthewrobertballard.com/about/#course-assignments-and-grading",
     "relUrl": "/about/#course-assignments-and-grading"
-  },"55": {
+  },"64": {
     "doc": "About",
     "title": "Homework",
     "content": "Except for the zeroth one, homework can be completed in groups of 1-4. All sources utilized must be cited. Homework is submitted as TeX files. The assignments will be available in and must be returned through GitHub Classroom. As part of the homework, you will learn how to use git. ",
     "url": "https://738.f21.matthewrobertballard.com/about/#homework",
     "relUrl": "/about/#homework"
-  },"56": {
+  },"65": {
     "doc": "About",
     "title": "Paper",
     "content": "In lieu of a finals, papers on more in depth topics are required. Contact me to arrange for a topic. Suggestions will be provided as we progress. ",
     "url": "https://738.f21.matthewrobertballard.com/about/#paper",
     "relUrl": "/about/#paper"
-  },"57": {
+  },"66": {
     "doc": "About",
     "title": "Evaluation and Grading Scale",
     "content": "All grades will be posted on Teams. A final letter grade will be assigned based on weighting below. Assignment Weights . | Component | Percent of total | . | Participation | 33% | . | Homework | 33% | . | Paper | 33% | . Grading Scale . | Final total intervals | Letter Grade | . | [90,100] | A | . | [85,90) | B+ | . | [80,85) | B | . | [75,80) | C+ | . | [70,75) | C | . | [65,70) | D+ | . | [60,65) | D | . | [0,60) | F | . ",
     "url": "https://738.f21.matthewrobertballard.com/about/#evaluation-and-grading-scale",
     "relUrl": "/about/#evaluation-and-grading-scale"
-  },"58": {
+  },"67": {
     "doc": "About",
     "title": "Assignment Submission",
     "content": "Assignment submission will be through the GitHub Classroom for the course. ",
     "url": "https://738.f21.matthewrobertballard.com/about/#assignment-submission",
     "relUrl": "/about/#assignment-submission"
-  },"59": {
+  },"68": {
     "doc": "About",
     "title": "Revisions",
     "content": "All homework turned in on-time is eligible for revision at full credit. Each assignment can undergo at most two revisions. Revisions must be resubmitted within one week of receiving a marked assignment or revision. ",
     "url": "https://738.f21.matthewrobertballard.com/about/#revisions",
     "relUrl": "/about/#revisions"
-  },"60": {
+  },"69": {
     "doc": "About",
     "title": "Academic Success",
     "content": " ",
     "url": "https://738.f21.matthewrobertballard.com/about/#academic-success",
     "relUrl": "/about/#academic-success"
-  },"61": {
+  },"70": {
     "doc": "About",
     "title": "Accessibility",
     "content": "The Student Disability Resource Center (SDRC) empowers students to manage challenges and limitations imposed by disabilities. Students with disabilities are encouraged to contact me to discuss the logistics of any accommodations needed to fulfill course requirements (within the first week of the semester). In order to receive reasonable accommodations from me, you must be registered with the Student Disability Resource Center (1705 College Street Close-Hipp, Suite 102 Columbia, SC 29208, 803-777-6142). Any student with a documented disability should contact the SDRC to make arrangements for appropriate accommodations. ",
     "url": "https://738.f21.matthewrobertballard.com/about/#accessibility",
     "relUrl": "/about/#accessibility"
-  },"62": {
+  },"71": {
     "doc": "About",
     "title": "University Library Resources",
     "content": "University Libraries has access to books, articles, subject specific resources, citation help, and more. If you are not sure where to start, please Ask a Librarian! Assistance is available at sc.edu/libraries/ask.  . Remember that if you use anything that is not your own writing or media (quotes from books, articles, interviews, websites, movies – everything) you must cite the source in MLA (or other appropriate and approved) format. ",
     "url": "https://738.f21.matthewrobertballard.com/about/#university-library-resources",
     "relUrl": "/about/#university-library-resources"
-  },"63": {
+  },"72": {
     "doc": "About",
     "title": "Teams and Technology",
     "content": "Teams and Technology. As a student in this course, you have access to support from the Division of Information Technology (DoIT) for Teams and computer issues. The service desk can be reached at 803-777-1800. ",
     "url": "https://738.f21.matthewrobertballard.com/about/#teams-and-technology",
     "relUrl": "/about/#teams-and-technology"
-  },"64": {
+  },"73": {
     "doc": "About",
     "title": "Counseling Services",
     "content": "The University offers counseling and crisis services as well as outreach services and self-help. ",
     "url": "https://738.f21.matthewrobertballard.com/about/#counseling-services",
     "relUrl": "/about/#counseling-services"
-  },"65": {
+  },"74": {
     "doc": "About",
     "title": "Course Policies and Procedures",
     "content": " ",
     "url": "https://738.f21.matthewrobertballard.com/about/#course-policies-and-procedures",
     "relUrl": "/about/#course-policies-and-procedures"
-  },"66": {
+  },"75": {
     "doc": "About",
     "title": "Attendance Policy and COVID Reporting",
     "content": "You are expected to participate actively in each course. If you anticipate an excused absence, you need to contact me in advance. You should submit a request in writing (email is acceptable) stating the dates of the anticipated absence, explaining the reason for absence, providing supporting documentation as required above, and including any request for make-up work. You should submit this request no later than the end of the second week of regularly scheduled classes in a full fall or spring semester term and within twice the length of the drop/add period for any other term. If regularly attending class becomes difficult for any reason, please contact me to discuss the issue. In accordance with university policy, a grade penalty of 10% may be imposed if a student has unexcused absensces exceeding 5% of the total number of courses. For this course, that means missing TWO courses without excuse. All absences due to documented illness or quarantine will be excused, and no grade penalty will be assessed for missing classes for this reason. If you experience COVID-19 symptoms, please stay home, contact the COVID-19 Student Health Services (SHS) nurse line (803-576-8511), complete the COVID-19 Student Report Form and select the option allowing the Student Ombuds to contact your professors. When talking with the SHS nurse, be sure to ask for documentation of the consult as you will need this to document why you missed class. You will also use the COVID-19 Student Report Form if you have tested positive for COVID-19 or if you have been ordered to quarantine because of close contact with a person who was COVID-19 positive. In each of these situations you will be provided appropriate documentation that can be shared through the Student Report Form. ",
     "url": "https://738.f21.matthewrobertballard.com/about/#attendance-policy-and-covid-reporting",
     "relUrl": "/about/#attendance-policy-and-covid-reporting"
-  },"67": {
+  },"76": {
     "doc": "About",
     "title": "COVID Policies",
     "content": "As of 8/17/2021, UofSC requires face coverings, including in this class. For more information on this semester’s COVID policies see the guidance from the Provost. I strongly encourage getting vaccinated. I encourage physical distancing. While not always possible, I will strive to keep everyone at least three feet apart, even when working in groups, which we will do regularly. If you feel uncomfortable with group work in my class, please come talk with me and I don’t mind letting you work independently at all. I have been requested to keep a seating chart. I have been urged to keep this seating chart for contact tracing purposes and will do my best to abide by the University policy. Questions You May Have . What if I get sick with COVID? Two things have to occur: Isolation: Students who have been diagnosed with COVID-19 are released from isolation when a medical professional has determined, based on the current CDC and DHEC guidelines, that they have recovered. Currently, these guidelines include being fever-free for at least 24 hours and at least 10 days from their first symptom or positive test if they are asymptomatic. Quarantine: Unvaccinated students who are deemed a close contact with a confirmed COVID-19 case will be quarantined for 7-14 days from their last contact with the infected individual. More specifically, students who test negative on day 5, 6, or 7 can leave quarantine after 7 full days; individuals who did not test but remain asymptomatic can leave after 10 full days. Individuals who are symptomatic or have other health concerns may be advised to remain under quarantine for 14 days.  . What is the attendance policy if I get COVID? In brief, I must provide make-up course work including content and assignments when students have excused absences which include (but are not limited to) being in quarantine or isolation, religious holidays, medical conditions related to pregnancy, and military duty. However, recorded classes and hybrid/online options are not required and should not be expected. All excused absences must have documentation. See syllabus for further attendance policies. How will the Dr. Ballard know if I am absent due to quarantine or isolation? COVID-19 related absences must be document through the Student Ombudsman.  Students who have been diagnosed with COVID-19 or have been exposed and require quarantining should complete the COVID-19 Student Report Form and instructors should request this form in order to excuse the absence.  . Can I inquire about classmates condition with COVID? Sadly, not with me. These are health issues and the information is protected by state and federal law. If an individual student has questions about whether they should quarantine or believe that they have been in close contact, have them reach out to the COVID Phone Bank (803-576-8511). Would we ever change to go online if too many people are sick? Only in the rare instance that 30% or more of students have documented excused absences may I take the course online. This is not to be expected and very complicated according to the current policies. What if Dr. Ballard gets sick with COVID? I have been fully vaccinated and breakthrough infection symptoms most often resemble the common cold. In the event of a breakthrough infection, I will enter the self-isolation period and the course will switch modality to synchronous online temporarily. In the rare circumstance I am unable to teach remotely, a substitute instructor will take over the course. ",
     "url": "https://738.f21.matthewrobertballard.com/about/#covid-policies",
     "relUrl": "/about/#covid-policies"
-  },"68": {
+  },"77": {
     "doc": "About",
     "title": "Academic Integrity",
     "content": "You are expected to practice the highest possible standards of academic integrity. Any deviation from this expectation will result in a minimum academic penalty of your failing the assignment, and will result in additional disciplinary measures. This includes improper citation of sources, using another student’s work, and any other form of academic misrepresentation. The first tenet of the Carolinian Creed is, “I will practice personal and academic integrity.” . Below are some websites for you to visit to learn more about University policies: . | Carolinian Creed . | Academic Responsibility . | Office of Student Conduct and Academic Integrity . | Information Security Policy and Standards . | . ",
     "url": "https://738.f21.matthewrobertballard.com/about/#academic-integrity",
     "relUrl": "/about/#academic-integrity"
-  },"69": {
+  },"78": {
     "doc": "About",
     "title": "Plagiarism",
     "content": "Using the words or ideas of another as if they were one’s own is a serious form of academic dishonesty. If another person’s complete sentence, syntax, key words, or the specific or unique ideas and information are used, one must give that person credit through proper citation. You should in particular cite any resources, person, text, or otherwise, you used to assist in preparation of your work. Copying proofs or problem solutions is strictly forbidden. ",
     "url": "https://738.f21.matthewrobertballard.com/about/#plagiarism",
     "relUrl": "/about/#plagiarism"
-  },"70": {
+  },"79": {
     "doc": "About",
     "title": "Group Work",
     "content": "Group work should be performed in safe manner. Remote work will certainly form a larger component of a career going forward. You are encouraged to take advantage of Microsoft Teams video conferencing and Zulip chat abilities to aid in collaboration. ",
     "url": "https://738.f21.matthewrobertballard.com/about/#group-work",
     "relUrl": "/about/#group-work"
-  },"71": {
+  },"80": {
     "doc": "About",
     "title": "Class Conduct",
     "content": "Professionalism will be expected at all times, but most especially with your interactions online and in person. Because the university classroom is a place designed for the free exchange of ideas, we must show respect for one another in all circumstances. We will show respect for one another by exhibiting patience and courtesy in our exchanges. Appropriate language and restraint from verbal attacks upon those whose perspectives differ from your own is a minimum requirement. Courtesy and kindness is the norm for those who participate in the class. Mistakes, in particular during the running phase, are expected and natural. Mistakes are how learning happens. All students should recognize and respect the bravery of a student presenting a proof or solution. If you ever feel uncomfortable beyond the intellectual challenge of the course, please contact me. Teams is a way for you to share your ideas and learning with your colleagues in this class. We do this as colleagues in learning, and the online space is meant to be a safe and respectful environment for us to conduct these discussions. Some general netiquette rules: . | Treat one another with respect. It will be expected that we will not attack one another personally for holding different opinions. | Do not use all CAPITAL LETTERS in emails or discussion board postings. This is considered “shouting” and is seen as impolite or aggressive. | Begin emails with a proper salutation (Examples: Dr. Name; Ms. Name; Hello Professor Name; Good afternoon Mr. Name). Starting an email without a salutation or a simple “Hey” is not appropriate. | When sending an email, please include a detailed subject line. Additionally, make sure you reference the course number (Ex. ENGL 287) in the message and sign the mail with your name. | Use proper grammar, spelling, punctuation, and capitalization. Text messaging language is not acceptable. | Use good taste when communicating. Profanity should be avoided. | Re-Read, think, and edit your message before you click “Send/Submit/Post.” . | Please remember when posting to be respectful and courteous to your colleagues, and limit your communication to topics of this course and the assignments. | . ",
     "url": "https://738.f21.matthewrobertballard.com/about/#class-conduct",
     "relUrl": "/about/#class-conduct"
-  },"72": {
+  },"81": {
     "doc": "About",
     "title": "Late Work/Make-up Policy",
     "content": "All assignments due by the deadline as posted on the course schedule. Late work is not accepted and not eligible for revision. Please plan accordingly, and complete these assignments in advance of their deadlines to ensure any unanticipated circumstances do not result in a missed assignment. User error does not qualify you for any kind of makeup or retake opportunity. Completing and submitting the assignments by the due date is the sole responsibility of you. If you fail to submit the assignment or test by the due date, then your score for that assignment will be recorded as “zero.” . You will be allowed to access the assignments an unlimited number of times until the due date/time. If you are concerned about missing a deadline, post your assignment the day before the deadline. Be Careful: The clock on your computer may be different than the clock in Teams. If the clock is different by one second, you will be locked out of the assignment. Plan accordingly. ",
     "url": "https://738.f21.matthewrobertballard.com/about/#late-workmake-up-policy",
     "relUrl": "/about/#late-workmake-up-policy"
-  },"73": {
+  },"82": {
     "doc": "About",
     "title": "Incomplete Grades",
     "content": "The grade of Incomplete will be granted only in accordance with university policy. ",
     "url": "https://738.f21.matthewrobertballard.com/about/#incomplete-grades",
     "relUrl": "/about/#incomplete-grades"
-  },"74": {
+  },"83": {
     "doc": "About",
     "title": "Diversity and Inclusion",
     "content": "The university is committed to a campus environment that is inclusive, safe, and respectful for all persons, and one that fully embraces the Carolinian Creed: “I will discourage bigotry, while striving to learn from differences in people, ideas and opinions.” Likewise, the Student Code of Conduct stresses, “The University of South Carolina strives to maintain an educational community that fosters the development of students who are ethical, civil and responsible persons.” . To that end, all course activities will be conducted in an atmosphere of friendly participation and interaction among colleagues, recognizing and appreciating the unique experiences, background, and point of view each student brings. You are expected at all times to apply the highest academic standards to this course and to treat others with dignity and respect. ",
     "url": "https://738.f21.matthewrobertballard.com/about/#diversity-and-inclusion",
     "relUrl": "/about/#diversity-and-inclusion"
-  },"75": {
+  },"84": {
     "doc": "About",
     "title": "Title IX and Gendered Identity",
     "content": "This course affirms equality and respect for all gendered identities and expressions. Please don’t hesitate to correct me regarding your preferred gender pronoun and/or name if different from what is indicated on the official class roster. Likewise, I am committed to nurturing an environment free from discrimination and harassment. Consistent with Title IX policy, please be aware that I as a responsible employee am obligated to report information that you provide to me about a situation involving sexual harassment or assault. ",
     "url": "https://738.f21.matthewrobertballard.com/about/#title-ix-and-gendered-identity",
     "relUrl": "/about/#title-ix-and-gendered-identity"
-  },"76": {
+  },"85": {
     "doc": "About",
     "title": "Expectations of the Instructor",
     "content": "I am expected to facilitate learning, answer questions appropriately, be fair and objective in grading, provide timely and useful feedback on assignments and treat you as I would like to be treated. ",
     "url": "https://738.f21.matthewrobertballard.com/about/#expectations-of-the-instructor",
     "relUrl": "/about/#expectations-of-the-instructor"
-  },"77": {
+  },"86": {
     "doc": "About",
     "title": "Copyright/Fair Use Statement",
     "content": "I will cite and/or reference any materials that I use in this course that I do not create. Anything that appears on this website is copyright © 2021 Matthew Ballard and is distributed by an MIT license. Course materials that do not appear on this website are copyright © 2021 Matthew Ballard and all rights are reserved. In particular, you may not distribute any of these course materials in any fashion. ",
     "url": "https://738.f21.matthewrobertballard.com/about/#copyrightfair-use-statement",
     "relUrl": "/about/#copyrightfair-use-statement"
-  },"78": {
+  },"87": {
     "doc": "About",
     "title": "About",
     "content": " ",
     "url": "https://738.f21.matthewrobertballard.com/about/",
     "relUrl": "/about/"
-  },"79": {
+  },"88": {
     "doc": "This Website",
     "title": "About this website",
     "content": "This website is hosted on GitHub and relies on Jekyll to generate the content. It uses the Just the Class theme which built off the Just the Docs theme. At material appearing here is copyright © 2021 Matthew Ballard and is distributed with an MIT license. ",
     "url": "https://738.f21.matthewrobertballard.com/about_this_webpage/#about-this-website",
     "relUrl": "/about_this_webpage/#about-this-website"
-  },"80": {
+  },"89": {
     "doc": "This Website",
     "title": "This Website",
     "content": " ",
     "url": "https://738.f21.matthewrobertballard.com/about_this_webpage/",
     "relUrl": "/about_this_webpage/"
-  },"81": {
+  },"90": {
     "doc": "Announcements",
     "title": "Announcements",
     "content": "Announcements are stored in the _announcements directory and rendered according to the layout file, _layouts/announcement.html. ",
     "url": "https://738.f21.matthewrobertballard.com/announcements/",
     "relUrl": "/announcements/"
-  },"82": {
+  },"91": {
     "doc": "Announcements",
     "title": "Week 1 Announcement",
     "content": "Aug 17 &middot; 0 min read Due to an immovable medical appointment, the first class (Aug 19) is rescheduled. We will figure if and how to make it up at a later date. ",
     "url": "https://738.f21.matthewrobertballard.com/announcements/",
     "relUrl": "/announcements/"
-  },"83": {
+  },"92": {
     "doc": "Calendar",
     "title": "Calendar",
     "content": " ",
     "url": "https://738.f21.matthewrobertballard.com/calendar/",
     "relUrl": "/calendar/"
-  },"84": {
+  },"93": {
     "doc": "Calendar",
     "title": "Abelian categories and chain complexes",
     "content": "Sept 7 Abelian categories and (half) exact functors Sept 9 Exactness for $\\text{Hom}$ and $\\otimes$: projectives, injectives, and flat modules Sept 14 Resolutions and chain complex categories ",
     "url": "https://738.f21.matthewrobertballard.com/calendar/#abelian-categories-and-chain-complexes",
     "relUrl": "/calendar/#abelian-categories-and-chain-complexes"
-  },"85": {
+  },"94": {
     "doc": "Calendar",
     "title": "Past topics",
     "content": ". ",
     "url": "https://738.f21.matthewrobertballard.com/calendar/#past-topics",
     "relUrl": "/calendar/#past-topics"
-  },"86": {
+  },"95": {
     "doc": "Calendar",
     "title": "Categories",
     "content": "Aug 24 Definitions of categories and examples Aug 26 Functors, natural transformations, and equivalences Aug 31 Adjunctions Sept 2 Representable functors and Yoneda ",
     "url": "https://738.f21.matthewrobertballard.com/calendar/#categories",
     "relUrl": "/calendar/#categories"
-  },"87": {
+  },"96": {
     "doc": "Homework",
     "title": "Homework",
     "content": ". | Homework 1. Due Date: September 15 . | Homework 0. Due Date: August 26 . | . ",
     "url": "https://738.f21.matthewrobertballard.com/homework/",
     "relUrl": "/homework/"
-  },"88": {
+  },"97": {
     "doc": "Derived Categories",
     "title": "Fall 2021 Math 738 at UofSC",
     "content": "We will localize some categories and have fun doing it. ",
     "url": "https://738.f21.matthewrobertballard.com/#fall-2021-math-738-at-uofsc",
     "relUrl": "/#fall-2021-math-738-at-uofsc"
-  },"89": {
+  },"98": {
     "doc": "Derived Categories",
     "title": "Syllabus",
     "content": "The syllabus can be found at the about tab. ",
     "url": "https://738.f21.matthewrobertballard.com/#syllabus",
     "relUrl": "/#syllabus"
-  },"90": {
+  },"99": {
     "doc": "Derived Categories",
     "title": "Calendar",
     "content": "At the calendar tab, you will find our topic schedule and due dates for assignments. ",
     "url": "https://738.f21.matthewrobertballard.com/#calendar",
     "relUrl": "/#calendar"
-  },"91": {
+  },"100": {
     "doc": "Derived Categories",
     "title": "Notes",
     "content": "The notes tab is where you can find the course notes. ",
     "url": "https://738.f21.matthewrobertballard.com/#notes",
     "relUrl": "/#notes"
-  },"92": {
+  },"101": {
     "doc": "Derived Categories",
     "title": "Homework",
     "content": "There is also a tab for class homework. ",
     "url": "https://738.f21.matthewrobertballard.com/#homework",
     "relUrl": "/#homework"
-  },"93": {
+  },"102": {
     "doc": "Derived Categories",
     "title": "Weekly schedule",
     "content": "If you ever need to remind yourself about the time and coordinates of our course or my office hours, you can quickly reference at the schedule tab. ",
     "url": "https://738.f21.matthewrobertballard.com/#weekly-schedule",
     "relUrl": "/#weekly-schedule"
-  },"94": {
+  },"103": {
     "doc": "Derived Categories",
     "title": "Me",
     "content": "If you are interested in a bit about who I am and what I do, check out the Me tab or visit my website. ",
     "url": "https://738.f21.matthewrobertballard.com/#me",
     "relUrl": "/#me"
-  },"95": {
+  },"104": {
     "doc": "Derived Categories",
     "title": "Derived Categories",
     "content": " ",
     "url": "https://738.f21.matthewrobertballard.com/",
     "relUrl": "/"
-  },"96": {
+  },"105": {
     "doc": "Notes",
     "title": "Course Notes",
     "content": "We will record notes from the course here. <!-- ",
     "url": "https://738.f21.matthewrobertballard.com/notes/intro/#course-notes",
     "relUrl": "/notes/intro/#course-notes"
-  },"97": {
+  },"106": {
     "doc": "Notes",
     "title": "Rank Nullity Theorem",
     "content": "Let $T : V \\to W$ be a linear tranformation between two finite dimensional vectors $V$ and $W$. Then, \\(\\operatorname{Rank}(T) + \\operatorname{Nullity}(T) = \\dim V.\\) . --> ",
     "url": "https://738.f21.matthewrobertballard.com/notes/intro/#rank-nullity-theorem",
     "relUrl": "/notes/intro/#rank-nullity-theorem"
-  },"98": {
+  },"107": {
     "doc": "Notes",
     "title": "Notes",
     "content": " ",
     "url": "https://738.f21.matthewrobertballard.com/notes/intro/",
     "relUrl": "/notes/intro/"
-  },"99": {
+  },"108": {
     "doc": "Schedule",
     "title": "Weekly Schedule",
     "content": ". | 7:30 AM | 8:00 AM | 8:30 AM | 9:00 AM | 9:30 AM | 10:00 AM | 10:30 AM | 11:00 AM | 11:30 AM | 12:00 PM | 12:30 PM | 1:00 PM | 1:30 PM | 2:00 PM | 2:30 PM | 3:00 PM | 3:30 PM | . | ",
     "url": "https://738.f21.matthewrobertballard.com/schedule/#weekly-schedule",
     "relUrl": "/schedule/#weekly-schedule"
-  },"100": {
+  },"109": {
     "doc": "Schedule",
     "title": "Monday",
     "content": "| ",
     "url": "https://738.f21.matthewrobertballard.com/schedule/",
     "relUrl": "/schedule/"
-  },"101": {
+  },"110": {
     "doc": "Schedule",
     "title": "Tuesday",
     "content": ". | Class 10:05 AM–11:20 AM COL 3006B | Office Hours 7:45 AM–8:30 AM COL 1022C | Office Hours 11:30 AM–12:15 PM COL 1022C | . | ",
     "url": "https://738.f21.matthewrobertballard.com/schedule/",
     "relUrl": "/schedule/"
-  },"102": {
+  },"111": {
     "doc": "Schedule",
     "title": "Wednesday",
     "content": "| ",
     "url": "https://738.f21.matthewrobertballard.com/schedule/",
     "relUrl": "/schedule/"
-  },"103": {
+  },"112": {
     "doc": "Schedule",
     "title": "Thursday",
     "content": ". | Class 10:05 AM–11:20 AM COL 3006B | Office Hours 7:45 AM–8:30 AM COL 1022C | Office Hours 11:30 AM–12:15 PM COL 1022C | . | ",
     "url": "https://738.f21.matthewrobertballard.com/schedule/",
     "relUrl": "/schedule/"
-  },"104": {
+  },"113": {
     "doc": "Schedule",
     "title": "Friday",
     "content": "| . ",
     "url": "https://738.f21.matthewrobertballard.com/schedule/",
     "relUrl": "/schedule/"
-  },"105": {
+  },"114": {
     "doc": "Schedule",
     "title": "Schedule",
     "content": " ",
     "url": "https://738.f21.matthewrobertballard.com/schedule/",
     "relUrl": "/schedule/"
-  },"106": {
+  },"115": {
     "doc": "Me",
     "title": "Staff",
     "content": " ",
     "url": "https://738.f21.matthewrobertballard.com/staff/#staff",
     "relUrl": "/staff/#staff"
-  },"107": {
+  },"116": {
     "doc": "Me",
     "title": "Instructor",
     "content": "Matthew Ballard . ballard@math.sc.edu . Schedule an appointment . I am an Associate Professor in the Department of Mathematics at the University of South Carolina. I have been teaching mathematics for almost two decades and have guided nearly 1000 students from all levels through math courses. A mindset focused on growth is essential for learning mathematics. Each day is a small step forward. When we turn around at the end of the course, only then, do we see how far we have truly traveled. For more of my pedagogical philosophy and experience, take a look at the teaching page. As an extension of teaching, I take pride in mentoring researchers at any stage. For a brief introduction to my mentees see the mentoring page. In my research, I study algebraic geometry and am particularly interested in questions arising from Homological Mirror Symmetry. Much of my current work focuses on derived categories and their relation to more classical questions. My research has been partially supported by the Simons Foundation and the National Science Foundation. It has also benefited from a membership at the Institute for Advanced Study, funding from UofSC, and the Southeastern Conference. For more information about me, see my CV. For a research summary and a list of my papers, take a look at my research page. I regularly organize mathematical events, even virtual ones. For the full list of events, see the organizing page. If you are interested in participating, contact me. ",
     "url": "https://738.f21.matthewrobertballard.com/staff/#instructor",
     "relUrl": "/staff/#instructor"
-  },"108": {
+  },"117": {
     "doc": "Me",
     "title": "Me",
     "content": " ",
