@@ -1,6 +1,6 @@
 ---
 title: Abelian categories and chain complexes
-ended: false 
+ended: true 
 ---
 
 Sept 7
@@ -10,4 +10,4 @@ Sept 9
 : **Exactness for $\text{Hom}$ and $\otimes$: projectives, injectives, and flat modules**
 
 Sept 14
-: **Resolutions and chain complex categories**
+: **Homotopy category of chain complexes**
