@@ -38,6 +38,8 @@ module Jekyll
           File.open(tex_path, 'w') { |file| file.write("#{tikz_code}") }
           system("pdflatex -output-directory #{tmp_directory} #{tex_path}")
           system("#{pdf2svg_path} #{pdf_path} #{dest_path}")
+          # print("#{pdf2svg_path} #{pdf_path} #{dest_path}")
+          # system("pdf2svg #{pdf_path} #{dest_path}")
         end
 
         web_dest_path = File.join("/assets/images/svg", File.basename(context["page"]["url"], ".*"), "#{@file_name}.svg")
