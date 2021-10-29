@@ -1,6 +1,6 @@
 ---
 title: The derived category and derived functors
-ended: false 
+ended: true 
 ---
 
 Sept 16
@@ -16,4 +16,4 @@ Sept 28
 : **Derived functors** 
 
 Sept 30 
-: **Derived tensor and Hom** 
+: **Derived tensor and Hom**
