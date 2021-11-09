@@ -1,9 +1,12 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.9.3)  23 SEP 2021 00:38
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.12.29)  9 NOV 2021 15:16
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**/home/matt/738/jekyll/_tikz_tmp/2021_09_16/retract_tri_map.tex
-(/home/matt/738/jekyll/_tikz_tmp/2021_09_16/retract_tri_map.tex
+**/home/matt/Dropbox/Teaching/USC/21fall/738/jekyll/_tikz_tmp/2021_09_16/retrac
+t_tri_map.tex
+
+(/home/matt/Dropbox/Teaching/USC/21fall/738/jekyll/_tikz_tmp/2021_09_16/retract
+_tri_map.tex
 LaTeX2e <2020-02-02> patch level 2
 L3 programming layer <2020-02-14>
 (/usr/share/texlive/texmf-dist/tex/latex/standalone/standalone.cls
@@ -453,13 +456,32 @@ File: pgflibraryarrows.meta.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 \pgfarrowlength=\dimen197
 \pgfarrowwidth=\dimen198
 \pgfarrowlinewidth=\dimen199
-)))
-(/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdfmode.def
+))) (/usr/share/texlive/texmf-dist/tex/latex/braids/braids.sty
+Package: braids 2011/10/18 v1.1 Tikz/PGF commands for drawing braid diagrams
+
+
+Package braids Warning: This package has been reimplemented as a TikZ library; 
+if starting with a fresh document, please consider using that instead. on input
+ line 19.
+
+\braid@width=\dimen256
+\braid@height=\dimen257
+\braid@tx=\dimen258
+\braid@ty=\dimen259
+\braid@nx=\dimen260
+\braid@ny=\dimen261
+\braid@cy=\dimen262
+\braid@dy=\dimen263
+\braid@eh=\dimen264
+\c@braid@level=\count277
+\c@braid@strands=\count278
+) (/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdfmode.def
 File: l3backend-pdfmode.def 2020-02-03 L3 backend support: PDF mode
-\l__kernel_color_stack_int=\count277
+\l__kernel_color_stack_int=\count279
 \l__pdf_internal_box=\box59
 )
-(/home/matt/738/jekyll/_tikz_tmp/2021_09_16/retract_tri_map.aux)
+(/home/matt/Dropbox/Teaching/USC/21fall/738/jekyll/_tikz_tmp/2021_09_16/retract
+_tri_map.aux)
 \openout1 = `retract_tri_map.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 4.
@@ -476,20 +498,19 @@ LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 4.
 LaTeX Font Info:    ... okay on input line 4.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 4.
 LaTeX Font Info:    ... okay on input line 4.
-
-ABD: EveryShipout initializing macros
+ ABD: EveryShipout initializing macros
 (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count278
-\scratchdimen=\dimen256
+\scratchcounter=\count280
+\scratchdimen=\dimen265
 \scratchbox=\box60
-\nofMPsegments=\count279
-\nofMParguments=\count280
+\nofMPsegments=\count281
+\nofMParguments=\count282
 \everyMPshowfont=\toks33
-\MPscratchCnt=\count281
-\MPscratchDim=\dimen257
-\MPnumerator=\count282
-\makeMPintoPDFobject=\count283
+\MPscratchCnt=\count283
+\MPscratchDim=\dimen266
+\MPnumerator=\count284
+\makeMPintoPDFobject=\count285
 \everyMPtoPDFconversion=\toks34
 ) (/usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
@@ -512,22 +533,22 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
-(/home/matt/738/jekyll/_tikz_tmp/2021_09_16/retract_tri_map.aux) ) 
+(/home/matt/Dropbox/Teaching/USC/21fall/738/jekyll/_tikz_tmp/2021_09_16/retract
+_tri_map.aux) ) 
 Here is how much of TeX's memory you used:
- 14074 strings out of 481239
- 289660 string characters out of 5920378
- 499365 words of memory out of 5000000
- 29083 multiletter control sequences out of 15000+600000
+ 14210 strings out of 481239
+ 292542 string characters out of 5920376
+ 502769 words of memory out of 5000000
+ 29215 multiletter control sequences out of 15000+600000
  536983 words of font info for 42 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 67i,15n,86p,502b,945s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/share/t
-exlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive
-/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-
-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fon
-ts/type1/public/amsfonts/cm/cmsy8.pfb>
-Output written on /home/matt/738/jekyll/_tikz_tmp/2021_09_16/retract_tri_map.pd
-f (1 page, 31321 bytes).
+ 67i,15n,86p,530b,945s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cm
+mi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pf
+b></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/
+share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
+Output written on /home/matt/Dropbox/Teaching/USC/21fall/738/jekyll/_tikz_tmp/2
+021_09_16/retract_tri_map.pdf (1 page, 31335 bytes).
 PDF statistics:
  27 PDF objects out of 1000 (max. 8388607)
  19 compressed objects within 1 object stream

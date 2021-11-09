@@ -7,7 +7,7 @@ module Jekyll
 
         @header = <<-'END'
         \documentclass[12pt]{standalone}
-        \usepackage{amsmath,amssymb,tikz-cd}
+        \usepackage{amsmath,amssymb,tikz-cd,tikz,braids}
 
         \begin{document}
         $$
