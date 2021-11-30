@@ -1,9 +1,12 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.9.3)  17 NOV 2021 23:31
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.12.29)  30 NOV 2021 14:12
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**/home/matt/738/jekyll/_tikz_tmp/2021_11_16/retract_H.tex
-(/home/matt/738/jekyll/_tikz_tmp/2021_11_16/retract_H.tex
+**/home/matt/Dropbox/Teaching/USC/21fall/738/jekyll/_tikz_tmp/2021_11_16/retrac
+t_H.tex
+
+(/home/matt/Dropbox/Teaching/USC/21fall/738/jekyll/_tikz_tmp/2021_11_16/retract
+_H.tex
 LaTeX2e <2020-02-02> patch level 2
 L3 programming layer <2020-02-14>
 (/usr/share/texlive/texmf-dist/tex/latex/standalone/standalone.cls
@@ -477,7 +480,8 @@ File: l3backend-pdfmode.def 2020-02-03 L3 backend support: PDF mode
 \l__kernel_color_stack_int=\count279
 \l__pdf_internal_box=\box59
 )
-No file retract_H.aux.
+(/home/matt/Dropbox/Teaching/USC/21fall/738/jekyll/_tikz_tmp/2021_11_16/retract
+_H.aux)
 \openout1 = `retract_H.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 4.
@@ -494,7 +498,7 @@ LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 4.
 LaTeX Font Info:    ... okay on input line 4.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 4.
 LaTeX Font Info:    ... okay on input line 4.
-ABD: EveryShipout initializing macros
+ ABD: EveryShipout initializing macros
 (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count280
@@ -529,21 +533,21 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
-(/home/matt/738/jekyll/_tikz_tmp/2021_11_16/retract_H.aux) ) 
+(/home/matt/Dropbox/Teaching/USC/21fall/738/jekyll/_tikz_tmp/2021_11_16/retract
+_H.aux) ) 
 Here is how much of TeX's memory you used:
- 14214 strings out of 481239
- 292241 string characters out of 5920378
- 502748 words of memory out of 5000000
+ 14216 strings out of 481239
+ 292605 string characters out of 5920376
+ 502751 words of memory out of 5000000
  29221 multiletter control sequences out of 15000+600000
  536983 words of font info for 42 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 67i,15n,86p,496b,944s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/share/texlive
-/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf
--dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/f
-onts/type1/public/amsfonts/cm/cmr8.pfb>
-Output written on /home/matt/738/jekyll/_tikz_tmp/2021_11_16/retract_H.pdf (1 p
-age, 26847 bytes).
+ 67i,15n,86p,524b,944s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.p
+fb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></us
+r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb>
+Output written on /home/matt/Dropbox/Teaching/USC/21fall/738/jekyll/_tikz_tmp/2
+021_11_16/retract_H.pdf (1 page, 26873 bytes).
 PDF statistics:
  23 PDF objects out of 1000 (max. 8388607)
  16 compressed objects within 1 object stream
