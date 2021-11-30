@@ -473,456 +473,516 @@
     "url": "https://738.f21.matthewrobertballard.com/notes/2021_11_04/",
     "relUrl": "/notes/2021_11_04/"
   },"79": {
+    "doc": "2021-11-09",
+    "title": "Brown Representability",
+    "content": "Existence of semi-orthogonal decompositions and if Serre functors strongly depending on representability of functors. It is useful to have strong general criteria for such. Here we will review a criteria for “large” categories: compactly generated triangulated categories. Next we will cover one for “small” categories, often categories of compact objects in compactly generated triangulated categories. Recall that a functor $H: \\mathcal T^{op} \\to \\operatorname{Ab}$ is cohomological if for any triangle \\(X \\to Y \\to Z \\to X[1]\\) the resulting sequence \\(\\cdots \\rightarrow \\operatorname{Hom}(X,W) \\rightarrow \\operatorname{Hom}(Y,W) \\rightarrow \\operatorname{Hom}(Z,W) \\rightarrow \\operatorname{Hom}(X[1],W) \\rightarrow \\cdots\\) is exact. We say that $H$ takes coproducts to products if the natural map \\(H\\left(\\bigoplus X_a \\right) \\to \\prod H(X_a)\\) is an isomorphism for any coproduct. Theorem. (Brown Representability) Let $\\mathcal T$ be a compactly generated triangulated category and $H : \\mathcal T^{op} \\to \\operatorname{Ab}$ a functor. Then $H$ is representable if and only if $H$ is cohomological and takes coproducts to products. Proof. (Expand to view) We have seen that representable functors must take triangles to long exact sequences and coproducts to products. So assume that $H$ is a cohomological functor which takes coproducts to products and let $\\mathcal C$ be a set of compact generators. Set $$ U_0 := \\bigcup_{C \\in \\mathcal C} H(C) $$ so each element is a pair $(C,u)$ with $C \\in \\mathcal C$ and $u \\in H(C)$. Set $$ X_0 := \\bigoplus_{(C,u) \\in U_0} C $$ If we apply $H$ to $X_0$, we get $$ H(X_0) = \\prod_{U_0} H(C) $$ We have the distinguished element $\\xi_0 \\in H(X_0)$ given by $u \\in H(C)$ for the factor $(C,u)$. From Yoneda, we get a natural transformation $$ \\xi_0 : h^{X_0} \\to H $$ Now assume we have constructed $X_n$ and $\\xi_n : h^{X_n} \\to H$. We set $$ U_n := \\bigcup_{C \\in \\mathcal C} \\operatorname{ker} \\left(\\xi_n(C) : \\operatorname{Hom}(C,X_n) \\to H(C) \\right) $$ and set $$ Y_n := \\bigcup_{U_n} C $$ Since each element of $U_n$ is a map $C \\to X_n$, we get a map $Y_n \\to X_n$. We let $$ X_{n+1} := \\operatorname{cone}(Y_n \\to X_n) $$ We want to show that $\\xi_n : h^{X_n} \\to H$ comes via composition from some $\\xi_{n+1} : h^{X_{n+1}} \\to H$. If we apply $H$ to the triangle, we get $$ \\cdots \\leftarrow H(Y_n) \\leftarrow H(X_n) \\leftarrow H(X_{n+1}) \\leftarrow \\cdots $$ an exact sequence. The map $$ H(X_n) \\to H(Y_n) = \\prod_{U_n} H(C) $$ takes $\\xi_n$ to the element $\\prod_{(C,u)} \\xi_n(C)(u) = 0$. Thus, there is some $\\xi_{n+1} \\in H(X_{n+1})$ with $H(f_{n+1})(\\xi_{n+1}) = \\xi_n$ for $f_{n+1} : X_n \\to X_{n+1}$. This is equivalent to commuting. Now we let $X = \\operatorname{hocolim} X_n$. We check that we have a natural transformation $h^X \\to H$ induced from the $\\xi_n$. We have triangle $$ \\bigoplus X_n \\to \\bigoplus X_n \\to \\operatorname{hocolim} X_n \\to \\bigoplus X_n [1] $$ We apply $H$ to get an exact sequence $$ \\prod H(X_n) \\leftarrow \\prod H(X_n) \\leftarrow H(\\operatorname{hocolim} X_n) $$ So we need to check that $\\prod \\xi_n$ lie in the kernel. Recall the map $1-f: \\bigoplus X_n \\to \\bigoplus X_n$ when restricted to the factor $X_n$ is $$ X_n \\overset{\\operatorname{id}_{X_n},-f_{n+1}}{\\to} X_n \\oplus X_{n+1} $$ Applying $H$ we have $$ H(1-f)\\left(\\prod \\xi_n \\right) = \\prod (\\xi_n - H(f_n)(\\xi_{n-1})) $$ We saw that $\\xi_n = H(f_n)(\\xi_{n-1})$ so the image is $0$. Thus, we have some $\\xi \\in H(\\operatorname{hocolim} X_n)$ giving us the desired $\\xi : h^X \\to H$. Let $\\mathcal S$ be the full subcategory of objects $Y$ of $\\mathcal T$ for which $$ \\xi(Y) : \\operatorname{Hom}(Y,X) \\to H(Y) $$ is an isomorphism. Since both $h^X$ and $H$ take triangles to long exact sequences, we see that $\\mathcal S$ is triangulated. Since both takes coproducts to products, we see $\\mathcal S$ is closed under coproducts. Finally, take $C \\in \\mathcal C$. Then, $\\xi(C)$ is surjective as $\\xi_0(C)$ is surjective by construction. If $g : C \\to X_n$ has $\\xi(C)(g) = 0$. Then $g \\in U_n$ by construction so we have a lift Consequently $f_{n+1}g = 0$. Thus, $g: C \\to X$ is the zero map. We can conclude that $C \\in \\mathcal S$. From [previously] (% link notes/2021_10_05.md %) we see that $\\mathcal T = \\mathcal S$ and $X$ represents $H$. &#9632; . An immediate consequence of Brown Representability is a condition on existence of a right adjoint. Corollary. Let $F: \\mathcal T \\to \\mathcal S$ be an exact functor between triangulated categories. If $\\mathcal T$ is compactly generated and $F$ commutes with coproducts, ie the natural map \\(\\bigoplus F(X_a) \\to F\\left(\\bigoplus X_a \\right)\\) is an isomorphism for coproducts, then $F$ has a right adjoint. Proof. (Expand to view) To construct the right adjoint is equivalent to representing the functor $$ \\operatorname{Hom}_{\\mathcal S}(F(-),Y) : \\mathcal T^{op} \\to \\operatorname{Ab} $$ But, this functor is cohomological since $F$ is exact and representable functors are cohomology. It also takes coproducts to products. Thus, the previous result shows it is representable. &#9632; . ",
+    "url": "https://738.f21.matthewrobertballard.com/notes/2021_11_09/#brown-representability",
+    "relUrl": "/notes/2021_11_09/#brown-representability"
+  },"80": {
+    "doc": "2021-11-09",
+    "title": "2021-11-09",
+    "content": " ",
+    "url": "https://738.f21.matthewrobertballard.com/notes/2021_11_09/",
+    "relUrl": "/notes/2021_11_09/"
+  },"81": {
+    "doc": "2021-11-11",
+    "title": "Strong generation and ghosts",
+    "content": "The proof of Brown Representability is a powerful way to construct a “resolution” in a triangulated category. We wish to be able to run it successfully without the condition on the existence of coproducts. It turns out that a good substitute for compact generation is the notion of strong generation. To define this, we need some intermediate notions. Defintion. Let $\\mathcal S$ be a subcategory of a triangulated category $\\mathcal T$. We write $\\langle \\mathcal S \\rangle_0$ for the smallest additive subcategory closed under shifts and containing the objects of $\\mathcal S$. The smallest subcategory closed under retracts and containing $\\mathcal S$ is denoted $\\overline{\\mathcal S}$. Given another subcategory $\\mathcal S^\\prime$, we write $\\mathcal S \\ast \\mathcal S^\\prime$ for the full subcategory consisting of objects $X$ of $\\mathcal T$ for which there is triangle \\(S \\to X \\to S^\\prime \\to S[1]\\) with $S \\in \\mathcal S$ and $S^\\prime \\in \\mathcal S^\\prime$. For $n&gt;1$, we set \\(\\langle \\mathcal S \\rangle_n = \\overline{\\langle \\mathcal S \\rangle}_{n-1} \\ast \\overline{\\langle \\mathcal S \\rangle}_0\\) . We say that an object $G$ strongly generates $\\mathcal T$ if there is some $n$ with \\(\\overline{\\langle G \\rangle}_n = \\mathcal T\\) . Lemma. The operation $\\ast$ is associative. Proof. (Expand to view) This is a consequence of the Octahedral Axiom, TR4. We will omit the details. &#9632; . From this lemma we see that \\(\\overline{\\langle G \\rangle}_n = \\overline{\\underbrace{ {\\overline{\\langle G \\rangle}_0 \\ast \\cdots \\ast \\overline{\\langle G \\rangle}_0}}_n}\\) . We introduce another notion which we will see is related. Definition. Let $\\mathcal S$ be a subcategory of $\\mathcal T$. We say that a map $f: X \\to Y$ is $\\mathcal S$-ghost if \\(\\operatorname{Hom}(S,f) = 0\\) for all objects of $\\mathcal S$. Example. Take $R$, a ring, as an object of $D(\\operatorname{Mod} R)$. Then, a map $f: C \\to D$ is $R$-ghost if and only if the induced map \\(H^0(f) : H^0(C) \\to H^0(D)\\) is zero. Lemma. If $X \\to Y$ is ghost for all shifts of objects from $\\mathcal S$, then it is $\\overline{\\langle \\mathcal S \\rangle}_0$ -ghost. Proof. (Expand to view) Note that $$ \\operatorname{Hom}\\left( \\bigoplus S_i, f) = \\bigoplus \\operatorname{Hom}(S_i,f) $$ for finite sums. If $T$ is retract of an object $S$ and $\\operatorname{Hom}(S,f)=0$, then $\\operatorname{Hom}(T,f)$ is a retract of $0$ and hence is $0$. &#9632; . Lemma (Ghost Lemma). Let $\\mathcal S$ be a subcategory of a triangulated category $\\mathcal T$. If $f_{i+1}: X_i \\to X_{i+1}$ is a sequence of $\\langle \\mathcal S \\rangle_0$-ghosts for $0 \\leq i \\leq n$, then the composition $f_n \\circ \\cdots \\circ f_1$ is $\\overline{\\langle \\mathcal S \\rangle}_{n+1}$-ghost. Proof. (Expand to view) We prove this via induction on $n$. The case of $n=0$ is clear. For the induction step, we must prove that if $f: X \\to Y$ is $\\overline{\\langle \\mathcal S \\rangle}_n$-ghost and $g: Y \\to Z$ is $\\langle \\mathcal S \\rangle_0$-ghost, then $gf$ is $\\overline{\\langle \\mathcal S \\rangle}_{n+1}$-ghost. In general, if a map $h$ is $\\mathcal R$-ghost for some subcategory $\\mathcal R$, then it is automatically $\\overline{\\mathcal R}$-ghost. So we reduce to checking $gf$ is $\\langle \\mathcal S \\rangle_{n+1}$- ghost. For an object $U$ from $\\langle \\mathcal S \\rangle_{n+1}$, we have a triangle $$ W \\to U \\to S \\to W[1] $$ with $W \\in \\overline{\\langle \\mathcal S \\rangle}_n$ and $S \\in \\overline{\\langle \\mathcal S \\rangle}_0$. Given a map $U \\to X$, the composition $$ W \\to U \\to X \\overset{f}{\\to} Y $$ vanishes as $f$ is $\\overline{\\langle \\mathcal S \\rangle}_n$-ghost. Thus, there exists a $S \\to Y$ making the diagram commute. But as $g: Y \\to Z$ is $\\langle \\mathcal S \\rangle_0$-ghost, the composition $$ S \\to Y \\to Z $$ is $0$. Thus, $$ U \\to X \\overset{f}{\\to} Y \\overset{g}{\\to} Z $$ is also $0$, and so, $gf$ is $\\overline{\\langle \\mathcal S \\rangle}_{n+1}$-ghost. &#9632; . Note that $\\mathcal S$-ghosts form an ideal in $\\mathcal T$. Corollary. Assume that there is a subcategory $\\mathcal S$ of $\\mathcal T$ with \\(\\overline{\\langle \\mathcal S \\rangle}_n = \\mathcal T\\) Then, the ideal of $\\langle \\mathcal S \\rangle_0$-ghosts is uniformly nilpotent with degree $n$. Finally, if we can produce $\\langle \\mathcal S \\rangle_0$ approximations, then we have a converse to the previous corollary. Lemma. Suppose we have a subcategory $\\mathcal S$ such that . | the ideal of $\\langle \\mathcal S \\rangle_0$-ghosts is uniformly nilpotent of degree $n$ and | for any object $X$ of $\\mathcal T$ there exists a triangle \\(S \\to X \\to Y \\to S[1]\\) with $S \\in \\overline{\\langle \\mathcal S \\rangle}_0$ and $X \\to Y$ $\\langle \\mathcal S \\rangle_0$-ghost. | . Then, \\(\\overline{\\langle \\mathcal S \\rangle}_n = \\mathcal T\\) . Proof. (Expand to view) Using induction, we can produce a sequence of ghosts $$ X_0 = X \\to X_1 \\to \\cdots \\to X_{n-1} \\to X_n $$ with $$ \\operatorname{cone}(X_i \\to X_{i+1}) \\in \\langle \\mathcal S \\rangle_0 $$ Let $Y$ be the cone over the composition $X \\to X_n$. Then from TR4 and the facts that each cone over $X_i \\to X_{i+1}$ lies in $\\langle \\mathcal S \\rangle_0$, one sees that $$ Y \\in \\langle \\mathcal S \\rangle_n $$ As it is composition of $n$ ghosts, the map $X \\to X_n$ is zero. Thus, $$ Y \\cong X_n \\oplus X[1] $$ So $$ X \\in \\overline{\\langle \\mathcal S \\rangle}_n $$ &#9632; . ",
+    "url": "https://738.f21.matthewrobertballard.com/notes/2021_11_11/#strong-generation-and-ghosts",
+    "relUrl": "/notes/2021_11_11/#strong-generation-and-ghosts"
+  },"82": {
+    "doc": "2021-11-11",
+    "title": "2021-11-11",
+    "content": " ",
+    "url": "https://738.f21.matthewrobertballard.com/notes/2021_11_11/",
+    "relUrl": "/notes/2021_11_11/"
+  },"83": {
+    "doc": "2021-11-16",
+    "title": "Strong generation and saturation",
+    "content": "Definition. Let $\\mathcal T$ be a triangulated category linear over a field $k$. We say $\\mathcal T$ is Ext-finite if for any pair of objects $X$ and $Y$ we have \\(\\dim_k \\bigoplus_{j \\in \\mathbb{Z}} \\operatorname{Hom}(X,Y[j]) &lt; \\infty\\) An additive functor $H : \\mathcal T \\to \\operatorname{Vect} k$ is Ext-finite if for any object $X$ we have \\(\\dim_k \\bigoplus_{j \\in \\mathbb{Z}} H(X[j]) &lt; \\infty\\) . Lemma. Let $\\mathcal T$ be an Ext-finite triangulated category and let $X$ and $Y$ be objects. Then there exists a triangle \\(Z \\to X \\to X^\\prime \\to Z[1]\\) where $Z \\in \\langle Y \\rangle_0$ and $X \\to X^\\prime$ is $\\langle Y \\rangle_0$-ghost. Proof. (Expand to view) We introduce some notation. For $$ \\operatorname{Hom}^\\ast(Y,X) \\otimes_k Y $$ we really mean $$ \\bigoplus_{i=1}^d Y[n_i] $$ where $d$ is the dimension of $\\bigoplus \\operatorname{Hom}(Y[j],X)$ and $n_1,\\ldots,n_d$ are the homological degrees of a basis. This object is independent of the basis up to isomorphism. There is a natural evaluation map $$ \\operatorname{Hom}^\\ast(Y,X) \\otimes_k Y \\to X $$ whose action of the factor $Y[n_i]$ is the corresponding map in the basis for $\\bigoplus \\operatorname{Hom}(Y[j],X)$. We set $$ Z = \\operatorname{Hom}^\\ast(Y,X) \\otimes_k Y $$ and use the triangle $$ Z \\to X \\to X^\\prime \\to Z[1] $$ where $X^\\prime$ is the cone over $Z \\to X$. By construction, any map $Y[l] \\to X$ will lift to $Y[l] \\to Z$. Just take the factor in $Z$ corresponding to $Y[l] \\to X$. Then, the composition $Y[l] \\to X \\to X^\\prime$ will be $0$. So $X \\to X^\\prime$ is $\\langle Y \\rangle_0$-ghost. &#9632; . Assume we have a cohomological functor $H : \\mathcal T^{op} \\to \\operatorname{Vect} k$ which is Ext-finite. We want to employ the “resolution” procedure from Brown representability to $H$ with a single object (and its shifts) playing the role of the compact generators. We start with \\(X_0 := \\bigoplus_{j \\in \\mathbb{Z}} H(G[j]) \\otimes_k G[j]\\) Since the summands of $X_0$ are indexed by elements $H(G[j])$, there is a natural element of $H(X_0)$ given by using the element from the index. From Yoneda, we get a natural transformation \\(\\xi_0 : h^{X_0} \\to H\\) . Inductively, we set \\(K_i(G[j]) := \\ker\\left( \\xi_i(G[j]): \\operatorname{Hom}(G[j],X_i) \\to H(G[j]) \\right)\\) and \\(Y_i := \\bigoplus_{j \\in \\mathbb{Z}} K_i(G[j]) \\otimes_k G[j]\\) We have natural map $Y_i \\to X_i$ and we let \\(X_{i+1} = \\operatorname{cone}(Y_i \\to X_i)\\) . Note that from Ext-finiteness of $\\mathcal T$ and $H$ all this constructions yield well-defined objects of $\\mathcal T$. As in the proof of Brown Representability, we get a natural transformation \\(\\xi_{i+1} : h^{X_i} \\to H\\) such that the diagram . commutes. Since we do not have anything beyond finite coproducts, we cannot pass to the homotopy colimit to achieve a representing object on the thick subcategory generated by $G$ so we need to prove that after finite number of steps we can do this. Lemma. On $\\overline{\\langle G \\rangle}_0$, $H$ is isomorphic to a retract of $h^{X_1}$. Proof. (Expand to view) For any object $E \\in \\overline{\\langle G \\rangle}_0$, we have a commutative diagram where the diagonal map vanishes from the construction $X_1$. Thus, we get a map $$ H(E) \\to \\operatorname{Hom}(E,X_1) $$ which splits $$ \\operatorname{Hom}(E,X_1) \\to H(E) $$ This construction is natural in $E$. &#9632; . So on $\\overline{\\langle G \\rangle}_0$, we have represented our object, at least allowing for retracts. To achieve this we needed that \\(\\operatorname{Hom}(S,X_i) \\to H(X_i) \\to 0\\) is exact and the composition \\(\\ker \\xi_i(S) \\to \\operatorname{Hom}(S,X_i) \\to \\operatorname{Hom}(S,X_{i+1})\\) is zero. We will show that we can achieve this for $\\overline{\\langle G \\rangle}_n$ by composing a sequence of the maps $X_i \\to X_{i+1}$. Proposition. For each $n \\geq 1$, there is an $M &gt; 0$ such that $H$ is isomorphic to a retract of $X_M$ on $\\overline{\\langle G \\rangle}_n$. Proof. (Expand to view) We will prove the following statement. For each $n$ there is a $N$ such that for any $E$ in $\\overline{\\langle G \\rangle}_n$ we have that * the sequence $$ \\operatorname{Hom}(E,X_N) \\to H(E) \\to 0 $$ is exact and * the composition $$ \\ker \\xi_N(E) \\to \\operatorname{Hom}(E,X_N) \\to \\operatorname{Hom}(E,X_{N+2}) $$ is $0$. Then we get $H$ is isomorphic to a retract of $h^{X_{N+2}}$ on $\\overline{\\langle G \\rangle}_n$. The base case of the induction is the previous lemma. Assume it is true for $n$. Note it suffices to prove it for $\\langle G \\rangle_0 \\ast \\langle G \\rangle_n$ since the two conditions are preserved under passage to sums, shifts, and summands. Take $E$ lying in a triangle $$ F \\to E \\to E^\\prime \\to F[1] $$ with $F \\in \\langle G \\rangle_0$ and $E^\\prime \\in \\langle G \\rangle_n$. Then for each $m$, we have the commutative diagram We can take $m$ large enough so that $$ \\operatorname{coker} \\xi_m(E^\\prime) = \\operatorname{coker} \\xi_m(F) = 0 $$ A diagram chase gives a injective map $$ \\operatorname{coker} \\xi_m(E) \\to \\operatorname{ker} \\xi_m(E^\\prime[-1]) $$ Taking $m$ larger if necessary we have $$ \\operatorname{coker} \\xi_m(E) = 0 $$ so $$ \\operatorname{Hom}(E,X_m) \\to H(E) \\to 0 $$ is exact. Finally, $m^\\prime &gt; m$ so that $$ \\operatorname{ker} \\xi_m(E) \\to \\operatorname{Hom}(E,X_{m^\\prime}) $$ and $$ \\operatorname{ker} \\xi_m(F) \\to \\operatorname{Hom}(F,X_{m^\\prime}) $$ are both $0$ maps. &#9632; . If we know that for some large enough $n$ we have \\(\\overline{\\langle G \\rangle}_n = \\mathcal T\\) then we get the following corollary due to Bondal and Van den Bergh . Corollary. If $\\mathcal T$ is a strongly generated Ext-finite triangulated category and $H$ is an Ext-finite (co)homological functor, then $H$ is representable by a retract of an object of $\\mathcal T$. Note that being a strongly generated triangulated category is a condition preserved by taking opposites. ",
+    "url": "https://738.f21.matthewrobertballard.com/notes/2021_11_16/#strong-generation-and-saturation",
+    "relUrl": "/notes/2021_11_16/#strong-generation-and-saturation"
+  },"84": {
+    "doc": "2021-11-16",
+    "title": "2021-11-16",
+    "content": " ",
+    "url": "https://738.f21.matthewrobertballard.com/notes/2021_11_16/",
+    "relUrl": "/notes/2021_11_16/"
+  },"85": {
+    "doc": "2021-11-18",
+    "title": "Strong generation in examples",
+    "content": "We saw last time that being strongly generated resulted in representability of many (co)homological functors. Today, we look at when familiar examples of triangulated categories are strongly generated. Question. Let $R$ be a Noetherian commutative ring. When is $D^b(\\operatorname{mod} R)$ strongly generated? When is $\\operatorname{perf} R$? . Definition. We say that $G$ is a generator of a triangulated category $\\mathcal T$ for every $E \\in \\mathcal T$ there is some $n$ with \\(E \\in \\overline{\\langle G \\rangle}_n\\) . Note there is no a priori uniform, in $E$, bound on $n$. Lemma. If $\\mathcal T$ is strongly generated, then any generator of $\\mathcal T$ is a strong generator. Proof. (Expand to view) Assume that $$ \\overline{\\langle G \\rangle}_n = \\mathcal T $$ and $H$ is a generator. Then there is some $m$ with $$ G \\in \\overline{\\langle H \\rangle}_m $$ But then $$ \\mathcal T = \\overline{\\langle G \\rangle}_n \\subseteq \\overline{\\langle \\overline{\\langle H \\rangle}_m \\rangle}_n = \\overline{\\langle H \\rangle}_{nm} \\subset \\mathcal T $$ &#9632; . Example. $R$ is a always a generator for $\\operatorname{perf} R$. So if $\\operatorname{perf} R$ is strongly generated then $R$ must also be a strong generator. Lemma. Let $F: \\mathcal T \\to \\mathcal S$ be an exact, essentially surjective functor. If $\\mathcal T$ is strongly generated, then so is $\\mathcal S$. Proof. (Expand to view) We have $$ F\\left( \\overline{\\langle X \\rangle}_m \\right) \\subset \\overline{\\langle FX \\rangle}_m $$ So if $F\\mathcal T = \\mathcal S$ and $\\overline{\\langle X \\rangle}_m = \\mathcal T$, we get $$ \\overline{\\langle FX \\rangle}_m = \\mathcal S $$ &#9632; . Lemma. Let $\\mathcal T = \\langle \\mathcal A, \\mathcal B \\rangle$ be a semi-orthogonal decomposition. Then $\\mathcal T$ is strongly generated if and only if $\\mathcal A$ and $\\mathcal B$ both are. Proof. (Expand to view) In a SOD, we have essentially surjective functors $$ \\mathcal T \\to \\mathcal A \\\\ \\mathcal T \\to \\mathcal B $$ so if $\\mathcal T$ is strongly generated then so are both $\\mathcal A$ and $\\mathcal B$. Assume that $G$ is a strong generator of $\\mathcal A$ and $H$ is strong generator of $\\mathcal B$. In an SOD, any object sits in a triangle $$ B \\to X \\to A \\to B[1] $$ with $A \\in \\mathcal A$ and $B \\in \\mathcal B$. Since $$ A \\in \\overline{\\langle G \\rangle}_m $$ and $$ B \\in \\overline{\\langle H \\rangle}_n $$ we have $$ X \\in \\overline{\\langle G \\oplus H \\rangle}_{mn} $$ &#9632; . Assume that Noetherian commutative $R$ is strong generator for $\\operatorname{perf} R$. We know that the ideal of $R$ is uniformly nilpotent and this ideal is exactly the maps in $D(R)$ which induce the zero map on cohomology. Let $t$ be a natural number. Let $M$ be a finitely generated module and $N$ an $R$-module. Then, taking a truncation of projective resolution of $M$ we see there is perfect complex $P$ with a map $P \\to M$ such that \\(\\operatorname{Hom}(P,N[i]) \\to \\operatorname{Hom}(M,N[i])\\) is an isomorphism for $0 \\leq i \\leq t$. Now take $N = R$. If for $t &gt; 1$ \\(\\operatorname{Hom}(M,R[t]) = 0\\) then we see that $M$ is a retract of a perfect complex of length $t$. Since any $n$-fold extension can be factored into a composition of extensions, the uniform bound on the nilpotence tell us that every finitely has a projective resolution of length at most the minimal number $t$ with \\(\\operatorname{perf} R = \\overline{\\langle R \\rangle}_t\\) . As a consequence, \\(D^b(\\operatorname{mod} R) = \\operatorname{perf} R\\) . Recall that we can test for regularity of local ring $(R,\\mathfrak m)$ by asking whether the projective dimension of $k(\\mathfrak{m})$ is finite. Corollary. $R$ is a strong generator for $\\operatorname{perf} R$ if and only if $R$ is regular, ie all local rings are regular. So strong generation of $\\operatorname{perf} R$ imposes strong conditions on the ring $R$. It turns out that is not the case for $D^b(\\operatorname{mod} R)$. The following result is due to Rouquier. Theorem. If $R$ is a finitely-generated $k$-algebra with $k$ a perfect field, then $D^b(\\operatorname{mod} R)$ is strongly generated. This result has since been improved. ",
+    "url": "https://738.f21.matthewrobertballard.com/notes/2021_11_18/#strong-generation-in-examples",
+    "relUrl": "/notes/2021_11_18/#strong-generation-in-examples"
+  },"86": {
+    "doc": "2021-11-18",
+    "title": "2021-11-18",
+    "content": " ",
+    "url": "https://738.f21.matthewrobertballard.com/notes/2021_11_18/",
+    "relUrl": "/notes/2021_11_18/"
+  },"87": {
+    "doc": "2021-11-23",
+    "title": "Rapid tour through sheaves",
+    "content": "Let $X$ be a topological space. We have a category $\\operatorname{Opens}(X)$ whose objects are open subsets and \\(\\operatorname{Hom}(U,V) = \\begin{cases} U \\to V &amp; U \\subseteq V \\\\ \\emptyset &amp; U \\not \\subseteq V \\end{cases}\\) . Definition. Let $\\mathcal C$ be a category. A pre-sheaf valued in $\\mathcal C$ $\\mathcal F$ on $X$ is a functor \\(\\mathcal F : \\operatorname{Opens}(X)^{op} \\to \\mathcal C\\) A morphisms of pre-sheaves is a natural transformation of the functors. We can unpack this as follows: . | For every open $U$ we have an object $\\mathcal F(U)$ of $\\mathcal C$. We can this sections of $\\mathcal F$ over $U$ and will also write this as $\\Gamma(U,\\mathcal F)$. | If $U \\subseteq V$, we have a morphism \\(r_{VU} : \\mathcal F(V) \\to \\mathcal F(U)\\) with $r_{UU} = 1_{\\mathcal F(U)}$. We usually call this map restriction from $V$ to $U$ and is also often denoted by \\(r_{VU}(s) = s|_U\\) | If $U \\subseteq V \\subseteq W$, the diagram | . commutes. For a morphism $f : \\mathcal F \\to \\mathcal G$ we have morphisms \\(f(U) : \\mathcal F(U) \\to \\mathcal G(U)\\) with the commutative diagrams . Generally, when we just say pre-sheaf without specifying the values, we will mean sets or abelian groups. Examples . | Take an object $C$ from $\\mathcal C$, then we have the constant pre-sheaf $\\underline{C}$ \\(\\underline{C}(U) = C \\\\ r_{VU} = 1_C.\\) . | Let $C_x$ be a set of objects of $\\mathcal C$ indexed by $X$. We have the pre-sheaf \\(U \\mapsto \\prod_{x \\in U} C_x\\) where \\(r_{VU} : \\prod_{x \\in V} C_x \\to \\prod_{x \\in U} C_x\\) is the projection onto the components with $x \\in U$. | We have the pre-sheaf of continuous functions \\(\\mathcal O(U) = \\lbrace f : X \\to Y \\mid f \\text{ continuous} \\rbrace\\) with target $Y$. If $Y$ is a topological ring, then $\\mathcal O$ is a pre-sheaf of rings. | Fix $x \\in X$ and $C \\in \\mathcal C$. Assume that $\\mathcal C$ has a terminal object $\\ast$. Then we have \\(i_{x \\ast} \\underline{C} (U) = \\begin{cases} C &amp; x \\in U \\\\ \\ast &amp; x \\not \\in U. \\end{cases}\\) This works, in particular, if $\\mathcal C$ is an abelian category. | . Definition. A pre-sheaf $\\mathcal F$ is a sheaf if given an open cover $U_\\alpha$ of $V$ and sections $s_\\alpha \\in \\mathcal F(U_\\alpha)$ satisfying \\(s_{\\alpha}|_{U_\\alpha \\cap U_\\beta} = s_{\\beta}|_{U_\\alpha \\cap U_\\beta}\\) for all $\\alpha, \\beta$, there exists a unique $s \\in \\mathcal F(V)$ with \\(s|_{U_\\alpha} = s_\\alpha\\) for all $\\alpha$. Morphisms of sheaves are morphisms of the underlying pre-sheaves. We have a forgetful functor \\(\\operatorname{Sh}(X,\\mathcal C) \\to \\operatorname{PreSh}(X,\\mathcal C)\\) which often has a left adjoint. To give a (somewhat) explicit description, we need an auxiliary notion. Definition. Let $x \\in X$ and $\\mathcal F$ a pre-sheaf on $X$ with values in $\\mathcal C$. Then the stalk of $\\mathcal F$ at $x$ is \\(\\mathcal F_x = \\operatorname{colim}_{x \\in U} \\mathcal F(U)\\) . In general, this need not exist. For common targets, like $\\operatorname{Ab}$, this is not an issue. Assume that $\\mathcal C$ has small colimits. Then . ",
+    "url": "https://738.f21.matthewrobertballard.com/notes/2021_11_23/#rapid-tour-through-sheaves",
+    "relUrl": "/notes/2021_11_23/#rapid-tour-through-sheaves"
+  },"88": {
+    "doc": "2021-11-23",
+    "title": "2021-11-23",
+    "content": " ",
+    "url": "https://738.f21.matthewrobertballard.com/notes/2021_11_23/",
+    "relUrl": "/notes/2021_11_23/"
+  },"89": {
     "doc": "About",
     "title": "Syllabus",
     "content": ". | Course Information . | Course Name and Number | Term | Meeting Time and Location | Instructor Information | Office Hours | Full Course Description | Prerequisites | Learning Outcomes | Course Materials | . | Course Requirements . | Course Format | Course Communication | Technology | Minimal Technical Skills Needed | Technical Support | . | Course Assignments and Grading . | Homework | Paper | Evaluation and Grading Scale . | Assignment Weights | Grading Scale | . | Assignment Submission | Revisions | . | Academic Success . | Accessibility | University Library Resources | Teams and Technology | Counseling Services | . | Course Policies and Procedures . | Attendance Policy and COVID Reporting | COVID Policies . | Questions You May Have | . | Academic Integrity | Plagiarism | Group Work | Class Conduct | Late Work/Make-up Policy | Incomplete Grades | Diversity and Inclusion | Title IX and Gendered Identity | Expectations of the Instructor | Copyright/Fair Use Statement | . | . ",
     "url": "https://738.f21.matthewrobertballard.com/about/#syllabus",
     "relUrl": "/about/#syllabus"
-  },"80": {
+  },"90": {
     "doc": "About",
     "title": "Course Information",
     "content": " ",
     "url": "https://738.f21.matthewrobertballard.com/about/#course-information",
     "relUrl": "/about/#course-information"
-  },"81": {
+  },"91": {
     "doc": "About",
     "title": "Course Name and Number",
     "content": "Selected Topics in Geometry and Topology: Derived categories in algebraic geometry I – Math 738 . ",
     "url": "https://738.f21.matthewrobertballard.com/about/#course-name-and-number",
     "relUrl": "/about/#course-name-and-number"
-  },"82": {
+  },"92": {
     "doc": "About",
     "title": "Term",
     "content": "Fall 2021 . ",
     "url": "https://738.f21.matthewrobertballard.com/about/#term",
     "relUrl": "/about/#term"
-  },"83": {
+  },"93": {
     "doc": "About",
     "title": "Meeting Time and Location",
     "content": "Tuesdays and Thursdays 10:05-11:20 AM in Room 3006B of the Carolina Coliseum . ",
     "url": "https://738.f21.matthewrobertballard.com/about/#meeting-time-and-location",
     "relUrl": "/about/#meeting-time-and-location"
-  },"84": {
+  },"94": {
     "doc": "About",
     "title": "Instructor Information",
     "content": ". | Instructor Name and Preferred Title: Prof. Matthew (Matt) Ballard | Preferred pronouns: He/Him/His | Office : Carolina Coliseum Room 1022C | E-mail: ballard@math.sc.edu | . ",
     "url": "https://738.f21.matthewrobertballard.com/about/#instructor-information",
     "relUrl": "/about/#instructor-information"
-  },"85": {
+  },"95": {
     "doc": "About",
     "title": "Office Hours",
     "content": "Tuesdays and Thursdays 7:45-8:30 and 11:30-12:15 or by appointment . ",
     "url": "https://738.f21.matthewrobertballard.com/about/#office-hours",
     "relUrl": "/about/#office-hours"
-  },"86": {
+  },"96": {
     "doc": "About",
     "title": "Full Course Description",
     "content": "This is the first in a two-semester course. This semester we will introduce derived categories of abelian categories with a particular emphasis on the category $\\operatorname{Mod} R$ of $R$-modules over a ring $R$. Time allowing we will introduce the necessary ideas and facts from Algebraic Geometry for the category $\\operatorname{Qcoh} X$ of quasi-coherent sheaves on a scheme $X$. ",
     "url": "https://738.f21.matthewrobertballard.com/about/#full-course-description",
     "relUrl": "/about/#full-course-description"
-  },"87": {
+  },"97": {
     "doc": "About",
     "title": "Prerequisites",
     "content": "None . ",
     "url": "https://738.f21.matthewrobertballard.com/about/#prerequisites",
     "relUrl": "/about/#prerequisites"
-  },"88": {
+  },"98": {
     "doc": "About",
     "title": "Learning Outcomes",
     "content": "After successful completion of this course, you will be able to: . | Localize abelian categories for fun and profit | Draw confusing diagrams that claim to explain the octohedral axiom | Day dream about stable $\\infty$-categories | . ",
     "url": "https://738.f21.matthewrobertballard.com/about/#learning-outcomes",
     "relUrl": "/about/#learning-outcomes"
-  },"89": {
+  },"99": {
     "doc": "About",
     "title": "Course Materials",
     "content": "The main resources for materials are . | the course website, | the course channel in the SCAGNT Zulip | the GitHub Classroom, and | the Microsoft Team for the course. | . Supplemental course materials will be linked as necessary. All course materials comply with copyright/fair use policies. ",
     "url": "https://738.f21.matthewrobertballard.com/about/#course-materials",
     "relUrl": "/about/#course-materials"
-  },"90": {
+  },"100": {
     "doc": "About",
     "title": "Course Requirements",
     "content": " ",
     "url": "https://738.f21.matthewrobertballard.com/about/#course-requirements",
     "relUrl": "/about/#course-requirements"
-  },"91": {
+  },"101": {
     "doc": "About",
     "title": "Course Format",
     "content": "The course is a standard lecture course with homeworks to test your understanding. At the end of the class, a paper will be due in place of a final exam. ",
     "url": "https://738.f21.matthewrobertballard.com/about/#course-format",
     "relUrl": "/about/#course-format"
-  },"92": {
+  },"102": {
     "doc": "About",
     "title": "Course Communication",
     "content": "If you need to get in touch with me, the best method is via Zulip chat or email. Generally, I will reply within 24 hours and will provide feedback on assignments within one week. You may also post questions pertaining to the course in the Questions channel in the course team. These questions will be answered within 24 hours. I encourage all students to take a stab at answering any question. If you are having trouble with this course or its material, you should contact me via Zulip chat or email to discuss the issues. Announcements will be posted to this course whenever necessary. If there is any other information I think is important, I will send it to your preferred university email address. It is your responsibility to ensure that your email account works properly in order to receive email. If you are unsure of your preferred email, check your account at myaccount.sc.edu. For more information on setting your preferred university email, please see the Knowledge Base Article How To Change Your Primary University Email Address. ",
     "url": "https://738.f21.matthewrobertballard.com/about/#course-communication",
     "relUrl": "/about/#course-communication"
-  },"93": {
+  },"103": {
     "doc": "About",
     "title": "Technology",
     "content": "To participate in learning activities and complete assignments, you will need: . | Access to a working computer that has a current operating system with updates installed with a modern web browser installed; . | Reliable Internet access and a USC email account; . | If you plan to submit handwritten assignments, a scanning device such as a smartphone with the Microsoft Office Lens app. | We are using the Microsoft Teams with the team COTEAM-BALLARMR-MATH-738-001-FALL-2021 run through your UofSC Microsoft account. To access the team for the first time on your desktop/laptop, use the join link included in your welcome email. | For dissemination, collection of, and feedback on homework assignments, we will be using GitHub Classroom. To access the classroom for the first time on your desktop/laptop, use the join link included in your welcome email. | For chat, We will be using a service called Zulip to aid our learning. It exceeds Team’s capabilities with regards to typsetting mathematics content. To access the SCAGNT Zulip chat for the first time on your desktop/laptop, use the join link included in your welcome email. | . ",
     "url": "https://738.f21.matthewrobertballard.com/about/#technology",
     "relUrl": "/about/#technology"
-  },"94": {
+  },"104": {
     "doc": "About",
     "title": "Minimal Technical Skills Needed",
     "content": "Minimal technical skills are needed in this course. All work in this course must be completed and submitted online. Therefore, you must have consistent and reliable access to a computer and the Internet. The minimal technical skills you have include the ability to: . | Organize and save electronic files; . | Check and use the course, GitHub Classroom, Zulip, and Microsoft Teams sites regularly; . | Download and upload documents; . | Locate and enter information with a browser; . | Edit and compile TeX documents. | . ",
     "url": "https://738.f21.matthewrobertballard.com/about/#minimal-technical-skills-needed",
     "relUrl": "/about/#minimal-technical-skills-needed"
-  },"95": {
+  },"105": {
     "doc": "About",
     "title": "Technical Support",
     "content": "If you have problems with your computer, technology, IT-related questions, support, including Microsoft Teams, please contact the Division of Information Technology (DoIT) Service Desk at (803) 777-1800 or submit an online request through the Self-Service Portal or visit the Carolina Tech Zone. The Service Desk is open Monday – Friday from 8:00 AM – 6:00 PM (Eastern Daylight Time). The Thomas Cooper Library at USC has computers for you to use in case you encounter computer issues/problems. If you have problems with Zulip or GitHub Classroom, contact me. ",
     "url": "https://738.f21.matthewrobertballard.com/about/#technical-support",
     "relUrl": "/about/#technical-support"
-  },"96": {
+  },"106": {
     "doc": "About",
     "title": "Course Assignments and Grading",
     "content": " ",
     "url": "https://738.f21.matthewrobertballard.com/about/#course-assignments-and-grading",
     "relUrl": "/about/#course-assignments-and-grading"
-  },"97": {
+  },"107": {
     "doc": "About",
     "title": "Homework",
     "content": "Except for the zeroth one, homework can be completed in groups of 1-4. All sources utilized must be cited. Homework is submitted as TeX files. The assignments will be available in and must be returned through GitHub Classroom. As part of the homework, you will learn how to use git. ",
     "url": "https://738.f21.matthewrobertballard.com/about/#homework",
     "relUrl": "/about/#homework"
-  },"98": {
+  },"108": {
     "doc": "About",
     "title": "Paper",
     "content": "In lieu of a finals, papers on more in depth topics are required. Contact me to arrange for a topic. Suggestions will be provided as we progress. ",
     "url": "https://738.f21.matthewrobertballard.com/about/#paper",
     "relUrl": "/about/#paper"
-  },"99": {
+  },"109": {
     "doc": "About",
     "title": "Evaluation and Grading Scale",
     "content": "All grades will be posted on Teams. A final letter grade will be assigned based on weighting below. Assignment Weights . | Component | Percent of total | . | Participation | 33% | . | Homework | 33% | . | Paper | 33% | . Grading Scale . | Final total intervals | Letter Grade | . | [90,100] | A | . | [85,90) | B+ | . | [80,85) | B | . | [75,80) | C+ | . | [70,75) | C | . | [65,70) | D+ | . | [60,65) | D | . | [0,60) | F | . ",
     "url": "https://738.f21.matthewrobertballard.com/about/#evaluation-and-grading-scale",
     "relUrl": "/about/#evaluation-and-grading-scale"
-  },"100": {
+  },"110": {
     "doc": "About",
     "title": "Assignment Submission",
     "content": "Assignment submission will be through the GitHub Classroom for the course. ",
     "url": "https://738.f21.matthewrobertballard.com/about/#assignment-submission",
     "relUrl": "/about/#assignment-submission"
-  },"101": {
+  },"111": {
     "doc": "About",
     "title": "Revisions",
     "content": "All homework turned in on-time is eligible for revision at full credit. Each assignment can undergo at most two revisions. Revisions must be resubmitted within one week of receiving a marked assignment or revision. ",
     "url": "https://738.f21.matthewrobertballard.com/about/#revisions",
     "relUrl": "/about/#revisions"
-  },"102": {
+  },"112": {
     "doc": "About",
     "title": "Academic Success",
     "content": " ",
     "url": "https://738.f21.matthewrobertballard.com/about/#academic-success",
     "relUrl": "/about/#academic-success"
-  },"103": {
+  },"113": {
     "doc": "About",
     "title": "Accessibility",
     "content": "The Student Disability Resource Center (SDRC) empowers students to manage challenges and limitations imposed by disabilities. Students with disabilities are encouraged to contact me to discuss the logistics of any accommodations needed to fulfill course requirements (within the first week of the semester). In order to receive reasonable accommodations from me, you must be registered with the Student Disability Resource Center (1705 College Street Close-Hipp, Suite 102 Columbia, SC 29208, 803-777-6142). Any student with a documented disability should contact the SDRC to make arrangements for appropriate accommodations. ",
     "url": "https://738.f21.matthewrobertballard.com/about/#accessibility",
     "relUrl": "/about/#accessibility"
-  },"104": {
+  },"114": {
     "doc": "About",
     "title": "University Library Resources",
     "content": "University Libraries has access to books, articles, subject specific resources, citation help, and more. If you are not sure where to start, please Ask a Librarian! Assistance is available at sc.edu/libraries/ask.  . Remember that if you use anything that is not your own writing or media (quotes from books, articles, interviews, websites, movies – everything) you must cite the source in MLA (or other appropriate and approved) format. ",
     "url": "https://738.f21.matthewrobertballard.com/about/#university-library-resources",
     "relUrl": "/about/#university-library-resources"
-  },"105": {
+  },"115": {
     "doc": "About",
     "title": "Teams and Technology",
     "content": "Teams and Technology. As a student in this course, you have access to support from the Division of Information Technology (DoIT) for Teams and computer issues. The service desk can be reached at 803-777-1800. ",
     "url": "https://738.f21.matthewrobertballard.com/about/#teams-and-technology",
     "relUrl": "/about/#teams-and-technology"
-  },"106": {
+  },"116": {
     "doc": "About",
     "title": "Counseling Services",
     "content": "The University offers counseling and crisis services as well as outreach services and self-help. ",
     "url": "https://738.f21.matthewrobertballard.com/about/#counseling-services",
     "relUrl": "/about/#counseling-services"
-  },"107": {
+  },"117": {
     "doc": "About",
     "title": "Course Policies and Procedures",
     "content": " ",
     "url": "https://738.f21.matthewrobertballard.com/about/#course-policies-and-procedures",
     "relUrl": "/about/#course-policies-and-procedures"
-  },"108": {
+  },"118": {
     "doc": "About",
     "title": "Attendance Policy and COVID Reporting",
     "content": "You are expected to participate actively in each course. If you anticipate an excused absence, you need to contact me in advance. You should submit a request in writing (email is acceptable) stating the dates of the anticipated absence, explaining the reason for absence, providing supporting documentation as required above, and including any request for make-up work. You should submit this request no later than the end of the second week of regularly scheduled classes in a full fall or spring semester term and within twice the length of the drop/add period for any other term. If regularly attending class becomes difficult for any reason, please contact me to discuss the issue. In accordance with university policy, a grade penalty of 10% may be imposed if a student has unexcused absensces exceeding 5% of the total number of courses. For this course, that means missing TWO courses without excuse. All absences due to documented illness or quarantine will be excused, and no grade penalty will be assessed for missing classes for this reason. If you experience COVID-19 symptoms, please stay home, contact the COVID-19 Student Health Services (SHS) nurse line (803-576-8511), complete the COVID-19 Student Report Form and select the option allowing the Student Ombuds to contact your professors. When talking with the SHS nurse, be sure to ask for documentation of the consult as you will need this to document why you missed class. You will also use the COVID-19 Student Report Form if you have tested positive for COVID-19 or if you have been ordered to quarantine because of close contact with a person who was COVID-19 positive. In each of these situations you will be provided appropriate documentation that can be shared through the Student Report Form. ",
     "url": "https://738.f21.matthewrobertballard.com/about/#attendance-policy-and-covid-reporting",
     "relUrl": "/about/#attendance-policy-and-covid-reporting"
-  },"109": {
+  },"119": {
     "doc": "About",
     "title": "COVID Policies",
     "content": "As of 8/17/2021, UofSC requires face coverings, including in this class. For more information on this semester’s COVID policies see the guidance from the Provost. I strongly encourage getting vaccinated. I encourage physical distancing. While not always possible, I will strive to keep everyone at least three feet apart, even when working in groups, which we will do regularly. If you feel uncomfortable with group work in my class, please come talk with me and I don’t mind letting you work independently at all. I have been requested to keep a seating chart. I have been urged to keep this seating chart for contact tracing purposes and will do my best to abide by the University policy. Questions You May Have . What if I get sick with COVID? Two things have to occur: Isolation: Students who have been diagnosed with COVID-19 are released from isolation when a medical professional has determined, based on the current CDC and DHEC guidelines, that they have recovered. Currently, these guidelines include being fever-free for at least 24 hours and at least 10 days from their first symptom or positive test if they are asymptomatic. Quarantine: Unvaccinated students who are deemed a close contact with a confirmed COVID-19 case will be quarantined for 7-14 days from their last contact with the infected individual. More specifically, students who test negative on day 5, 6, or 7 can leave quarantine after 7 full days; individuals who did not test but remain asymptomatic can leave after 10 full days. Individuals who are symptomatic or have other health concerns may be advised to remain under quarantine for 14 days.  . What is the attendance policy if I get COVID? In brief, I must provide make-up course work including content and assignments when students have excused absences which include (but are not limited to) being in quarantine or isolation, religious holidays, medical conditions related to pregnancy, and military duty. However, recorded classes and hybrid/online options are not required and should not be expected. All excused absences must have documentation. See syllabus for further attendance policies. How will the Dr. Ballard know if I am absent due to quarantine or isolation? COVID-19 related absences must be document through the Student Ombudsman.  Students who have been diagnosed with COVID-19 or have been exposed and require quarantining should complete the COVID-19 Student Report Form and instructors should request this form in order to excuse the absence.  . Can I inquire about classmates condition with COVID? Sadly, not with me. These are health issues and the information is protected by state and federal law. If an individual student has questions about whether they should quarantine or believe that they have been in close contact, have them reach out to the COVID Phone Bank (803-576-8511). Would we ever change to go online if too many people are sick? Only in the rare instance that 30% or more of students have documented excused absences may I take the course online. This is not to be expected and very complicated according to the current policies. What if Dr. Ballard gets sick with COVID? I have been fully vaccinated and breakthrough infection symptoms most often resemble the common cold. In the event of a breakthrough infection, I will enter the self-isolation period and the course will switch modality to synchronous online temporarily. In the rare circumstance I am unable to teach remotely, a substitute instructor will take over the course. ",
     "url": "https://738.f21.matthewrobertballard.com/about/#covid-policies",
     "relUrl": "/about/#covid-policies"
-  },"110": {
+  },"120": {
     "doc": "About",
     "title": "Academic Integrity",
     "content": "You are expected to practice the highest possible standards of academic integrity. Any deviation from this expectation will result in a minimum academic penalty of your failing the assignment, and will result in additional disciplinary measures. This includes improper citation of sources, using another student’s work, and any other form of academic misrepresentation. The first tenet of the Carolinian Creed is, “I will practice personal and academic integrity.” . Below are some websites for you to visit to learn more about University policies: . | Carolinian Creed . | Academic Responsibility . | Office of Student Conduct and Academic Integrity . | Information Security Policy and Standards . | . ",
     "url": "https://738.f21.matthewrobertballard.com/about/#academic-integrity",
     "relUrl": "/about/#academic-integrity"
-  },"111": {
+  },"121": {
     "doc": "About",
     "title": "Plagiarism",
     "content": "Using the words or ideas of another as if they were one’s own is a serious form of academic dishonesty. If another person’s complete sentence, syntax, key words, or the specific or unique ideas and information are used, one must give that person credit through proper citation. You should in particular cite any resources, person, text, or otherwise, you used to assist in preparation of your work. Copying proofs or problem solutions is strictly forbidden. ",
     "url": "https://738.f21.matthewrobertballard.com/about/#plagiarism",
     "relUrl": "/about/#plagiarism"
-  },"112": {
+  },"122": {
     "doc": "About",
     "title": "Group Work",
     "content": "Group work should be performed in safe manner. Remote work will certainly form a larger component of a career going forward. You are encouraged to take advantage of Microsoft Teams video conferencing and Zulip chat abilities to aid in collaboration. ",
     "url": "https://738.f21.matthewrobertballard.com/about/#group-work",
     "relUrl": "/about/#group-work"
-  },"113": {
+  },"123": {
     "doc": "About",
     "title": "Class Conduct",
     "content": "Professionalism will be expected at all times, but most especially with your interactions online and in person. Because the university classroom is a place designed for the free exchange of ideas, we must show respect for one another in all circumstances. We will show respect for one another by exhibiting patience and courtesy in our exchanges. Appropriate language and restraint from verbal attacks upon those whose perspectives differ from your own is a minimum requirement. Courtesy and kindness is the norm for those who participate in the class. Mistakes, in particular during the running phase, are expected and natural. Mistakes are how learning happens. All students should recognize and respect the bravery of a student presenting a proof or solution. If you ever feel uncomfortable beyond the intellectual challenge of the course, please contact me. Teams is a way for you to share your ideas and learning with your colleagues in this class. We do this as colleagues in learning, and the online space is meant to be a safe and respectful environment for us to conduct these discussions. Some general netiquette rules: . | Treat one another with respect. It will be expected that we will not attack one another personally for holding different opinions. | Do not use all CAPITAL LETTERS in emails or discussion board postings. This is considered “shouting” and is seen as impolite or aggressive. | Begin emails with a proper salutation (Examples: Dr. Name; Ms. Name; Hello Professor Name; Good afternoon Mr. Name). Starting an email without a salutation or a simple “Hey” is not appropriate. | When sending an email, please include a detailed subject line. Additionally, make sure you reference the course number (Ex. ENGL 287) in the message and sign the mail with your name. | Use proper grammar, spelling, punctuation, and capitalization. Text messaging language is not acceptable. | Use good taste when communicating. Profanity should be avoided. | Re-Read, think, and edit your message before you click “Send/Submit/Post.” . | Please remember when posting to be respectful and courteous to your colleagues, and limit your communication to topics of this course and the assignments. | . ",
     "url": "https://738.f21.matthewrobertballard.com/about/#class-conduct",
     "relUrl": "/about/#class-conduct"
-  },"114": {
+  },"124": {
     "doc": "About",
     "title": "Late Work/Make-up Policy",
     "content": "All assignments due by the deadline as posted on the course schedule. Late work is not accepted and not eligible for revision. Please plan accordingly, and complete these assignments in advance of their deadlines to ensure any unanticipated circumstances do not result in a missed assignment. User error does not qualify you for any kind of makeup or retake opportunity. Completing and submitting the assignments by the due date is the sole responsibility of you. If you fail to submit the assignment or test by the due date, then your score for that assignment will be recorded as “zero.” . You will be allowed to access the assignments an unlimited number of times until the due date/time. If you are concerned about missing a deadline, post your assignment the day before the deadline. Be Careful: The clock on your computer may be different than the clock in Teams. If the clock is different by one second, you will be locked out of the assignment. Plan accordingly. ",
     "url": "https://738.f21.matthewrobertballard.com/about/#late-workmake-up-policy",
     "relUrl": "/about/#late-workmake-up-policy"
-  },"115": {
+  },"125": {
     "doc": "About",
     "title": "Incomplete Grades",
     "content": "The grade of Incomplete will be granted only in accordance with university policy. ",
     "url": "https://738.f21.matthewrobertballard.com/about/#incomplete-grades",
     "relUrl": "/about/#incomplete-grades"
-  },"116": {
+  },"126": {
     "doc": "About",
     "title": "Diversity and Inclusion",
     "content": "The university is committed to a campus environment that is inclusive, safe, and respectful for all persons, and one that fully embraces the Carolinian Creed: “I will discourage bigotry, while striving to learn from differences in people, ideas and opinions.” Likewise, the Student Code of Conduct stresses, “The University of South Carolina strives to maintain an educational community that fosters the development of students who are ethical, civil and responsible persons.” . To that end, all course activities will be conducted in an atmosphere of friendly participation and interaction among colleagues, recognizing and appreciating the unique experiences, background, and point of view each student brings. You are expected at all times to apply the highest academic standards to this course and to treat others with dignity and respect. ",
     "url": "https://738.f21.matthewrobertballard.com/about/#diversity-and-inclusion",
     "relUrl": "/about/#diversity-and-inclusion"
-  },"117": {
+  },"127": {
     "doc": "About",
     "title": "Title IX and Gendered Identity",
     "content": "This course affirms equality and respect for all gendered identities and expressions. Please don’t hesitate to correct me regarding your preferred gender pronoun and/or name if different from what is indicated on the official class roster. Likewise, I am committed to nurturing an environment free from discrimination and harassment. Consistent with Title IX policy, please be aware that I as a responsible employee am obligated to report information that you provide to me about a situation involving sexual harassment or assault. ",
     "url": "https://738.f21.matthewrobertballard.com/about/#title-ix-and-gendered-identity",
     "relUrl": "/about/#title-ix-and-gendered-identity"
-  },"118": {
+  },"128": {
     "doc": "About",
     "title": "Expectations of the Instructor",
     "content": "I am expected to facilitate learning, answer questions appropriately, be fair and objective in grading, provide timely and useful feedback on assignments and treat you as I would like to be treated. ",
     "url": "https://738.f21.matthewrobertballard.com/about/#expectations-of-the-instructor",
     "relUrl": "/about/#expectations-of-the-instructor"
-  },"119": {
+  },"129": {
     "doc": "About",
     "title": "Copyright/Fair Use Statement",
     "content": "I will cite and/or reference any materials that I use in this course that I do not create. Anything that appears on this website is copyright © 2021 Matthew Ballard and is distributed by an MIT license. Course materials that do not appear on this website are copyright © 2021 Matthew Ballard and all rights are reserved. In particular, you may not distribute any of these course materials in any fashion. ",
     "url": "https://738.f21.matthewrobertballard.com/about/#copyrightfair-use-statement",
     "relUrl": "/about/#copyrightfair-use-statement"
-  },"120": {
+  },"130": {
     "doc": "About",
     "title": "About",
     "content": " ",
     "url": "https://738.f21.matthewrobertballard.com/about/",
     "relUrl": "/about/"
-  },"121": {
+  },"131": {
     "doc": "This Website",
     "title": "About this website",
     "content": "This website is hosted on GitHub and relies on Jekyll to generate the content. It uses the Just the Class theme which built off the Just the Docs theme. At material appearing here is copyright © 2021 Matthew Ballard and is distributed with an MIT license. ",
     "url": "https://738.f21.matthewrobertballard.com/about_this_webpage/#about-this-website",
     "relUrl": "/about_this_webpage/#about-this-website"
-  },"122": {
+  },"132": {
     "doc": "This Website",
     "title": "This Website",
     "content": " ",
     "url": "https://738.f21.matthewrobertballard.com/about_this_webpage/",
     "relUrl": "/about_this_webpage/"
-  },"123": {
+  },"133": {
     "doc": "Announcements",
     "title": "Announcements",
     "content": "Announcements are stored in the _announcements directory and rendered according to the layout file, _layouts/announcement.html. ",
     "url": "https://738.f21.matthewrobertballard.com/announcements/",
     "relUrl": "/announcements/"
-  },"124": {
+  },"134": {
     "doc": "Announcements",
     "title": "Week 1 Announcement",
     "content": "Aug 17 &middot; 0 min read Due to an immovable medical appointment, the first class (Aug 19) is rescheduled. We will figure if and how to make it up at a later date. ",
     "url": "https://738.f21.matthewrobertballard.com/announcements/",
     "relUrl": "/announcements/"
-  },"125": {
+  },"135": {
     "doc": "Calendar",
     "title": "Calendar",
     "content": " ",
     "url": "https://738.f21.matthewrobertballard.com/calendar/",
     "relUrl": "/calendar/"
-  },"126": {
+  },"136": {
     "doc": "Calendar",
     "title": "Semi-orthogonal decompositions",
     "content": "Oct 26 SODs and upper triangular algebras Oct 28 Properties of SODs Nov 2 Mutations and braid group actions ",
     "url": "https://738.f21.matthewrobertballard.com/calendar/#semi-orthogonal-decompositions",
     "relUrl": "/calendar/#semi-orthogonal-decompositions"
-  },"127": {
+  },"137": {
     "doc": "Calendar",
     "title": "Past topics",
     "content": ". ",
     "url": "https://738.f21.matthewrobertballard.com/calendar/#past-topics",
     "relUrl": "/calendar/#past-topics"
-  },"128": {
+  },"138": {
     "doc": "Calendar",
     "title": "Derived Morita equivalences, dg-algebras, and integral transforms",
     "content": "Oct 12 Derived categories of dg-modules Oct 14 Derived Morita equivalences and integral transforms Oct 19 More on kernels, homological smoothness and propers Oct 21 A look ahead to geometry ",
     "url": "https://738.f21.matthewrobertballard.com/calendar/#derived-morita-equivalences-dg-algebras-and-integral-transforms",
     "relUrl": "/calendar/#derived-morita-equivalences-dg-algebras-and-integral-transforms"
-  },"129": {
+  },"139": {
     "doc": "Calendar",
     "title": "Compactly generated triangulated categories",
     "content": "Oct 5 Compact generators and resolutions ",
     "url": "https://738.f21.matthewrobertballard.com/calendar/#compactly-generated-triangulated-categories",
     "relUrl": "/calendar/#compactly-generated-triangulated-categories"
-  },"130": {
+  },"140": {
     "doc": "Calendar",
     "title": "The derived category and derived functors",
     "content": "Sept 16 Triangulated categories Sept 21 K-projectives and K-injectives Sept 23 Derived categories Sept 28 Derived functors Sept 30 Derived tensor and Hom ",
     "url": "https://738.f21.matthewrobertballard.com/calendar/#the-derived-category-and-derived-functors",
     "relUrl": "/calendar/#the-derived-category-and-derived-functors"
-  },"131": {
+  },"141": {
     "doc": "Calendar",
     "title": "Abelian categories and chain complexes",
     "content": "Sept 7 Abelian categories and (half) exact functors Sept 9 Exactness for $\\text{Hom}$ and $\\otimes$: projectives, injectives, and flat modules Sept 14 Homotopy category of chain complexes ",
     "url": "https://738.f21.matthewrobertballard.com/calendar/#abelian-categories-and-chain-complexes",
     "relUrl": "/calendar/#abelian-categories-and-chain-complexes"
-  },"132": {
+  },"142": {
     "doc": "Calendar",
     "title": "Categories",
     "content": "Aug 24 Definitions of categories and examples Aug 26 Functors, natural transformations, and equivalences Aug 31 Adjunctions Sept 2 Representable functors and Yoneda ",
     "url": "https://738.f21.matthewrobertballard.com/calendar/#categories",
     "relUrl": "/calendar/#categories"
-  },"133": {
+  },"143": {
     "doc": "Homework",
     "title": "Homework",
     "content": ". | Homework 1. Due Date: September 15 . | Homework 2. Due Date: October 21 . | Homework 0. Due Date: August 26 . | . ",
     "url": "https://738.f21.matthewrobertballard.com/homework/",
     "relUrl": "/homework/"
-  },"134": {
+  },"144": {
     "doc": "Derived Categories",
     "title": "Fall 2021 Math 738 at UofSC",
     "content": "We will localize some categories and have fun doing it. ",
     "url": "https://738.f21.matthewrobertballard.com/#fall-2021-math-738-at-uofsc",
     "relUrl": "/#fall-2021-math-738-at-uofsc"
-  },"135": {
+  },"145": {
     "doc": "Derived Categories",
     "title": "Syllabus",
     "content": "The syllabus can be found at the about tab. ",
     "url": "https://738.f21.matthewrobertballard.com/#syllabus",
     "relUrl": "/#syllabus"
-  },"136": {
+  },"146": {
     "doc": "Derived Categories",
     "title": "Calendar",
     "content": "At the calendar tab, you will find our topic schedule and due dates for assignments. ",
     "url": "https://738.f21.matthewrobertballard.com/#calendar",
     "relUrl": "/#calendar"
-  },"137": {
+  },"147": {
     "doc": "Derived Categories",
     "title": "Notes",
     "content": "The notes tab is where you can find the course notes. ",
     "url": "https://738.f21.matthewrobertballard.com/#notes",
     "relUrl": "/#notes"
-  },"138": {
+  },"148": {
     "doc": "Derived Categories",
     "title": "Homework",
     "content": "There is also a tab for class homework. ",
     "url": "https://738.f21.matthewrobertballard.com/#homework",
     "relUrl": "/#homework"
-  },"139": {
+  },"149": {
     "doc": "Derived Categories",
     "title": "Weekly schedule",
     "content": "If you ever need to remind yourself about the time and coordinates of our course or my office hours, you can quickly reference at the schedule tab. ",
     "url": "https://738.f21.matthewrobertballard.com/#weekly-schedule",
     "relUrl": "/#weekly-schedule"
-  },"140": {
+  },"150": {
     "doc": "Derived Categories",
     "title": "Me",
     "content": "If you are interested in a bit about who I am and what I do, check out the Me tab or visit my website. ",
     "url": "https://738.f21.matthewrobertballard.com/#me",
     "relUrl": "/#me"
-  },"141": {
+  },"151": {
     "doc": "Derived Categories",
     "title": "Derived Categories",
     "content": " ",
     "url": "https://738.f21.matthewrobertballard.com/",
     "relUrl": "/"
-  },"142": {
+  },"152": {
     "doc": "Notes",
     "title": "Course Notes",
     "content": "We will record notes from the course here. <!-- ",
     "url": "https://738.f21.matthewrobertballard.com/notes/intro/#course-notes",
     "relUrl": "/notes/intro/#course-notes"
-  },"143": {
+  },"153": {
     "doc": "Notes",
     "title": "Rank Nullity Theorem",
     "content": "Let $T : V \\to W$ be a linear tranformation between two finite dimensional vectors $V$ and $W$. Then, \\(\\operatorname{Rank}(T) + \\operatorname{Nullity}(T) = \\dim V.\\) . --> ",
     "url": "https://738.f21.matthewrobertballard.com/notes/intro/#rank-nullity-theorem",
     "relUrl": "/notes/intro/#rank-nullity-theorem"
-  },"144": {
+  },"154": {
     "doc": "Notes",
     "title": "Notes",
     "content": " ",
     "url": "https://738.f21.matthewrobertballard.com/notes/intro/",
     "relUrl": "/notes/intro/"
-  },"145": {
+  },"155": {
     "doc": "Schedule",
     "title": "Weekly Schedule",
     "content": ". | 7:30 AM | 8:00 AM | 8:30 AM | 9:00 AM | 9:30 AM | 10:00 AM | 10:30 AM | 11:00 AM | 11:30 AM | 12:00 PM | 12:30 PM | 1:00 PM | 1:30 PM | 2:00 PM | 2:30 PM | 3:00 PM | 3:30 PM | . | ",
     "url": "https://738.f21.matthewrobertballard.com/schedule/#weekly-schedule",
     "relUrl": "/schedule/#weekly-schedule"
-  },"146": {
+  },"156": {
     "doc": "Schedule",
     "title": "Monday",
     "content": "| ",
     "url": "https://738.f21.matthewrobertballard.com/schedule/",
     "relUrl": "/schedule/"
-  },"147": {
+  },"157": {
     "doc": "Schedule",
     "title": "Tuesday",
     "content": ". | Class 10:05 AM–11:20 AM COL 3006B | Office Hours 7:45 AM–8:30 AM COL 1022C | Office Hours 11:30 AM–12:15 PM COL 1022C | . | ",
     "url": "https://738.f21.matthewrobertballard.com/schedule/",
     "relUrl": "/schedule/"
-  },"148": {
+  },"158": {
     "doc": "Schedule",
     "title": "Wednesday",
     "content": "| ",
     "url": "https://738.f21.matthewrobertballard.com/schedule/",
     "relUrl": "/schedule/"
-  },"149": {
+  },"159": {
     "doc": "Schedule",
     "title": "Thursday",
     "content": ". | Class 10:05 AM–11:20 AM COL 3006B | Office Hours 7:45 AM–8:30 AM COL 1022C | Office Hours 11:30 AM–12:15 PM COL 1022C | . | ",
     "url": "https://738.f21.matthewrobertballard.com/schedule/",
     "relUrl": "/schedule/"
-  },"150": {
+  },"160": {
     "doc": "Schedule",
     "title": "Friday",
     "content": "| . ",
     "url": "https://738.f21.matthewrobertballard.com/schedule/",
     "relUrl": "/schedule/"
-  },"151": {
+  },"161": {
     "doc": "Schedule",
     "title": "Schedule",
     "content": " ",
     "url": "https://738.f21.matthewrobertballard.com/schedule/",
     "relUrl": "/schedule/"
-  },"152": {
+  },"162": {
     "doc": "Me",
     "title": "Staff",
     "content": " ",
     "url": "https://738.f21.matthewrobertballard.com/staff/#staff",
     "relUrl": "/staff/#staff"
-  },"153": {
+  },"163": {
     "doc": "Me",
     "title": "Instructor",
     "content": "Matthew Ballard . ballard@math.sc.edu . Schedule an appointment . I am an Associate Professor in the Department of Mathematics at the University of South Carolina. I have been teaching mathematics for almost two decades and have guided nearly 1000 students from all levels through math courses. A mindset focused on growth is essential for learning mathematics. Each day is a small step forward. When we turn around at the end of the course, only then, do we see how far we have truly traveled. For more of my pedagogical philosophy and experience, take a look at the teaching page. As an extension of teaching, I take pride in mentoring researchers at any stage. For a brief introduction to my mentees see the mentoring page. In my research, I study algebraic geometry and am particularly interested in questions arising from Homological Mirror Symmetry. Much of my current work focuses on derived categories and their relation to more classical questions. My research has been partially supported by the Simons Foundation and the National Science Foundation. It has also benefited from a membership at the Institute for Advanced Study, funding from UofSC, and the Southeastern Conference. For more information about me, see my CV. For a research summary and a list of my papers, take a look at my research page. I regularly organize mathematical events, even virtual ones. For the full list of events, see the organizing page. If you are interested in participating, contact me. ",
     "url": "https://738.f21.matthewrobertballard.com/staff/#instructor",
     "relUrl": "/staff/#instructor"
-  },"154": {
+  },"164": {
     "doc": "Me",
     "title": "Me",
     "content": " ",
