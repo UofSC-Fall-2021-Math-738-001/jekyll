@@ -1,6 +1,6 @@
 ---
 title: Semi-orthogonal decompositions
-ended: false 
+ended: true 
 ---
 
 Oct 26
