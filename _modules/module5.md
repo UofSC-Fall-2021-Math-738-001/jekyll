@@ -10,7 +10,7 @@ Oct 14
 : **Derived Morita equivalences and integral transforms**
 
 Oct 19 
-: **More on kernels, homological smoothness and propers**
+: **More on kernels, homological smoothness and properness**
 
 Oct 21
 : **A look ahead to geometry** 
