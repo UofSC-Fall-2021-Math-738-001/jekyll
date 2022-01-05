@@ -1,13 +1,13 @@
 ---
 title: Ludicrous speed through scheme basics
-ended: false 
+ended: true 
 ---
 
 Nov 23
-: **Sheaves**
+: [**Sheaves**]({% link notes/2021_11_23.md %})
 
 Nov 30 
-: **Schemes**
+: [**Schemes**]({% link notes/2021_11_30.md %})
 
 Dec 2
-: **Projective spaces**
+: [**Projective spaces**]({% link notes/2021_12_02.md %})
