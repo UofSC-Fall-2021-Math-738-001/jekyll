@@ -840,16 +840,16 @@
     "relUrl": "/calendar/"
   },"140": {
     "doc": "Calendar",
-    "title": "Ludicrous speed through scheme basics",
-    "content": "Nov 23 Sheaves Nov 30 Schemes Dec 2 Projective spaces ",
-    "url": "https://738.f21.matthewrobertballard.com/calendar/#ludicrous-speed-through-scheme-basics",
-    "relUrl": "/calendar/#ludicrous-speed-through-scheme-basics"
-  },"141": {
-    "doc": "Calendar",
     "title": "Past topics",
     "content": ". ",
     "url": "https://738.f21.matthewrobertballard.com/calendar/#past-topics",
     "relUrl": "/calendar/#past-topics"
+  },"141": {
+    "doc": "Calendar",
+    "title": "Ludicrous speed through scheme basics",
+    "content": "Nov 23 Sheaves Nov 30 Schemes Dec 2 Projective spaces ",
+    "url": "https://738.f21.matthewrobertballard.com/calendar/#ludicrous-speed-through-scheme-basics",
+    "relUrl": "/calendar/#ludicrous-speed-through-scheme-basics"
   },"142": {
     "doc": "Calendar",
     "title": "Generation and representability",
@@ -893,59 +893,59 @@
     "url": "https://738.f21.matthewrobertballard.com/calendar/#categories",
     "relUrl": "/calendar/#categories"
   },"149": {
-    "doc": "Homework",
-    "title": "Homework",
-    "content": ". | Homework 1. Due Date: September 15 . | Homework 2. Due Date: October 21 . | Homework 0. Due Date: August 26 . | . ",
-    "url": "https://738.f21.matthewrobertballard.com/homework/",
-    "relUrl": "/homework/"
-  },"150": {
     "doc": "Derived Categories",
     "title": "Fall 2021 Math 738 at UofSC",
     "content": "We will localize some categories and have fun doing it. ",
     "url": "https://738.f21.matthewrobertballard.com/#fall-2021-math-738-at-uofsc",
     "relUrl": "/#fall-2021-math-738-at-uofsc"
-  },"151": {
+  },"150": {
     "doc": "Derived Categories",
     "title": "Syllabus",
     "content": "The syllabus can be found at the about tab. ",
     "url": "https://738.f21.matthewrobertballard.com/#syllabus",
     "relUrl": "/#syllabus"
-  },"152": {
+  },"151": {
     "doc": "Derived Categories",
     "title": "Calendar",
     "content": "At the calendar tab, you will find our topic schedule and due dates for assignments. ",
     "url": "https://738.f21.matthewrobertballard.com/#calendar",
     "relUrl": "/#calendar"
-  },"153": {
+  },"152": {
     "doc": "Derived Categories",
     "title": "Notes",
     "content": "The notes tab is where you can find the course notes. ",
     "url": "https://738.f21.matthewrobertballard.com/#notes",
     "relUrl": "/#notes"
-  },"154": {
+  },"153": {
     "doc": "Derived Categories",
     "title": "Homework",
     "content": "There is also a tab for class homework. ",
     "url": "https://738.f21.matthewrobertballard.com/#homework",
     "relUrl": "/#homework"
-  },"155": {
+  },"154": {
     "doc": "Derived Categories",
     "title": "Weekly schedule",
     "content": "If you ever need to remind yourself about the time and coordinates of our course or my office hours, you can quickly reference at the schedule tab. ",
     "url": "https://738.f21.matthewrobertballard.com/#weekly-schedule",
     "relUrl": "/#weekly-schedule"
-  },"156": {
+  },"155": {
     "doc": "Derived Categories",
     "title": "Me",
     "content": "If you are interested in a bit about who I am and what I do, check out the Me tab or visit my website. ",
     "url": "https://738.f21.matthewrobertballard.com/#me",
     "relUrl": "/#me"
-  },"157": {
+  },"156": {
     "doc": "Derived Categories",
     "title": "Derived Categories",
     "content": " ",
     "url": "https://738.f21.matthewrobertballard.com/",
     "relUrl": "/"
+  },"157": {
+    "doc": "Homework",
+    "title": "Homework",
+    "content": ". | Homework 1. Due Date: September 15 . | Homework 2. Due Date: October 21 . | Homework 0. Due Date: August 26 . | . ",
+    "url": "https://738.f21.matthewrobertballard.com/homework/",
+    "relUrl": "/homework/"
   },"158": {
     "doc": "Notes",
     "title": "Course Notes",
